@@ -1,0 +1,144 @@
+Portfolio: ('BA', 'HD', 'HSY')
+Expected portfolio return: 15.940212860559749
+Number of times SPX was beat: 371
+--------------------------------------------
+Portfolio: ('HD', 'MRK', 'NFLX')
+Expected portfolio return: 25.48417733980683
+Number of times SPX was beat: 501
+--------------------------------------------
+Portfolio: ('AAPL', 'BA', 'HD')
+Expected portfolio return: 31.251397346855764
+Number of times SPX was beat: 587
+--------------------------------------------
+Portfolio: ('BA', 'DIS', 'NFLX')
+Expected portfolio return: -12.196873447548557
+Number of times SPX was beat: 200
+--------------------------------------------
+Portfolio: ('BA', 'NFLX', 'V')
+Expected portfolio return: 13.605606055090904
+Number of times SPX was beat: 346
+--------------------------------------------
+Portfolio: ('COST', 'HD', 'NFLX')
+Expected portfolio return: 47.345906159810134
+Number of times SPX was beat: 806
+--------------------------------------------
+Portfolio: ('ADBE', 'BA', 'NKE')
+Expected portfolio return: -1.4000559252450075
+Number of times SPX was beat: 218
+--------------------------------------------
+Portfolio: ('ADBE', 'HD', 'NKE')
+Expected portfolio return: 11.403500047476196
+Number of times SPX was beat: 219
+--------------------------------------------
+Portfolio: ('AAPL', 'BA', 'DIS')
+Expected portfolio return: 8.641389170656316
+Number of times SPX was beat: 179
+--------------------------------------------
+Portfolio: ('AAPL', 'DIS', 'NFLX')
+Expected portfolio return: 15.117268668144472
+Number of times SPX was beat: 266
+--------------------------------------------
+Portfolio: ('ADBE', 'BA', 'V')
+Expected portfolio return: 12.863785094021566
+Number of times SPX was beat: 324
+--------------------------------------------
+Portfolio: ('ADBE', 'EA', 'NFLX')
+Expected portfolio return: 16.888792462663584
+Number of times SPX was beat: 336
+--------------------------------------------
+Portfolio: ('BA', 'HAS', 'NKE')
+Expected portfolio return: -11.532608366492862
+Number of times SPX was beat: 165
+--------------------------------------------
+Portfolio: ('HAS', 'HD', 'NKE')
+Expected portfolio return: 2.4247393484660504
+Number of times SPX was beat: 155
+--------------------------------------------
+Portfolio: ('ADBE', 'COST', 'HD')
+Expected portfolio return: 45.313781111127874
+Number of times SPX was beat: 800
+--------------------------------------------
+Portfolio: ('ADBE', 'COST', 'NFLX')
+Expected portfolio return: 55.77090326612523
+Number of times SPX was beat: 826
+--------------------------------------------
+Portfolio: ('EA', 'NFLX', 'V')
+Expected portfolio return: 18.796997069340836
+Number of times SPX was beat: 320
+--------------------------------------------
+Portfolio: ('ADBE', 'EA', 'V')
+Expected portfolio return: 18.882007111619377
+Number of times SPX was beat: 304
+--------------------------------------------
+Portfolio: ('BA', 'HAS', 'JPM')
+Expected portfolio return: 8.307792473872832
+Number of times SPX was beat: 236
+--------------------------------------------
+Portfolio: ('HAS', 'HD', 'JPM')
+Expected portfolio return: 15.043235875894066
+Number of times SPX was beat: 211
+--------------------------------------------
+Portfolio: ('BA', 'JPM', 'KMI')
+Expected portfolio return: 17.915251423090364
+Number of times SPX was beat: 422
+--------------------------------------------
+Portfolio: ('HD', 'JPM', 'KMI')
+Expected portfolio return: 22.358108473261534
+Number of times SPX was beat: 342
+--------------------------------------------
+Portfolio: ('AAPL', 'HD', 'LLY')
+Expected portfolio return: 88.99338245693791
+Number of times SPX was beat: 851
+--------------------------------------------
+Portfolio: ('AAPL', 'LLY', 'NFLX')
+Expected portfolio return: 130.1319124452626
+Number of times SPX was beat: 856
+--------------------------------------------
+Portfolio: ('BA', 'CVS', 'KMI')
+Expected portfolio return: -2.6769182151052893
+Number of times SPX was beat: 193
+--------------------------------------------
+Portfolio: ('CVS', 'HD', 'KMI')
+Expected portfolio return: 10.171164637017462
+Number of times SPX was beat: 194
+--------------------------------------------
+Portfolio: ('BA', 'CVS', 'T')
+Expected portfolio return: -9.533103435093382
+Number of times SPX was beat: 183
+--------------------------------------------
+Portfolio: ('CVS', 'HD', 'T')
+Expected portfolio return: 0.01240940040060026
+Number of times SPX was beat: 180
+--------------------------------------------
+Portfolio: ('BA', 'KO', 'T')
+Expected portfolio return: 1.8166967386558925
+Number of times SPX was beat: 219
+--------------------------------------------
+Portfolio: ('HD', 'KO', 'T')
+Expected portfolio return: 6.610706010190685
+Number of times SPX was beat: 207
+--------------------------------------------
+Portfolio: ('BA', 'HSY', 'KO')
+Expected portfolio return: 11.183414738375834
+Number of times SPX was beat: 327
+--------------------------------------------
+Portfolio: ('HD', 'HSY', 'KO')
+Expected portfolio return: 15.008588992260288
+Number of times SPX was beat: 320
+--------------------------------------------
+Portfolio: ('HD', 'JNJ', 'LLY')
+Expected portfolio return: 26.116041119525953
+Number of times SPX was beat: 522
+--------------------------------------------
+Portfolio: ('LLY', 'MRK', 'NFLX')
+Expected portfolio return: 67.49630325381798
+Number of times SPX was beat: 842
+--------------------------------------------
+Portfolio: ('HD', 'JNJ', 'MRK')
+Expected portfolio return: 14.105707815812158
+Number of times SPX was beat: 301
+--------------------------------------------
+Portfolio: ('JNJ', 'LLY', 'MRK')
+Expected portfolio return: 24.37609421876261
+Number of times SPX was beat: 502
+--------------------------------------------

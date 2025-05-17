@@ -185,19 +185,22 @@ A = '''
   (18,20)       4
   '''
 
+'''
 stock_list = ['DIS', 'KO', 'ADBE', 'MRK', 'KMI', 'AAPL', 'JNJ', 'CVS', 'COST', 'T', 'BA', 'EA', 'HAS', 'HD', 'HSY', 'LLY', 'NFLX', 'NKE', 'V', 'JPM']
 stock_list.sort()
 
 print(matlab_to_python_faces(faces_2, stock_list))
 
 g = matlab_to_python_weights(A, stock_list)
+print('__________')
+
 pos0 = nx.planar_layout(g)
 nx.draw_networkx_nodes(g, pos0, node_color='lightblue', node_size=650)
 nx.draw_networkx_labels(g, pos0, font_size=8, font_family='sans-serif')
 nx.draw_networkx_edges(g, pos0, width=2)
 plt.figure(1,figsize=(12,12)) 
 plt.show()
-
+'''
 
 
 

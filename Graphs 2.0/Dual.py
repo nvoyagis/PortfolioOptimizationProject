@@ -5,7 +5,7 @@ import MATLAB_to_Python as m2p
 import pandas as pd
 import numpy as np
 from datetime import datetime
-import Portfolio_Optimization as po
+# import Portfolio_Optimization as po
 
 def build_dual_from_faces(faces):
     """
@@ -187,8 +187,9 @@ for node in dual.nodes:
 # print('Number of portfolios with negative returns: ' + str(negative_return_count))
 # print('Number of portfolios outperforming the SPX: ' + str(better_than_spx_count))
 
-
-# NOTE: YOU MUST CHANGE THE GRAPH DATA DEPENDING ON THE RANDOM START DATE OF THE SIMULATION
+'''
+# NOTE: YOU MUST CHANGE THE GRAPH DATA DEPENDING ON THE 
+# START DATE OF THE SIMULATION
 with open('100_Sims_2018-2019_and_2020-2021.txt', "w", newline="") as f: # Make file for data
     seed = 2
     sims = 100
@@ -248,3 +249,4 @@ nx.draw(
 plt.title("Dual Graph")
 plt.tight_layout()
 plt.show()
+'''

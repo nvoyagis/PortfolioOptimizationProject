@@ -7,6 +7,7 @@ from typing import Union, Optional
 from numpy.linalg import inv
 
 
+
 class OutputMode(Enum):
     LOGO = "logo"
     UNWEIGHTED_SPARSE_W_MATRIX = "unweighted_sparse_W_matrix"

@@ -10,7 +10,7 @@ import sklearn
 
 
 
-def get_weight_mat(stock_list: list[str]):
+def get_weight_matrix(stock_list: list[str]):
     # Initialize variables and sort stocks.
     mapping = {}
     complete = nx.complete_graph(len(stock_list))
@@ -147,4 +147,4 @@ def get_weight_mat(stock_list: list[str]):
 
 
 stocks = ['DIS', 'KO', 'ADBE', 'MRK', 'KMI', 'AAPL', 'JNJ', 'CVS', 'COST', 'T', 'BA', 'EA', 'HAS', 'HD', 'HSY', 'LLY', 'NFLX', 'NKE', 'V', 'JPM']
-graph = get_weight_mat(stocks)
+graph = get_weight_matrix(stocks)

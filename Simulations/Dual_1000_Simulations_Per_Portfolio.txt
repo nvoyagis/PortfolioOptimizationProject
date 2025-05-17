@@ -142,3 +142,5 @@ Portfolio: ('JNJ', 'LLY', 'MRK')
 Expected portfolio return: 24.37609421876261
 Number of times SPX was beat: 502
 --------------------------------------------
+* NOTE: Start dates: 01/01/2019 - 01/01/2022
+        End dates: 01/01/2023 - 01/01/2025

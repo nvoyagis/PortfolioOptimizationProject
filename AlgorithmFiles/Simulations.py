@@ -1,6 +1,8 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.cm as cm
+import matplotlib.colors as colors
 import networkx as nx
 import scipy as sp
 import cvxpy
@@ -11,10 +13,10 @@ import Dual
 import os
 import time
 from itertools import combinations
-import AlgorithmFiles.Charts as Charts
-import Report_Visualizations
+import Charts
 import random
-#import riskfolio as rf
+import ta
+# import riskfolio as rf
 
 
 
@@ -45,6 +47,42 @@ def sort_by_growth(stock_list: list[str], day1: str, day2: str):
 
     
 
+# def analyze_ewm_deviation(stock: str, end_date: str, span=30):
+#     results = []
+
+#     df = pd.read_csv(
+#                     f'Data2015-2025/HistoricalPrices 2015 - 2025, {stock}.csv',
+#                     parse_dates=['Date'],
+#                     date_format='%m/%d/%y')
+#     df = df[df['Date'] <= end_date]
+#     df['Percent Change'] = ((df[' Close'] - df[' Open']) / df[' Open']) * 100
+#     data = df['Percent Change']
+
+#     # Estimate trend
+#     ewm = data.ewm(span=span, adjust=False).mean()
+
+#     residuals = data - ewm
+#     residuals = residuals.dropna()
+
+#     mad = np.mean(np.abs(residuals))
+#     rmse = np.sqrt(np.mean(residuals ** 2))
+#     std_dev = np.std(residuals)
+#     percent_dev = np.mean(np.abs(residuals / ewm.dropna()))
+
+#     results.append({
+#         'Stock': stock,
+#         'MAD': mad,
+#         'RMSE': rmse,
+#         'STD_DEV': std_dev,
+#         'PCT_DEV': percent_dev
+#     })
+
+#     results_df = pd.DataFrame(results).set_index('Stock')
+#     return results_df
+
+# deviation_stats = analyze_ewm_deviation('AAPL', span=20)
+# print(deviation_stats)
+
 
 
 # Create TMFG for each simulation with a chosen buy date
@@ -74,18 +112,155 @@ def simulate(sims: int, seed: int, stocks: list[str], begin_data_date: str, buy_
         cliques, seps, adj_matrix = model.fit_transform(weights=cov_mat, output='weighted_sparse_W_matrix') # This only works with Pandas dataframes for whatever reason
         g = nx.from_numpy_array(adj_matrix)
 
+        # Add node weights to TMFG. These weights are the percent change of a stock from begin_data_date to buy_date. Color nodes by their weight.
+        stock_percent_changes = {}
+        for s in stocks:
+            df = pd.read_csv(
+                            f'Data2015-2025/HistoricalPrices 2015 - 2025, {s}.csv',
+                            parse_dates=['Date'],
+                            date_format='%m/%d/%y')
+            df.set_index('Date', inplace=True)
+            open_value = df.loc[pd.Timestamp(begin_data_date), ' Open']
+            close_value = df.loc[pd.Timestamp(buy_date), ' Close']
+            stock_percent_changes[s] = (close_value - open_value) / open_value * 100
+        g = nx.relabel_nodes(g, stock_dict)
+        nx.set_node_attributes(g, stock_percent_changes, name='weight')
+        # Assign numerical values to nodes (e.g., node indices)
+        node_values = list(range(len(g.nodes())))
+        # Choose a colormap (e.g., 'viridis', 'plasma', 'Blues')
+        cmap = cm.Reds
+        # Normalize the values to the range [0, 1]
+        norm = plt.Normalize(min(node_values), max(node_values))
+        # Map values to colors
+        node_colors = [cmap(norm(value)) for value in node_values]
+
         # Draw TMFG
         plt.figure(figsize=(12, 8))
         # plt.title('TMFG')
-        g = nx.relabel_nodes(g, stock_dict)
         pos0 = nx.planar_layout(g, scale=2)
-        nx.draw(g, pos=pos0, node_color='#5192b8', node_size=650)
-        nx.draw(g, pos=pos0, with_labels=True, node_color='#8fd6ff', edge_color='#5192b8', node_size=600, font_size=8)
+        # nx.draw(g, pos=pos0, node_color='#5192b8', node_size=650)
+        # nx.draw(g, pos=pos0, with_labels=True, node_color='#8fd6ff', edge_color='#5192b8', node_size=600, font_size=8)
+        nx.draw(g, pos=pos0, with_labels=True, node_color=node_colors, edge_color='#5192b8', node_size=600, font_size=8)
         edge_labels = nx.get_edge_attributes(g, 'weight')
         for key, weight in edge_labels.items():
             edge_labels[key] = round(weight, 2)
         nx.draw_networkx_edge_labels(g, pos=pos0, edge_labels=edge_labels, font_size=6)
         plt.show()
+
+
+        # Draw TMFG coloring based on expected growth by modeling expected returns as heat flow.
+        # TODO: Check if TMFG and Predicting TMFG have the same node weight sums
+        '''
+        1. Take node value
+        2. Diffuse it across adjacent edges based off of edge weights. Keep some of it contained at the original node.
+        3. Display graph using new node values
+        '''
+
+        # Calculate ADX for all stocks. ADX measures the strength of a stock's trend.
+        # Convert strings to datetime objects
+        d1 = pd.to_datetime(begin_data_date)
+        d2 = pd.to_datetime(buy_date)
+
+        # Calculate the difference in days
+        day_difference = abs((d2 - d1).days)
+        ADX_dict = {}
+        for stock in stocks:
+            df = pd.read_csv(
+                            f'Data2015-2025/HistoricalPrices 2015 - 2025, {stock}.csv',
+                            parse_dates=['Date'],
+                            date_format='%m/%d/%y')
+            df['ADX'] = ta.trend.adx(df[' High'], df[' Low'], df[' Close'], window=day_difference+1)
+            df['+DI'] = ta.trend.adx_pos(df[' High'], df[' Low'], df[' Close'], window=day_difference+1)
+            df['-DI'] = ta.trend.adx_neg(df[' High'], df[' Low'], df[' Close'], window=day_difference+1)
+            print(df.min())
+            print(df.max())
+            df.set_index('Date', inplace=True)
+            ADX_dict[stock] = df.loc[buy_date, 'ADX']
+
+
+        def normalize_dict(data: dict) -> dict:
+            """
+            Normalize the values of a dictionary to the range [0, 1].
+            """
+            values = list(data.values())
+            min_val = min(values)
+            max_val = max(values)
+            range_val = max_val - min_val
+            normalized = {}
+
+            if range_val == 0:
+                # All values are the same --> map everything to 0.5
+                for key in data:
+                    normalized[key] = 0.5
+
+            else:
+                for k, v in data.items():
+                    normalized[k] = (v - min_val) / range_val
+            
+            return normalized
+
+        # Normalize ADX_dict to be in [0, 1]
+        ADX_dict = normalize_dict(ADX_dict)
+
+        # Calculate "heat flow" out of each stock. Flow from one stock to another depends on the edge weight between them AND the total edge weight from the source stock.
+        directed_edges = {}
+        for v in g.nodes:
+            total_local_edge_weight = 0
+            for e in nx.edges(g, nbunch=v):
+                u = e[1]
+                total_local_edge_weight += g[v][u]['weight']
+            for e in nx.edges(g, nbunch=v):
+                u = e[1]
+                directed_edges[(v, u)] = g[v][u]['weight'] / total_local_edge_weight
+        
+        # Create a new TMFG after heat flows across edges
+        predicting_TMFG = g.copy()
+
+        # Recalculate node weights
+        for v in predicting_TMFG.nodes:
+            predicting_TMFG.nodes[v]['weight'] = 0
+        
+        # For each node v, calculate total incoming heat from each adjacent node, u
+        for v in predicting_TMFG.nodes:
+            for e in nx.edges(predicting_TMFG, nbunch=v):
+                u = e[1]
+                '''
+                Formula: 1) g.nodes[u]['weight']: Heat from an adjacent node u
+                         2) (1 - ADX_dict[u]): More signficant trend => (1 - ADX_dict[u]) approaches 0 => We care more about the stock with the strong trend instead of its adjacent stocks
+                         3) directed_edges[(u, v)]: Percentage of POSSIBLE heat from u that goes into the direction of v. Possible heat: (1 - ADX_dict[u]) * g.nodes[u]['weight']
+                '''
+                predicting_TMFG.nodes[v]['weight'] += directed_edges[(u, v)] * (1 - ADX_dict[u]) * g.nodes[u]['weight']
+        
+        # Add back each node's retained heat. This heat is was not shared with other nodes since ADX_dict[v] is within [0, 1].
+        for v in predicting_TMFG.nodes:
+            predicting_TMFG.nodes[v]['weight'] += ADX_dict[v] * g.nodes[v]['weight']
+
+        # Create new colors for Predicting TMFG
+        # Extract weights
+        weights = nx.get_node_attributes(predicting_TMFG, 'weight')
+        weight_values = list(weights.values())
+
+        # Normalize weights to [0, 1] for color mapping
+        norm = colors.Normalize(vmin=min(weight_values), vmax=max(weight_values))
+        cmap = cm.Reds
+
+        # Create color list
+        node_colors = [cmap(norm(weights[node])) for node in predicting_TMFG.nodes()]
+
+        # Draw Predicting TMFG
+        plt.figure(figsize=(12, 8))
+        # plt.title('Predicting TMFG')
+        pos0 = nx.planar_layout(predicting_TMFG, scale=3)
+        # nx.draw(predicting_TMFG, pos=pos0, node_color='#5192b8', node_size=650)
+        # nx.draw(predicting_TMFG, pos=pos0, with_labels=True, node_color='#8fd6ff', edge_color='#5192b8', node_size=600, font_size=8)
+        nx.draw(predicting_TMFG, pos=pos0, with_labels=True, node_color=node_colors, edge_color='#5192b8', node_size=600, font_size=8)
+        edge_labels = nx.get_edge_attributes(predicting_TMFG, 'weight')
+        for key, weight in edge_labels.items():
+            edge_labels[key] = round(weight, 2)
+        nx.draw_networkx_edge_labels(predicting_TMFG, pos=pos0, edge_labels=edge_labels, font_size=6)
+        plt.show()
+
+
 
         # Make dual graph of TMFG
         triads = model.triangles
@@ -102,7 +277,7 @@ def simulate(sims: int, seed: int, stocks: list[str], begin_data_date: str, buy_
 
         # Fix node labels
         labels = {
-            node: f'({', '.join(node)})'
+            node: f'({", ".join(node)})'
             for node in dual.nodes
         }
 
@@ -130,8 +305,8 @@ def simulate(sims: int, seed: int, stocks: list[str], begin_data_date: str, buy_
         sell2 = pd.Timestamp(sell2)
 
         # Filter rows between sell1 and sell2
-        filtered_sell_df = df[df['Date'] > sell1]
-        filtered_sell_df = filtered_sell_df[filtered_sell_df['Date'] < sell2]
+        filtered_sell_df = df[df['Date'] >= sell1]
+        filtered_sell_df = filtered_sell_df[filtered_sell_df['Date'] <= sell2]
         filtered_sell_df.index = pd.to_datetime(filtered_sell_df.index)
 
         # Get all valid dates in that range
@@ -144,12 +319,45 @@ def simulate(sims: int, seed: int, stocks: list[str], begin_data_date: str, buy_
 
         # Run variance-minimized simulations of triads and count wins
         for node in dual.nodes:
-            
+
+
+            # Find variance-minimizing portfolio allocations
+            percent_changes = pd.DataFrame()
+            for s in node:
+                df = pd.read_csv(
+                                f'Data2015-2025/HistoricalPrices 2015 - 2025, {s}.csv',
+                                parse_dates=['Date'],
+                                date_format='%m/%d/%y')
+                df = df[df['Date'] <= buy_date]
+                df = df[df['Date'] >= begin_data_date]
+                # Calculate daily percent change for a stock and add it as a new column to df.
+                df['Percent Change'] = ((df[' Close'] - df[' Open']) / df[' Open']) * 100
+                percent_changes[s] = df['Percent Change']
+            small_cov_mat = percent_changes.cov()
+            small_cov_mat = pd.DataFrame(small_cov_mat)
+            print(small_cov_mat)
+            # Calculate variance-minimizing stock allocations
+            mat = np.array(2*small_cov_mat)
+            mat = np.vstack([mat, np.ones((1, mat.shape[1]))])
+            mat = np.hstack([mat, np.ones((mat.shape[0], 1))])
+            mat[-1][-1] = 0
+            mat_inv = np.linalg.inv(mat)
+            B = np.zeros((mat.shape[1], 1))
+            B[-1] = 1
+            stock_allocations = np.dot(mat_inv, B)
+            # Remove last row of stock_allocations and retrieve its important values
+            stock_allocations = np.delete(stock_allocations, -1, axis=0)
+            x = np.dot(np.transpose(stock_allocations), small_cov_mat)
+            variance = np.dot(x, stock_allocations)
+            print(f'Portfolio minimum variance: {variance[0][0]}')
+            print(f'Portfolio allocations:  {node[0]}: {stock_allocations[0][0]}\n                       {node[1]}: {stock_allocations[1][0]}\n                       {node[2]}: {stock_allocations[2][0]}')
+
+
+
             SPX_beat_count = 0
             triad_percent_changes = []
             portfolio_returns = []
 
-            # TODO: restructure to make more time-efficient
             for i in range(sims):
                 # Pick a sell random date
                 random_sell_date = np.random.choice(valid_dates)
@@ -180,31 +388,31 @@ def simulate(sims: int, seed: int, stocks: list[str], begin_data_date: str, buy_
                     df.columns = df.columns.str.strip()
                     # Remove some recent data to analyze profits in the past
                     cutoff_date = pd.to_datetime(buy_date)
-                    df = df[df['Date'] < cutoff_date]
+                    df = df[df['Date'] <= cutoff_date]
                     # Calculate daily percent change for a stock and add it as a new column to df.
                     df['Percent Change'] = ((df['Close'] - df['Open']) / df['Open']) * 100
                     # Store percent changes into a single DataFrame, with each column representing a different stock.
                     percent_changes[s] = df['Percent Change']
                 
-                # Make covariance matrix of a 3-stock portoflio
-                cov_mat = percent_changes.cov()
-                print(cov_mat)
-                # Calculate variance-minimizing stock allocations
-                mat = np.array(2*cov_mat)
-                mat = np.vstack([mat, np.ones((1, mat.shape[1]))])
-                mat = np.hstack([mat, np.ones((mat.shape[0], 1))])
-                mat[-1][-1] = 0
-                mat_inv = np.linalg.inv(mat)
-                B = np.zeros((mat.shape[1], 1))
-                B[-1] = 1
-                stock_allocations = np.dot(mat_inv, B)
-                # Remove last row of stock_allocations and retrieve its important values
-                stock_allocations = np.delete(stock_allocations, -1, axis=0)
-                x = np.dot(np.transpose(stock_allocations), cov_mat)
-                variance = np.dot(x, stock_allocations)
+                # # Make covariance matrix of a 3-stock portoflio
+                # cov_mat = percent_changes.cov()
+                # print(cov_mat)
+                # # Calculate variance-minimizing stock allocations
+                # mat = np.array(2*cov_mat)
+                # mat = np.vstack([mat, np.ones((1, mat.shape[1]))])
+                # mat = np.hstack([mat, np.ones((mat.shape[0], 1))])
+                # mat[-1][-1] = 0
+                # mat_inv = np.linalg.inv(mat)
+                # B = np.zeros((mat.shape[1], 1))
+                # B[-1] = 1
+                # stock_allocations = np.dot(mat_inv, B)
+                # # Remove last row of stock_allocations and retrieve its important values
+                # stock_allocations = np.delete(stock_allocations, -1, axis=0)
+                # x = np.dot(np.transpose(stock_allocations), cov_mat)
+                # variance = np.dot(x, stock_allocations)
 
-                print(f'Portfolio minimum variance: {variance[0][0]}')
-                print(f'Portfolio allocations:  {node[0]}: {stock_allocations[0][0]}\n                       {node[1]}: {stock_allocations[1][0]}\n                       {node[2]}: {stock_allocations[2][0]}')
+                # print(f'Portfolio minimum variance: {variance[0][0]}')
+                # print(f'Portfolio allocations:  {node[0]}: {stock_allocations[0][0]}\n                       {node[1]}: {stock_allocations[1][0]}\n                       {node[2]}: {stock_allocations[2][0]}')
 
                 random_period_portfolio_percent_change = 0
                 for i in range(len(random_period_percent_changes)):
@@ -260,21 +468,6 @@ def simulate(sims: int, seed: int, stocks: list[str], begin_data_date: str, buy_
         def round_dict(d, n):
             return {k: round(v, n) for k, v in d.items()}
         
-
-        def normalize_dict(data: dict) -> dict:
-            """
-            Normalize the values of a dictionary to the range [0, 1].
-            """
-            values = list(data.values())
-            min_val = min(values)
-            max_val = max(values)
-            range_val = max_val - min_val
-
-            if range_val == 0:
-                # All values are the same; map everything to 0.5
-                return {k: 0.5 for k in data}
-
-            return {k: (v - min_val) / range_val for k, v in data.items()}
         
 
         # Determine node colors and border thickness based on SPX_wins and avg_returns_dict
@@ -313,6 +506,77 @@ def simulate(sims: int, seed: int, stocks: list[str], begin_data_date: str, buy_
         plt.axis('off')
         plt.tight_layout()
         plt.show()
+
+
+        # NOTE: before heat spread
+        # Get node weights as a dictionary
+        node_weights = nx.get_node_attributes(g, 'weight')
+
+        # Calculate the nth percentile threshold
+        weights = list(node_weights.values())
+        threshold = np.percentile(weights, 85)
+
+        # Select nodes whose weight is greater than or equal to the threshold
+        hot_stocks = []
+        for stock, weight in node_weights.items():
+            if weight >= threshold:
+                hot_stocks.append(stock)
+
+        Charts.hot_stocks_in_dual_portfolios(hot_stocks, 'Average Returns', avg_returns=avg_returns_dict)
+        Charts.hot_stocks_in_dual_portfolios(hot_stocks, 'SPX Wins', sims=sims, SPX_wins=SPX_wins)
+
+
+        # NOTE: after heat spread
+        # Get node weights as a dictionary
+        node_weights = nx.get_node_attributes(predicting_TMFG, 'weight')
+
+        # Calculate the nth percentile threshold
+        weights = list(node_weights.values())
+        threshold = np.percentile(weights, 85)
+
+        # Select nodes whose weight is greater than or equal to the threshold
+        hot_stocks = []
+        for stock, weight in node_weights.items():
+            if weight >= threshold:
+                hot_stocks.append(stock)
+    
+        Charts.hot_stocks_in_dual_portfolios(hot_stocks, 'Average Returns', avg_returns=avg_returns_dict)
+        Charts.hot_stocks_in_dual_portfolios(hot_stocks, 'SPX Wins', sims=sims, SPX_wins=SPX_wins)
+
+
+        # 1) Get edge weights of triangles
+        # 2) Graph edge weights w/ winning portfolios
+        stock_triads = face_list.values()
+        edge_weight_dict = {}
+        for three_clique_stocks in stock_triads:
+            s = 0
+            for u, v in combinations(three_clique_stocks, 2):
+                s += g[u][v]['weight']
+            edge_weight_dict[three_clique_stocks] = s
+        Charts.dual_edge_weights_single_bar_graph(edge_weight_dict, 'Edge Weights', 'Sum of TMFG Edge Weights of Dual Portfolios', avg_returns_dict)
+        Charts.dual_edge_weights_single_bar_graph(edge_weight_dict, 'Edge Weights', 'Sum of TMFG Edge Weights of Dual Portfolios', SPX_wins, sims=sims)
+            
+
+        # 1) Get vertex weights of triangles
+        # 2) Graph vertex weights w/ winning portfolios
+        vertex_weight_dict = {}
+        for three_clique_stocks in stock_triads:
+            s = 0
+            for u, v in combinations(three_clique_stocks, 2):
+                s += g.nodes[u]['weight']
+            vertex_weight_dict[three_clique_stocks] = s
+        Charts.dual_edge_weights_single_bar_graph(vertex_weight_dict, 'Vertex Weights', 'Sum of TMFG Vertex Weights of Dual Portfolios', avg_returns_dict)
+        Charts.dual_edge_weights_single_bar_graph(vertex_weight_dict, 'Vertex Weights', 'Sum of TMFG Vertex Weights of Dual Portfolios', SPX_wins, sims=sims)
+
+        # 1) Get edge & vertex weights of triangles
+        # 2) Graph edge & vertex weights w/ winning portfolios 
+        edge_and_vertex_weight_dict = {}
+        for key in edge_weight_dict:
+            edge_and_vertex_weight_dict[key] = edge_weight_dict[key] + vertex_weight_dict[key]
+        Charts.dual_edge_weights_single_bar_graph(edge_and_vertex_weight_dict, 'Edge & Vertex Weights', 'Sum of TMFG Edge & Vertex Weights of Dual Portfolios', avg_returns_dict)
+        Charts.dual_edge_weights_single_bar_graph(edge_and_vertex_weight_dict, 'Edge & Vertex Weights', 'Sum of TMFG Edge & Vertex Weights of Dual Portfolios', SPX_wins, sims=sims)
+
+
 
         # Calculate centralities of TMFG and its dual and some median centralities to use for comparisons
         TMFG_degree_centrality = round_dict(nx.degree_centrality(g), 3)
@@ -540,8 +804,8 @@ def simulate_all_3combos(sims: int, seed: int, stocks: list[str], buy_date: str,
         sell2 = pd.Timestamp(sell2)
 
         # Filter rows between sell1 and sell2
-        filtered_sell_df = df[df['Date'] > sell1]
-        filtered_sell_df = filtered_sell_df[filtered_sell_df['Date'] < sell2]
+        filtered_sell_df = df[df['Date'] >= sell1]
+        filtered_sell_df = filtered_sell_df[filtered_sell_df['Date'] <= sell2]
         filtered_sell_df.index = pd.to_datetime(filtered_sell_df.index)
 
         # Get all valid dates in that range
@@ -586,7 +850,7 @@ def simulate_all_3combos(sims: int, seed: int, stocks: list[str], buy_date: str,
                     df.columns = df.columns.str.strip()
                     # Remove some recent data to analyze profits in the past
                     cutoff_date = pd.to_datetime(buy_date)
-                    df = df[df['Date'] < cutoff_date]
+                    df = df[df['Date'] <= cutoff_date]
                     # Calculate daily percent change for a stock and add it as a new column to df.
                     df['Percent Change'] = ((df['Close'] - df['Open']) / df['Open']) * 100
                     # Store percent changes into a single DataFrame, with each column representing a different stock.
@@ -675,7 +939,6 @@ stocks = ['DIS', 'KO', 'ADBE', 'MRK', 'KMI', 'AAPL', 'JNJ', 'CVS', 'COST', 'T', 
           'AZO', 'COF', 'WFC', 'XOM', 'CVX', 'MAR', 'MCD', 'ORCL', 'UNH', 'EBAY', 'CPB', 'DPZ', 'JBHT', 'TSN', 'WYNN', 'DLTR', 'EXPE', 'JNPR', 'SJM', 'NTAP', 'ATO', 'AFL', 'DXCM', 'MCHP', 'DAL', 'TGT', 'PCG',
           'CSGP', 'WTW', 'AXON']
 stocks2 = random.sample(stocks, 50)
-print(stocks2)
 stocks3 = random.sample(stocks, 40)
 stocks4 = random.sample(stocks, 30)
 stocks5 = random.sample(stocks, 20)
@@ -697,16 +960,23 @@ stocks6 = random.sample(stocks, 10)
 # simulate(100, 1, stocks, '2021-07-01', '2021-12-31', '2022-01-03', '2022-06-30')
 # simulate(100, 1, stocks, '2021-10-03', '2021-12-31', '2022-01-03', '2022-03-31')
 
-# simulate(100, 1, stocks, '2022-01-03', '2022-12-30', '2023-01-03', '2023-12-29')
+# simulate(1, 1, stocks, '2022-01-03', '2022-12-30', '2023-01-03', '2023-12-29')
 # simulate(100, 1, stocks, '2022-07-01', '2022-12-30', '2023-01-03', '2023-06-30')
 # simulate(100, 1, stocks, '2022-10-03', '2022-12-30', '2023-01-03', '2023-03-31')
 
 # Upward SPX 
 simulate(100, 1, stocks, '2023-11-14', '2024-01-24', '2024-01-25', '2024-04-05')
+# simulate(100, 1, stocks, '2020-10-16', '2021-05-17', '2021-05-18', '2021-12-17')   # NOTE: Long-term --> Insignificant findings
+# simulate(100, 1, stocks, '2021-03-04', '2021-10-28', '2021-10-29', '2021-12-17')
+# simulate(100, 1, stocks, '2021-07-29', '2021-10-28', '2021-10-29', '2021-12-17')
+
+
 # simulate_all_3combos(1, 1, stocks, '2024-01-24', '2024-01-25', '2024-04-05')
 
 # Downward SPX
 # simulate(100, 1, stocks, '2022-03-29', '2022-04-22', '2022-04-25', '2022-05-20')
+# simulate(100, 1, stocks, '2023-07-21', '2023-09-12', '2023-09-13', '2023-11-02')
+# simulate(100, 1, stocks, '2022-08-12', '2022-09-21', '2022-09-22', '2022-10-14')
 
 # Stagnating SPX
 # simulate(100, 1, stocks, '2024-10-11', '2024-11-19', '2024-11-20', '2024-12-31')

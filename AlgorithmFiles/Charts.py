@@ -128,6 +128,50 @@ def dual_single_bar_graph_returns(data: dict, y_label: str, title: str, returns:
     plt.show()
 
 
+# Displays a single centrality bar graph for dual graphs based on S&P 500 wins
+def dual_edge_weights_single_bar_graph(data: dict, y_label: str, title: str, portfolio_success: dict, sims=None):
+    # Identify winning portfolios OR portfolios with positive average returns
+    if sims is not None:
+        highlighted_portfolios = {k for k, v in portfolio_success.items() if v > sims // 2}
+    else:
+        highlighted_portfolios = {k for k, v in portfolio_success.items() if v > 0}
+
+    # Sort portflios by value
+    sorted_keys = sorted(data.keys(), key=lambda k: data[k])
+
+    # Prepare labels and values
+    portfolios = ['-'.join(k) for k in sorted_keys]
+    values = [data[k] for k in sorted_keys]
+
+    x = np.arange(len(portfolios))
+    width = 1
+
+    plt.figure(figsize=(16, 6))
+
+    for i, key in enumerate(sorted_keys):
+        if key in highlighted_portfolios:
+            color = 'tomato'
+            linewidth = 2
+        else:
+            color = 'skyblue'
+            linewidth = 1
+
+        plt.bar(x[i], values[i], width, linewidth=linewidth, color=color, edgecolor='black')
+
+    plt.xticks(x, portfolios, rotation=90, fontsize=8)
+    plt.xlabel('Portfolio')
+    plt.ylabel(y_label)
+    plt.title(title)
+
+    legend_elements = [
+        Patch(facecolor='tomato', linewidth=2, edgecolor='black', label=f'Winning Portfolio'),
+        Patch(facecolor='skyblue', edgecolor='black', label=f'Losing Portfolio'),
+    ]
+    plt.legend(handles=legend_elements, loc='upper right')
+    plt.tight_layout()
+    plt.grid(axis='y', linestyle='--', alpha=0.5)
+    plt.show()
+
 
 # Displays a single centrality bar graph for TMFGs
 def tmfg_single_bar_graph(data: dict, y_label: str):
@@ -278,7 +322,62 @@ def visualize_stock_data(stock: str, date1: str, date2: str, date3: str, date4: 
     plt.xticks()
     plt.show()
 
-def visualize_multiple_stock_data(stocks: list[str], date1: str, date2: str, date3: str, date4: str):
+def hot_stocks_in_dual_portfolios(hot_stocks: list[str], y_label: str, sims=None, SPX_wins=None, avg_returns=None):
+    if SPX_wins is not None:
+        portfolios = SPX_wins
+    elif avg_returns is not None:
+        portfolios = avg_returns
+
+    # Count number of hot stocks in each portfolio
+    hot_stock_counts = {
+        portfolio: sum(1 for stock in hot_stocks if stock in portfolio)
+        for portfolio in portfolios
+    }
+
+    # Define color mapping for 0, 1, 2, or 3 hot stocks
+    color_map = {
+        0: '#d0e1f9',  # light blue
+        1: '#f4a582',  # orange
+        2: '#ca0020',  # red
+        3: '#67001f',  # dark red
+    }
+
+    # Sort keys by value
+    sorted_keys = sorted(portfolios, key=lambda k: portfolios[k])
+    values = [portfolios[k] for k in sorted_keys]
+
+    x = np.arange(len(portfolios))
+    width = 1
+
+    plt.figure(figsize=(16, 6))
+
+    for i, key in enumerate(sorted_keys):
+        count = hot_stock_counts.get(key, 0)
+        color = color_map.get(count, '#d0e1f9')  # default to light blue if unexpected
+        linewidth = 1 if count == 0 else 2
+
+        plt.bar(x[i], values[i], width, linewidth=linewidth, color=color, edgecolor='black')
+
+    plt.xticks(x, sorted_keys, rotation=90, fontsize=8)
+    plt.xlabel('Portfolio')
+    plt.ylabel(y_label)
+    plt.title(f'{y_label} Per Portfolio')
+
+    # Legend
+    legend_elements = [
+        Patch(facecolor=color_map[0], edgecolor='black', label='0 Hot Stocks'),
+        Patch(facecolor=color_map[1], edgecolor='black', label='1 Hot Stock'),
+        Patch(facecolor=color_map[2], edgecolor='black', label='2 Hot Stocks'),
+        Patch(facecolor=color_map[3], edgecolor='black', label='3 Hot Stocks'),
+    ]
+    plt.legend(handles=legend_elements, loc='upper right')
+
+    plt.tight_layout()
+    plt.grid(axis='y', linestyle='--', alpha=0.5)
+    plt.show()
+
+
+def visualize_multiple_stock_data(stocks: list[str], y_axis: str, date1: str, date2: str, date3: str, date4: str):
     plt.figure(figsize=(12, 6))
 
     for stock in stocks:
@@ -289,8 +388,8 @@ def visualize_multiple_stock_data(stocks: list[str], date1: str, date2: str, dat
         # Filter date range
         mask = (df['Date'] >= date1) & (df['Date'] <= date4)
         df_filtered = df.loc[mask].sort_values(by='Date')
-
-        plt.plot(df_filtered['Date'], df_filtered['Close'], label=stock)
+        df_filtered['Percent Change'] = ((df['Close'] - df['Open']) / df['Open']) * 100
+        plt.plot(df_filtered['Date'], df_filtered[y_axis], label=stock)
 
     # Add shaded regions
     plt.axvspan(pd.to_datetime(date1), pd.to_datetime(date2), color='#9DA2FF', alpha=0.5)
@@ -303,8 +402,8 @@ def visualize_multiple_stock_data(stocks: list[str], date1: str, date2: str, dat
     ]
     plt.legend(handles=legend_elements + plt.gca().get_legend_handles_labels()[0], loc='upper left')
     plt.xlabel('Date')
-    plt.ylabel('Closing Price')
-    plt.title(f'Closing Prices ({date1} to {date4})')
+    plt.ylabel(f'Daily {y_axis}')
+    plt.title(f'Daily {y_axis} ({date1} to {date4})')
     plt.grid(True)
     plt.tight_layout()
     plt.show()
@@ -323,6 +422,9 @@ def visualize_multiple_stock_data(stocks: list[str], date1: str, date2: str, dat
 # visualize_stock_data('SJM', '2023-11-14', '2024-01-24', '2024-01-25', '2024-04-05')
 # visualize_stock_data('CVS', '2023-11-14', '2024-01-24', '2024-01-25', '2024-04-05')
 
+# visualize_multiple_stock_data(['GOOG'], 'Close', '2023-11-14', '2024-01-24', '2024-01-25', '2024-04-05')
+# visualize_multiple_stock_data(['TGT'], 'Close', '2022-03-29', '2022-04-22', '2022-04-25', '2022-05-20')
+# visualize_multiple_stock_data(['MCHPx'], 'Close', '2024-10-11', '2024-11-19', '2024-11-20', '2024-12-31')
 
 
 

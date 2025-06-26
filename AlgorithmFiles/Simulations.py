@@ -24,10 +24,10 @@ def sort_by_growth(stock_list: list[str], day1: str, day2: str):
     growth_tracker = {}
     # Calculate the growth of each stock between day1 and day2
     for stock in stock_list:
-        # Create DataFrame for a given stock.
+        # Create DataFrame for a given stock
         df = pd.read_csv(f'Data2015-2025/HistoricalPrices 2015 - 2025, {stock}.csv', parse_dates=['Date'], date_format='%m/%d/%Y')
         df['Date'] = pd.to_datetime(df['Date'])
-        # Remove spaces in column names.
+        # Remove spaces in column names
         df.columns = df.columns.str.strip()
 
         day1 = pd.to_datetime(day1)
@@ -124,32 +124,38 @@ def simulate(sims: int, seed: int, stocks: list[str], begin_data_date: str, buy_
             close_value = df.loc[pd.Timestamp(buy_date), ' Close']
             stock_percent_changes[s] = (close_value - open_value) / open_value * 100
         g = nx.relabel_nodes(g, stock_dict)
+        # Assign weights (percent changes) to nodes/stocks
         nx.set_node_attributes(g, stock_percent_changes, name='weight')
-        # Assign numerical values to nodes (e.g., node indices)
-        node_values = list(range(len(g.nodes())))
-        # Choose a colormap (e.g., 'viridis', 'plasma', 'Blues')
+        # Map node weight to colors
+        node_values = list(stock_percent_changes.values())
+        norm = plt.Normalize(vmin=min(node_values), vmax=max(node_values))
         cmap = cm.Reds
-        # Normalize the values to the range [0, 1]
-        norm = plt.Normalize(min(node_values), max(node_values))
-        # Map values to colors
-        node_colors = [cmap(norm(value)) for value in node_values]
-
+        node_colors = []
+        for value in node_values:
+            node_colors.append(cmap(norm(value)))
         # Draw TMFG
-        plt.figure(figsize=(12, 8))
-        # plt.title('TMFG')
+        fig, ax = plt.subplots(figsize=(12, 8))
+        plt.title('TMFG')
         pos0 = nx.planar_layout(g, scale=2)
         # nx.draw(g, pos=pos0, node_color='#5192b8', node_size=650)
         # nx.draw(g, pos=pos0, with_labels=True, node_color='#8fd6ff', edge_color='#5192b8', node_size=600, font_size=8)
-        nx.draw(g, pos=pos0, with_labels=True, node_color=node_colors, edge_color='#5192b8', node_size=600, font_size=8)
+        nx.draw(g, pos=pos0, with_labels=True, node_color=node_colors, edge_color='#5192b8', node_size=600, font_size=8, ax=ax)
+        # Draw edge labels
         edge_labels = nx.get_edge_attributes(g, 'weight')
-        for key, weight in edge_labels.items():
-            edge_labels[key] = round(weight, 2)
-        nx.draw_networkx_edge_labels(g, pos=pos0, edge_labels=edge_labels, font_size=6)
+        for k, v in edge_labels.items():
+            edge_labels[k] = round(v, 2)
+        nx.draw_networkx_edge_labels(g, pos=pos0, edge_labels=edge_labels, font_size=6, ax=ax)
+
+        # Create colorbar based on the node color mapping
+        sm = cm.ScalarMappable(cmap=cm.Reds, norm=norm)
+        cbar = plt.colorbar(sm, ax=ax, shrink=0.8, pad=0.01)
+        cbar.set_label("Stock Percent Change", fontsize=9)
+
+        plt.tight_layout()
         plt.show()
 
 
         # Draw TMFG coloring based on expected growth by modeling expected returns as heat flow.
-        # TODO: Check if TMFG and Predicting TMFG have the same node weight sums
         '''
         1. Take node value
         2. Diffuse it across adjacent edges based off of edge weights. Keep some of it contained at the original node.
@@ -249,7 +255,7 @@ def simulate(sims: int, seed: int, stocks: list[str], begin_data_date: str, buy_
 
         # Draw Predicting TMFG
         plt.figure(figsize=(12, 8))
-        # plt.title('Predicting TMFG')
+        plt.title('Predicting TMFG')
         pos0 = nx.planar_layout(predicting_TMFG, scale=3)
         # nx.draw(predicting_TMFG, pos=pos0, node_color='#5192b8', node_size=650)
         # nx.draw(predicting_TMFG, pos=pos0, with_labels=True, node_color='#8fd6ff', edge_color='#5192b8', node_size=600, font_size=8)
@@ -259,6 +265,7 @@ def simulate(sims: int, seed: int, stocks: list[str], begin_data_date: str, buy_
             edge_labels[key] = round(weight, 2)
         nx.draw_networkx_edge_labels(predicting_TMFG, pos=pos0, edge_labels=edge_labels, font_size=6)
         plt.show()
+        
 
 
 
@@ -290,7 +297,7 @@ def simulate(sims: int, seed: int, stocks: list[str], begin_data_date: str, buy_
         # plt.title('Dual Graph')
         plt.axis('off')
         plt.tight_layout()
-        plt.show()
+        # plt.show()
         
         # Generate random sell dates using a random stock (doesn't matter which one since all stocks use the same dates)
         df = pd.read_csv(
@@ -316,6 +323,7 @@ def simulate(sims: int, seed: int, stocks: list[str], begin_data_date: str, buy_
         # Create dictionaries to store information about portfolios
         SPX_wins = {}
         avg_returns_dict = {}
+        allocations = {}
 
         # Run variance-minimized simulations of triads and count wins
         for node in dual.nodes:
@@ -351,7 +359,7 @@ def simulate(sims: int, seed: int, stocks: list[str], begin_data_date: str, buy_
             variance = np.dot(x, stock_allocations)
             print(f'Portfolio minimum variance: {variance[0][0]}')
             print(f'Portfolio allocations:  {node[0]}: {stock_allocations[0][0]}\n                       {node[1]}: {stock_allocations[1][0]}\n                       {node[2]}: {stock_allocations[2][0]}')
-
+            allocations[node] = [stock_allocations[0][0], stock_allocations[1][0], stock_allocations[2][0]]
 
 
             SPX_beat_count = 0
@@ -454,8 +462,7 @@ def simulate(sims: int, seed: int, stocks: list[str], begin_data_date: str, buy_
 
             SPX_wins[node] = SPX_beat_count
             avg_returns_dict[node] = avg_return
-                
-            
+
         stock_frequency = {}
         for s1 in stocks:
             stock_frequency[s1] = 0
@@ -505,7 +512,7 @@ def simulate(sims: int, seed: int, stocks: list[str], begin_data_date: str, buy_
         # plt.title('Dual Graph')
         plt.axis('off')
         plt.tight_layout()
-        plt.show()
+        # plt.show()
 
 
         # NOTE: before heat spread
@@ -514,7 +521,7 @@ def simulate(sims: int, seed: int, stocks: list[str], begin_data_date: str, buy_
 
         # Calculate the nth percentile threshold
         weights = list(node_weights.values())
-        threshold = np.percentile(weights, 85)
+        threshold = np.percentile(weights, 95)
 
         # Select nodes whose weight is greater than or equal to the threshold
         hot_stocks = []
@@ -523,7 +530,7 @@ def simulate(sims: int, seed: int, stocks: list[str], begin_data_date: str, buy_
                 hot_stocks.append(stock)
 
         Charts.hot_stocks_in_dual_portfolios(hot_stocks, 'Average Returns', avg_returns=avg_returns_dict)
-        Charts.hot_stocks_in_dual_portfolios(hot_stocks, 'SPX Wins', sims=sims, SPX_wins=SPX_wins)
+        Charts.hot_stocks_in_dual_portfolios(hot_stocks, 'SPX Wins', SPX_wins=SPX_wins)
 
 
         # NOTE: after heat spread
@@ -532,16 +539,18 @@ def simulate(sims: int, seed: int, stocks: list[str], begin_data_date: str, buy_
 
         # Calculate the nth percentile threshold
         weights = list(node_weights.values())
-        threshold = np.percentile(weights, 85)
+        threshold = np.percentile(weights, 95)
 
         # Select nodes whose weight is greater than or equal to the threshold
         hot_stocks = []
         for stock, weight in node_weights.items():
             if weight >= threshold:
                 hot_stocks.append(stock)
+
+        Charts.compare_portfolios_to_SPX(allocations, hot_stocks, begin_data_date, buy_date, sell1, sell2)  
     
         Charts.hot_stocks_in_dual_portfolios(hot_stocks, 'Average Returns', avg_returns=avg_returns_dict)
-        Charts.hot_stocks_in_dual_portfolios(hot_stocks, 'SPX Wins', sims=sims, SPX_wins=SPX_wins)
+        Charts.hot_stocks_in_dual_portfolios(hot_stocks, 'SPX Wins', SPX_wins=SPX_wins)
 
 
         # 1) Get edge weights of triangles
@@ -965,21 +974,20 @@ stocks6 = random.sample(stocks, 10)
 # simulate(100, 1, stocks, '2022-10-03', '2022-12-30', '2023-01-03', '2023-03-31')
 
 # Upward SPX 
-simulate(100, 1, stocks, '2023-11-14', '2024-01-24', '2024-01-25', '2024-04-05')
-# simulate(100, 1, stocks, '2020-10-16', '2021-05-17', '2021-05-18', '2021-12-17')   # NOTE: Long-term --> Insignificant findings
-# simulate(100, 1, stocks, '2021-03-04', '2021-10-28', '2021-10-29', '2021-12-17')
-# simulate(100, 1, stocks, '2021-07-29', '2021-10-28', '2021-10-29', '2021-12-17')
-
+# simulate(1, 1, stocks, '2023-11-14', '2024-01-24', '2024-01-25', '2024-04-05')
+# simulate(1, 1, stocks, '2021-03-04', '2021-10-28', '2021-10-29', '2021-12-17')
+simulate(1, 1, stocks, '2021-07-29', '2021-10-28', '2021-10-29', '2021-12-17')
+# simulate(1, 1, stocks, '2020-10-16', '2021-05-17', '2021-05-18', '2021-12-17')   # NOTE: Long-term --> Insignificant findings
 
 # simulate_all_3combos(1, 1, stocks, '2024-01-24', '2024-01-25', '2024-04-05')
 
 # Downward SPX
-# simulate(100, 1, stocks, '2022-03-29', '2022-04-22', '2022-04-25', '2022-05-20')
-# simulate(100, 1, stocks, '2023-07-21', '2023-09-12', '2023-09-13', '2023-11-02')
-# simulate(100, 1, stocks, '2022-08-12', '2022-09-21', '2022-09-22', '2022-10-14')
+# simulate(1, 1, stocks, '2022-03-29', '2022-04-22', '2022-04-25', '2022-05-20')
+# simulate(1, 1, stocks, '2023-07-21', '2023-09-12', '2023-09-13', '2023-11-02')
+# simulate(1, 1, stocks, '2022-08-12', '2022-09-21', '2022-09-22', '2022-10-14')
 
 # Stagnating SPX
-# simulate(100, 1, stocks, '2024-10-11', '2024-11-19', '2024-11-20', '2024-12-31')
+# simulate(1, 1, stocks, '2024-10-11', '2024-11-19', '2024-11-20', '2024-12-31')
 
 
 

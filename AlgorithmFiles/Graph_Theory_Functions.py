@@ -147,7 +147,7 @@ def get_weight_mat(stock_list: list[str], begin_data_date: str, cutoff: str):
             edge_labels_complete[edge_list_complete[weight_list_complete.index(weight)]] = '4'
 
     # Create a new graph by assigning the quartile of each edge of g to the corresponding edge of the new graph.
-    g_quartiles = g.copy()
+    g_quartiles = g.()
     x_counter = 0
     for x in g_quartiles.nodes():
         x_counter += 1

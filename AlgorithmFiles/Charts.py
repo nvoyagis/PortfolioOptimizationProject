@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
+from matplotlib.lines import Line2D
 import networkx as nx
 import scipy as sp
 import cvxpy
@@ -322,7 +323,7 @@ def visualize_stock_data(stock: str, date1: str, date2: str, date3: str, date4: 
     plt.xticks()
     plt.show()
 
-def hot_stocks_in_dual_portfolios(hot_stocks: list[str], y_label: str, sims=None, SPX_wins=None, avg_returns=None):
+def hot_stocks_in_dual_portfolios(hot_stocks: list[str], y_label: str, SPX_wins=None, avg_returns=None):
     if SPX_wins is not None:
         portfolios = SPX_wins
     elif avg_returns is not None:
@@ -407,6 +408,89 @@ def visualize_multiple_stock_data(stocks: list[str], y_axis: str, date1: str, da
     plt.grid(True)
     plt.tight_layout()
     plt.show()
+
+def compare_portfolios_to_SPX(portfolios: dict, highlighted_stocks: list[tuple], date1: str, date2: str, date3: str, date4: str):
+    '''
+    Invests $100 into SPX and all portfolios, tracking all performances from date1 to date4.
+    '''
+    date1 = pd.to_datetime(date1)
+    date2 = pd.to_datetime(date2)
+    date3 = pd.to_datetime(date3)
+    date4 = pd.to_datetime(date4)
+
+    plt.figure(figsize=(12, 6))
+
+    # --- Portfolio processing ---
+    for stocks, allocation in portfolios.items():
+        merged = pd.DataFrame()
+
+        for stock, weight in zip(stocks, allocation):
+            df = pd.read_csv(
+                f'Data2015-2025/HistoricalPrices 2015 - 2025, {stock}.csv',
+                parse_dates=['Date'], date_format='%m/%d/%Y'
+            )
+            df.columns = df.columns.str.strip()
+            df['Date'] = pd.to_datetime(df['Date'], format='%m/%d/%y', errors='coerce')
+
+            mask = (df['Date'] >= date1) & (df['Date'] <= date4)
+            df = df.loc[mask].sort_values(by='Date')
+
+            # Normalize values
+            df_weighted = (df['Close'] / df['Close'].iloc[0]) * weight
+            df_weighted = df_weighted.to_frame(name=stock)
+
+            df_weighted.index = df['Date']
+
+            # Join into merged
+            merged = merged.join(df_weighted, how='outer') if not merged.empty else df_weighted
+
+        if merged.empty:
+            continue
+
+        portfolio_value = merged.sum(axis=1) * 100
+        label = f"{stocks[0]}-{stocks[1]}-{stocks[2]}"
+        color = 'blue'
+        alpha = 0.5
+        zorder = 10
+        for s in highlighted_stocks:
+            if s in stocks:
+                color = 'red'
+                alpha = 0.75
+                zorder = 11
+                break
+        plt.plot(portfolio_value.index, portfolio_value, alpha=alpha, zorder=zorder, color=color, label=label)
+
+    # Plot SPX
+    spx_df = pd.read_csv(
+        'Data2015-2025/HistoricalPrices 2015 - 2025, SPX.csv',
+        parse_dates=['Date'], date_format='%m/%d/%Y'
+    )
+    spx_df.columns = spx_df.columns.str.strip()
+    spx_df['Date'] = pd.to_datetime(spx_df['Date'], format='%m/%d/%y')
+    spx_df = spx_df.sort_values('Date')
+    mask = (spx_df['Date'] >= date1) & (spx_df['Date'] <= date4)
+    spx_df_filtered = spx_df.loc[mask].set_index('Date')
+    spx_normalized = spx_df_filtered['Close'] / spx_df_filtered['Close'].iloc[0] * 100
+    plt.plot(spx_normalized.index, spx_normalized, label='S&P 500', zorder=12, linewidth=3, color='black')
+    plt.axhline(y=100, color='black', linestyle='--', label='$100')
+
+    # Shaded regions
+    plt.axvspan(date1, date2, color='#9DA2FF', alpha=0.4)
+    plt.axvspan(date3, date4, color='#FF9999', alpha=0.4)
+
+    legend_elements = [Line2D([0], [0], color='black', linestyle='-', linewidth=3, label='S&P 500'), 
+                       Line2D([0], [0], color='red', linestyle='-', label='Portfolios With Hot Stocks'), 
+                       Line2D([0], [0], color='blue', linestyle='-', label='Portfolios Without Hot Stocks'),
+                       Patch(facecolor='#9DA2FF', edgecolor='black', label='Data Collection Period'),
+                       Patch(facecolor='#FF9999', edgecolor='black', label='Portfolio Selling Period')]
+    plt.legend(handles=legend_elements, loc='upper left')
+    plt.xlabel('Date')
+    plt.ylabel('Portfolio Value (Starting at $100)')
+    plt.title(f'Portfolio Growth ({date1.date()} to {date4.date()})')
+    plt.grid(True)
+    plt.tight_layout()
+    plt.show()
+
 
 
 # visualize_stock_data('SPX', '2023-11-14', '2024-01-24', '2024-01-25', '2024-04-05')

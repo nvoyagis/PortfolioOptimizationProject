@@ -18,7 +18,7 @@ import random
 import ta
 import Simulations
 
-
+# NOTE: Not done
 def optimize_hot_stocks(stocks: list[str], date_tuples: list[tuple]):
     '''
     - date_tuples contains 4-tuples of date1, date2, date3, date4. Choose one tuple.
@@ -28,7 +28,10 @@ def optimize_hot_stocks(stocks: list[str], date_tuples: list[tuple]):
     - Repeat last 2 steps for each tuple
     - Repeat all steps for each n
     '''
+    n_dict = {}
     for n in range(100, 80):
+        highlighted_wins = []
+        nonhighlighted_wins = []
         for date_tuple in date_tuples:
             date1 = date_tuple[0]
             date2 = date_tuple[1]

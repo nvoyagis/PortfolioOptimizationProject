@@ -420,7 +420,7 @@ def compare_portfolios_to_SPX(portfolios: dict, highlighted_stocks: list[tuple],
 
     plt.figure(figsize=(12, 6))
 
-    # --- Portfolio processing ---
+    # Process portfolio
     for stocks, allocation in portfolios.items():
         merged = pd.DataFrame()
 
@@ -490,6 +490,28 @@ def compare_portfolios_to_SPX(portfolios: dict, highlighted_stocks: list[tuple],
     plt.grid(True)
     plt.tight_layout()
     plt.show()
+    
+def graph_dict(d: dict, x_label: str, y_label: str):
+    # Sort by keys (optional)
+    d = dict(sorted(d.items()))
+
+    x_axis = list(d.keys())
+    y_axis = list(d.values())
+
+    # Create the bar chart
+    plt.figure(figsize=(12, 6))
+    plt.bar(x_axis, y_axis)
+
+    # X-axis tick labels: the keys
+    plt.xticks(ticks=x_axis, labels=x_axis)
+
+    # Axis labels and title
+    plt.xlabel(x_label)
+    plt.ylabel(y_label)
+
+    plt.tight_layout()
+    plt.show()
+
 
 
 
@@ -508,8 +530,8 @@ def compare_portfolios_to_SPX(portfolios: dict, highlighted_stocks: list[tuple],
 
 # visualize_multiple_stock_data(['GOOG'], 'Close', '2023-11-14', '2024-01-24', '2024-01-25', '2024-04-05')
 # visualize_multiple_stock_data(['TGT'], 'Close', '2022-03-29', '2022-04-22', '2022-04-25', '2022-05-20')
-# visualize_multiple_stock_data(['MCHPx'], 'Close', '2024-10-11', '2024-11-19', '2024-11-20', '2024-12-31')
-
+# visualize_multiple_stock_data(['MCHP'], 'Close', '2024-10-11', '2024-11-19', '2024-11-20', '2024-12-31')
+# visualize_multiple_stock_data(['LLY'], 'Close', '2023-11-14', '2024-01-24', '2024-01-25', '2024-04-05')
 
 
 

@@ -2,9 +2,6 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import networkx as nx
-import scipy as sp
-import cvxpy
-import sklearn
 # import riskfolio as rf
 
 
@@ -44,8 +41,8 @@ def get_weight_mat(stock_list: list[str], begin_data_date: str, cutoff: str):
     # cov_mat = cov_mat.abs()
     min_cov = np.min(upper_cov_mat)
     max_cov = np.max(upper_cov_mat)
-    upper_cov_mat = 0.0001 + (1 - 2 * 0.0001) * (upper_cov_mat - min_cov)/(max_cov - min_cov) # Normalize covariance to be between [1/1000, 999/1000]
-    cov_mat = 0.0001 + (1 - 2 * 0.0001) * (cov_mat - np.min(cov_mat))/(np.max(cov_mat) - np.min(cov_mat)) # Normalize covariance to be between [1/1000, 999/1000]    
+    upper_cov_mat = 0.0001 + (0.9999 - 0.0001) * ((upper_cov_mat - min_cov)/(max_cov - min_cov)) # Normalize covariance to be between [1/10000, 9999/10000]
+    cov_mat = 0.0001 + (0.9999 - 0.0001) * ((cov_mat - np.min(cov_mat))/(np.max(cov_mat) - np.min(cov_mat))) # Normalize covariance to be between [1/1000, 999/1000]    
     # pos_upper_cov_mat = upper_cov_mat[pos_mask == True]
     upper_cov_mat_df = pd.DataFrame(upper_cov_mat)
     cov_mat_df = pd.DataFrame(cov_mat)

@@ -1,0 +1,470 @@
+Stocks (60): ['DIS', 'KO', 'ADBE', 'MRK', 'KMI', 'AAPL', 'JNJ', 'CVS', 'COST', 'T', 'BA', 'EA', 'HAS', 'HD', 'HSY', 'LLY', 'NFLX', 'NKE', 'V', 'JPM', 'FDX', 'KR', 'KHC', 'LULU', 'MA', 'BBY', 'GOOG', 'ALL', 'KMX', 'MNST', 'AZO', 'COF', 'WFC', 'XOM', 'CVX', 'MAR', 'MCD', 'ORCL', 'UNH', 'EBAY', 'CPB', 'DPZ', 'JBHT', 'TSN', 'WYNN', 'DLTR', 'EXPE', 'JNPR', 'SJM', 'NTAP', 'ATO', 'AFL', 'DXCM', 'MCHP', 'DAL', 'TGT', 'PCG', 'CSGP', 'WTW', 'AXON']
+Seed: 1
+Simulations: 100
+Starting date: 2023-11-01 to 2023-11-29
+Ending date range: 2023-12-01 to 2023-12-29
+------------------------------------------------------
+Portfolio: ('KMX', 'CSGP', 'MCHP')
+Average portfolio return: 10.720503263091132
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('KMX', 'COF', 'MCHP')
+Average portfolio return: 13.82608005399773
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('WYNN', 'KMX', 'LLY')
+Average portfolio return: 5.7900961087656775
+Number of times SPX was beat: 86
+------------------------------------------------------
+Portfolio: ('WYNN', 'JPM', 'MCHP')
+Average portfolio return: 4.489858812857145
+Number of times SPX was beat: 82
+------------------------------------------------------
+Portfolio: ('KMX', 'AXON', 'BA')
+Average portfolio return: 12.876269510858926
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('AXON', 'NFLX', 'MCHP')
+Average portfolio return: 6.39378054354006
+Number of times SPX was beat: 85
+------------------------------------------------------
+Portfolio: ('MAR', 'DAL', 'MCHP')
+Average portfolio return: 7.148313869322834
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('MA', 'AXON', 'DAL')
+Average portfolio return: 4.084271483899643
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('WFC', 'MCHP', 'EXPE')
+Average portfolio return: 8.694018869856777
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('EBAY', 'AXON', 'EXPE')
+Average portfolio return: 4.678239991042071
+Number of times SPX was beat: 99
+------------------------------------------------------
+Portfolio: ('WYNN', 'KMX', 'COST')
+Average portfolio return: 5.459055200831682
+Number of times SPX was beat: 88
+------------------------------------------------------
+Portfolio: ('WYNN', 'CVS', 'MCHP')
+Average portfolio return: 4.096702509432494
+Number of times SPX was beat: 68
+------------------------------------------------------
+Portfolio: ('CVS', 'KMX', 'FDX')
+Average portfolio return: 9.722256853279454
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('CVS', 'ADBE', 'MCHP')
+Average portfolio return: 5.491430303589412
+Number of times SPX was beat: 87
+------------------------------------------------------
+Portfolio: ('HAS', 'MCHP', 'NTAP')
+Average portfolio return: 7.822741287352076
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('CVS', 'HAS', 'ATO')
+Average portfolio return: 8.944610864116772
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('KR', 'HAS', 'KMX')
+Average portfolio return: 4.135553051719475
+Number of times SPX was beat: 94
+------------------------------------------------------
+Portfolio: ('HAS', 'BBY', 'MCHP')
+Average portfolio return: 7.840274451773382
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('KMX', 'JBHT', 'BBY')
+Average portfolio return: 12.051035444905045
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('HAS', 'JBHT', 'BBY')
+Average portfolio return: 8.387981933269836
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('DLTR', 'MCHP', 'DXCM')
+Average portfolio return: 11.099359456657284
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('HAS', 'T', 'DXCM')
+Average portfolio return: 7.260184394042703
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('HAS', 'DLTR', 'LULU')
+Average portfolio return: 10.140696994446863
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('UNH', 'DLTR', 'DXCM')
+Average portfolio return: 3.9624645153049265
+Number of times SPX was beat: 64
+------------------------------------------------------
+Portfolio: ('HD', 'MCHP', 'TGT')
+Average portfolio return: 7.846847600548991
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('WFC', 'TGT', 'EXPE')
+Average portfolio return: 8.862501331803962
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('KMX', 'AXON', 'ORCL')
+Average portfolio return: 11.689000944934342
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('WYNN', 'MRK', 'AXON')
+Average portfolio return: 4.250264805097795
+Number of times SPX was beat: 82
+------------------------------------------------------
+Portfolio: ('HAS', 'KMX', 'FDX')
+Average portfolio return: 9.640499721786535
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('TSN', 'CVS', 'HAS')
+Average portfolio return: 7.670566715114892
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('TSN', 'CVS', 'FDX')
+Average portfolio return: 7.84455789065212
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('SJM', 'HAS', 'FDX')
+Average portfolio return: 10.705350287102355
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('CVS', 'PCG', 'DXCM')
+Average portfolio return: 7.18122008666934
+Number of times SPX was beat: 95
+------------------------------------------------------
+Portfolio: ('HAS', 'ALL', 'DXCM')
+Average portfolio return: 7.267626230554628
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('JNJ', 'AXON', 'TGT')
+Average portfolio return: 4.5346670564517435
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('NKE', 'TGT', 'EXPE')
+Average portfolio return: 4.925070735268801
+Number of times SPX was beat: 79
+------------------------------------------------------
+Portfolio: ('ADBE', 'MCHP', 'DXCM')
+Average portfolio return: -0.3150941493806335
+Number of times SPX was beat: 14
+------------------------------------------------------
+Portfolio: ('CVS', 'GOOG', 'DXCM')
+Average portfolio return: 6.227983156243955
+Number of times SPX was beat: 89
+------------------------------------------------------
+Portfolio: ('CVS', 'KMX', 'DPZ')
+Average portfolio return: 9.603775600631847
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('WYNN', 'CVS', 'COST')
+Average portfolio return: 3.739389764609486
+Number of times SPX was beat: 73
+------------------------------------------------------
+Portfolio: ('EBAY', 'NKE', 'AXON')
+Average portfolio return: 3.4423671555298325
+Number of times SPX was beat: 83
+------------------------------------------------------
+Portfolio: ('EBAY', 'NKE', 'EXPE')
+Average portfolio return: 3.233858948291558
+Number of times SPX was beat: 87
+------------------------------------------------------
+Portfolio: ('DLTR', 'MCHP', 'NTAP')
+Average portfolio return: 10.727864006724024
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('HAS', 'DLTR', 'NTAP')
+Average portfolio return: 9.53983879760417
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('CVS', 'PCG', 'KMI')
+Average portfolio return: 7.946723922049531
+Number of times SPX was beat: 98
+------------------------------------------------------
+Portfolio: ('HAS', 'PCG', 'V')
+Average portfolio return: 6.550533945103945
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('KMX', 'COST', 'DPZ')
+Average portfolio return: 11.080485270199175
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('CVS', 'COST', 'DPZ')
+Average portfolio return: 8.670952130262554
+Number of times SPX was beat: 95
+------------------------------------------------------
+Portfolio: ('KMX', 'LLY', 'ORCL')
+Average portfolio return: 9.067225524454697
+Number of times SPX was beat: 93
+------------------------------------------------------
+Portfolio: ('HSY', 'LLY', 'AXON')
+Average portfolio return: -1.0025252646327278
+Number of times SPX was beat: 16
+------------------------------------------------------
+Portfolio: ('CVS', 'KMI', 'MNST')
+Average portfolio return: 6.758638319538665
+Number of times SPX was beat: 94
+------------------------------------------------------
+Portfolio: ('CVX', 'HAS', 'KMI')
+Average portfolio return: 2.6023410802112443
+Number of times SPX was beat: 49
+------------------------------------------------------
+Portfolio: ('CVS', 'AZO', 'KHC')
+Average portfolio return: 6.977382226991828
+Number of times SPX was beat: 95
+------------------------------------------------------
+Portfolio: ('KMI', 'MNST', 'KHC')
+Average portfolio return: 1.1277610815422714
+Number of times SPX was beat: 28
+------------------------------------------------------
+Portfolio: ('KMX', 'BBY', 'CSGP')
+Average portfolio return: 12.442811085357091
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('BBY', 'CSGP', 'MCHP')
+Average portfolio return: 5.488282483973941
+Number of times SPX was beat: 94
+------------------------------------------------------
+Portfolio: ('JNPR', 'MCHP', 'TGT')
+Average portfolio return: 5.345412264550491
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('AXON', 'NFLX', 'TGT')
+Average portfolio return: 5.301631946907532
+Number of times SPX was beat: 89
+------------------------------------------------------
+Portfolio: ('CVX', 'HAS', 'KHC')
+Average portfolio return: 2.7390886103707044
+Number of times SPX was beat: 59
+------------------------------------------------------
+Portfolio: ('AFL', 'KMI', 'KHC')
+Average portfolio return: 0.5943395172117754
+Number of times SPX was beat: 34
+------------------------------------------------------
+Portfolio: ('XOM', 'CVX', 'KMI')
+Average portfolio return: -1.8777267208988904
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('CVX', 'KO', 'KHC')
+Average portfolio return: 0.6884645351838178
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('XOM', 'AFL', 'KMI')
+Average portfolio return: -2.4380590448561446
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('XOM', 'CPB', 'KHC')
+Average portfolio return: -0.41882017447180353
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('KR', 'KMX', 'JBHT')
+Average portfolio return: 5.34614242898414
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('KR', 'HAS', 'JBHT')
+Average portfolio return: 4.212193466521036
+Number of times SPX was beat: 98
+------------------------------------------------------
+Portfolio: ('CVS', 'AAPL', 'ADBE')
+Average portfolio return: 6.861818963392119
+Number of times SPX was beat: 92
+------------------------------------------------------
+Portfolio: ('GOOG', 'ADBE', 'DXCM')
+Average portfolio return: -1.3695239371544092
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('JNJ', 'NKE', 'AXON')
+Average portfolio return: 3.762272533618381
+Number of times SPX was beat: 76
+------------------------------------------------------
+Portfolio: ('JNJ', 'NKE', 'TGT')
+Average portfolio return: 3.5927312643244336
+Number of times SPX was beat: 72
+------------------------------------------------------
+Portfolio: ('WYNN', 'MCD', 'LLY')
+Average portfolio return: 2.280117519811464
+Number of times SPX was beat: 61
+------------------------------------------------------
+Portfolio: ('MRK', 'LLY', 'AXON')
+Average portfolio return: 4.100227724133438
+Number of times SPX was beat: 95
+------------------------------------------------------
+Portfolio: ('MAR', 'MCHP', 'EXPE')
+Average portfolio return: 5.831243101989182
+Number of times SPX was beat: 94
+------------------------------------------------------
+Portfolio: ('MAR', 'DAL', 'EXPE')
+Average portfolio return: 7.327129154544325
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('CVS', 'GOOG', 'AAPL')
+Average portfolio return: 6.651116178970166
+Number of times SPX was beat: 90
+------------------------------------------------------
+Portfolio: ('GOOG', 'AAPL', 'ADBE')
+Average portfolio return: -1.3129259219790645
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('HD', 'WFC', 'MCHP')
+Average portfolio return: 7.942703572541087
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('HD', 'WFC', 'TGT')
+Average portfolio return: 8.350855421777922
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('KMX', 'COF', 'DAL')
+Average portfolio return: 13.762243320377854
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('COF', 'DAL', 'MCHP')
+Average portfolio return: 13.756081650170104
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('HAS', 'PCG', 'ALL')
+Average portfolio return: 7.150107772866578
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('PCG', 'ALL', 'DXCM')
+Average portfolio return: 3.0077707857337144
+Number of times SPX was beat: 64
+------------------------------------------------------
+Portfolio: ('CVS', 'ATO', 'KHC')
+Average portfolio return: 7.430298070169702
+Number of times SPX was beat: 95
+------------------------------------------------------
+Portfolio: ('HAS', 'ATO', 'KHC')
+Average portfolio return: 7.081618434445988
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('HSY', 'AXON', 'ORCL')
+Average portfolio return: 0.7547348988840419
+Number of times SPX was beat: 27
+------------------------------------------------------
+Portfolio: ('HSY', 'LLY', 'ORCL')
+Average portfolio return: -1.9438407268957976
+Number of times SPX was beat: 13
+------------------------------------------------------
+Portfolio: ('CVS', 'AZO', 'MNST')
+Average portfolio return: 6.898869637495714
+Number of times SPX was beat: 97
+------------------------------------------------------
+Portfolio: ('AZO', 'MNST', 'KHC')
+Average portfolio return: 0.771195199170289
+Number of times SPX was beat: 32
+------------------------------------------------------
+Portfolio: ('SJM', 'TSN', 'HAS')
+Average portfolio return: 9.99680447584887
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('SJM', 'TSN', 'FDX')
+Average portfolio return: 10.367567384768432
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('CPB', 'AFL', 'KHC')
+Average portfolio return: 4.845228252137985
+Number of times SPX was beat: 96
+------------------------------------------------------
+Portfolio: ('XOM', 'WTW', 'AFL')
+Average portfolio return: -2.379549368413555
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('MA', 'AXON', 'EXPE')
+Average portfolio return: 3.8192845708907854
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('MA', 'DAL', 'EXPE')
+Average portfolio return: 4.63251226881075
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('JNPR', 'NFLX', 'MCHP')
+Average portfolio return: 3.5938979967560774
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('JNPR', 'NFLX', 'TGT')
+Average portfolio return: 3.175104489193105
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('KMX', 'EA', 'DAL')
+Average portfolio return: 11.02193367869183
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('AXON', 'DAL', 'BA')
+Average portfolio return: 8.879452003137082
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('HAS', 'T', 'LULU')
+Average portfolio return: 7.6678740094520235
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('T', 'LULU', 'DXCM')
+Average portfolio return: 6.0755358525110195
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('AXON', 'JPM', 'MCHP')
+Average portfolio return: 7.815898734721056
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('WYNN', 'AXON', 'JPM')
+Average portfolio return: 3.993175606616959
+Number of times SPX was beat: 65
+------------------------------------------------------
+Portfolio: ('HAS', 'KMI', 'V')
+Average portfolio return: 6.726819959039959
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('PCG', 'KMI', 'V')
+Average portfolio return: 2.722076163666472
+Number of times SPX was beat: 57
+------------------------------------------------------
+Portfolio: ('XOM', 'CPB', 'DIS')
+Average portfolio return: -0.6983338681391283
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('CPB', 'AFL', 'DIS')
+Average portfolio return: 4.830482297294258
+Number of times SPX was beat: 88
+------------------------------------------------------
+Portfolio: ('WYNN', 'MRK', 'MCD')
+Average portfolio return: 3.906205997082404
+Number of times SPX was beat: 80
+------------------------------------------------------
+Portfolio: ('MRK', 'MCD', 'LLY')
+Average portfolio return: 4.575943235016412
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('XOM', 'KO', 'KHC')
+Average portfolio return: -2.273001536709097
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('XOM', 'CVX', 'KO')
+Average portfolio return: -2.301386315588769
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('KMX', 'EA', 'BA')
+Average portfolio return: 10.647475454619652
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('EA', 'DAL', 'BA')
+Average portfolio return: 3.942026232746774
+Number of times SPX was beat: 76
+------------------------------------------------------
+Portfolio: ('UNH', 'LULU', 'DXCM')
+Average portfolio return: 4.530648554047495
+Number of times SPX was beat: 74
+------------------------------------------------------
+Portfolio: ('UNH', 'DLTR', 'LULU')
+Average portfolio return: 4.344148928116898
+Number of times SPX was beat: 64
+------------------------------------------------------
+Portfolio: ('XOM', 'WTW', 'DIS')
+Average portfolio return: -2.495283974056297
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('WTW', 'AFL', 'DIS')
+Average portfolio return: 0.00363830724071594
+Number of times SPX was beat: 32
+------------------------------------------------------

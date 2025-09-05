@@ -1,0 +1,511 @@
+Stocks (60): ['DIS', 'KO', 'ADBE', 'MRK', 'KMI', 'AAPL', 'JNJ', 'CVS', 'COST', 'T', 'BA', 'EA', 'HAS', 'HD', 'HSY', 'LLY', 'NFLX', 'NKE', 'V', 'JPM', 'FDX', 'KR', 'KHC', 'LULU', 'MA', 'BBY', 'GOOG', 'ALL', 'KMX', 'MNST', 'AZO', 'COF', 'WFC', 'XOM', 'CVX', 'MAR', 'MCD', 'ORCL', 'UNH', 'EBAY', 'CPB', 'DPZ', 'JBHT', 'TSN', 'WYNN', 'DLTR', 'EXPE', 'JNPR', 'SJM', 'NTAP', 'ATO', 'AFL', 'DXCM', 'MCHP', 'DAL', 'TGT', 'PCG', 'CSGP', 'WTW', 'AXON']
+Seed: 1
+Simulations: 100
+Starting date: 2024-02-01 to 2024-02-29
+Ending date range: 2024-03-01 to 2024-03-28
+------------------------------------------------------
+Portfolio: ('JNPR', 'KO', 'JPM')
+Average portfolio return: 0.2850399750222435
+Number of times SPX was beat: 11
+------------------------------------------------------
+Portfolio: ('JNPR', 'JPM', 'TGT')
+Average portfolio return: 1.5745165501820149
+Number of times SPX was beat: 37
+------------------------------------------------------
+Portfolio: ('MCHP', 'JNPR', 'COST')
+Average portfolio return: 4.537091319022322
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('NKE', 'JPM', 'COST')
+Average portfolio return: -4.160101550378654
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('JNPR', 'JNJ', 'ALL')
+Average portfolio return: -0.31089989766388015
+Number of times SPX was beat: 15
+------------------------------------------------------
+Portfolio: ('JNJ', 'ALL', 'COST')
+Average portfolio return: -1.4919990069230837
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('ALL', 'JPM', 'WYNN')
+Average portfolio return: 0.718363989778831
+Number of times SPX was beat: 29
+------------------------------------------------------
+Portfolio: ('ALL', 'COST', 'KMX')
+Average portfolio return: 0.4681665106605211
+Number of times SPX was beat: 19
+------------------------------------------------------
+Portfolio: ('JNPR', 'XOM', 'COST')
+Average portfolio return: 1.1134268883626335
+Number of times SPX was beat: 28
+------------------------------------------------------
+Portfolio: ('DXCM', 'JPM', 'COST')
+Average portfolio return: 12.129442042348373
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('DXCM', 'JNPR', 'EA')
+Average portfolio return: 10.908828527118079
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('DXCM', 'JPM', 'AZO')
+Average portfolio return: 12.94520803745661
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('DXCM', 'PCG', 'JNPR')
+Average portfolio return: 11.45594729402026
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('DXCM', 'HAS', 'COST')
+Average portfolio return: 13.038803086966496
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('JNPR', 'KO', 'AZO')
+Average portfolio return: 0.34138444019884934
+Number of times SPX was beat: 22
+------------------------------------------------------
+Portfolio: ('KO', 'JPM', 'AZO')
+Average portfolio return: 0.7272551562931698
+Number of times SPX was beat: 5
+------------------------------------------------------
+Portfolio: ('PCG', 'JNPR', 'XOM')
+Average portfolio return: -1.024356894097272
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('PCG', 'XOM', 'COST')
+Average portfolio return: -0.5452699220664262
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('BA', 'COST', 'WYNN')
+Average portfolio return: -6.337238896234828
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('ALL', 'WYNN', 'KMX')
+Average portfolio return: 0.1393150115921196
+Number of times SPX was beat: 17
+------------------------------------------------------
+Portfolio: ('JNPR', 'KMI', 'AZO')
+Average portfolio return: 0.9846525930945572
+Number of times SPX was beat: 37
+------------------------------------------------------
+Portfolio: ('DXCM', 'KMI', 'AZO')
+Average portfolio return: 12.545538469957298
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('JNPR', 'KMI', 'V')
+Average portfolio return: 0.7158021785313567
+Number of times SPX was beat: 28
+------------------------------------------------------
+Portfolio: ('DXCM', 'JBHT', 'KMI')
+Average portfolio return: 10.356042248444412
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('CVS', 'JNPR', 'ALL')
+Average portfolio return: 0.7527574230387514
+Number of times SPX was beat: 45
+------------------------------------------------------
+Portfolio: ('CVS', 'ALL', 'JPM')
+Average portfolio return: 1.0037366389414606
+Number of times SPX was beat: 39
+------------------------------------------------------
+Portfolio: ('CVS', 'JNPR', 'MCD')
+Average portfolio return: 0.4983025865069768
+Number of times SPX was beat: 34
+------------------------------------------------------
+Portfolio: ('CVS', 'JPM', 'MNST')
+Average portfolio return: 1.8189515956280176
+Number of times SPX was beat: 52
+------------------------------------------------------
+Portfolio: ('ATO', 'JNPR', 'MNST')
+Average portfolio return: 1.8030580857258576
+Number of times SPX was beat: 56
+------------------------------------------------------
+Portfolio: ('CVS', 'MNST', 'HD')
+Average portfolio return: 0.7047861391483413
+Number of times SPX was beat: 40
+------------------------------------------------------
+Portfolio: ('JNPR', 'LULU', 'HD')
+Average portfolio return: -0.611302211747624
+Number of times SPX was beat: 4
+------------------------------------------------------
+Portfolio: ('MNST', 'HD', 'EBAY')
+Average portfolio return: 0.8647031620387028
+Number of times SPX was beat: 23
+------------------------------------------------------
+Portfolio: ('T', 'AAPL', 'JNPR')
+Average portfolio return: -0.16465284162452584
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('T', 'NFLX', 'HD')
+Average portfolio return: 0.9752391791287931
+Number of times SPX was beat: 10
+------------------------------------------------------
+Portfolio: ('AAPL', 'JNPR', 'NFLX')
+Average portfolio return: -3.2491667522069174
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('T', 'AAPL', 'NFLX')
+Average portfolio return: 0.012507971559488644
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('T', 'NTAP', 'MNST')
+Average portfolio return: 3.6018271288542514
+Number of times SPX was beat: 98
+------------------------------------------------------
+Portfolio: ('T', 'NTAP', 'HD')
+Average portfolio return: 3.71160749079344
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('JNPR', 'HD', 'WFC')
+Average portfolio return: 0.4730604118604511
+Number of times SPX was beat: 26
+------------------------------------------------------
+Portfolio: ('CVS', 'HD', 'WFC')
+Average portfolio return: 1.3618181745304636
+Number of times SPX was beat: 51
+------------------------------------------------------
+Portfolio: ('KHC', 'JNPR', 'NFLX')
+Average portfolio return: -0.5652354554756069
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('UNH', 'NFLX', 'HD')
+Average portfolio return: -1.5973001047084017
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('CPB', 'UNH', 'JNPR')
+Average portfolio return: 0.725904990886808
+Number of times SPX was beat: 26
+------------------------------------------------------
+Portfolio: ('UNH', 'LULU', 'HD')
+Average portfolio return: -2.3923167790946
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('JNPR', 'CVX', 'LULU')
+Average portfolio return: -0.08887321045822966
+Number of times SPX was beat: 6
+------------------------------------------------------
+Portfolio: ('UNH', 'LULU', 'MRK')
+Average portfolio return: -2.839363802018558
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('JNPR', 'EA', 'AFL')
+Average portfolio return: -0.4076003559855602
+Number of times SPX was beat: 20
+------------------------------------------------------
+Portfolio: ('DXCM', 'EA', 'AFL')
+Average portfolio return: 10.60991787799905
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('JNPR', 'MRK', 'FDX')
+Average portfolio return: 0.040227173242018015
+Number of times SPX was beat: 8
+------------------------------------------------------
+Portfolio: ('LULU', 'MRK', 'FDX')
+Average portfolio return: -4.242402797589197
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('EXPE', 'JNPR', 'MRK')
+Average portfolio return: -0.6436837478480186
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('EXPE', 'UNH', 'MRK')
+Average portfolio return: -1.3393101841611579
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('EXPE', 'JNPR', 'WTW')
+Average portfolio return: -0.6025026042088619
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('EXPE', 'CPB', 'UNH')
+Average portfolio return: -0.39504076249772596
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('CPB', 'ORCL', 'JNPR')
+Average portfolio return: 2.9266524895198587
+Number of times SPX was beat: 88
+------------------------------------------------------
+Portfolio: ('EXPE', 'CPB', 'ORCL')
+Average portfolio return: 0.45289448154406187
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('NKE', 'JPM', 'WYNN')
+Average portfolio return: -4.562143073918184
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('ADBE', 'COST', 'WYNN')
+Average portfolio return: -2.8326286559402485
+Number of times SPX was beat: 28
+------------------------------------------------------
+Portfolio: ('HSY', 'JNPR', 'FDX')
+Average portfolio return: 3.109333873137505
+Number of times SPX was beat: 85
+------------------------------------------------------
+Portfolio: ('CVX', 'LULU', 'FDX')
+Average portfolio return: -0.015257062205066953
+Number of times SPX was beat: 18
+------------------------------------------------------
+Portfolio: ('JNPR', 'COF', 'CVX')
+Average portfolio return: 0.24500130248107058
+Number of times SPX was beat: 15
+------------------------------------------------------
+Portfolio: ('CVX', 'FDX', 'BBY')
+Average portfolio return: 1.1180801593674528
+Number of times SPX was beat: 48
+------------------------------------------------------
+Portfolio: ('KHC', 'UNH', 'JNPR')
+Average portfolio return: -0.927459394167137
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('KHC', 'UNH', 'NFLX')
+Average portfolio return: -0.6500538787856911
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('T', 'ATO', 'JNPR')
+Average portfolio return: 1.0709649255980371
+Number of times SPX was beat: 36
+------------------------------------------------------
+Portfolio: ('T', 'ATO', 'MNST')
+Average portfolio return: 1.154026814906889
+Number of times SPX was beat: 31
+------------------------------------------------------
+Portfolio: ('ORCL', 'JNPR', 'WTW')
+Average portfolio return: 6.582392624442133
+Number of times SPX was beat: 87
+------------------------------------------------------
+Portfolio: ('EXPE', 'ORCL', 'WTW')
+Average portfolio return: 1.0511404542815523
+Number of times SPX was beat: 31
+------------------------------------------------------
+Portfolio: ('JNPR', 'DPZ', 'MNST')
+Average portfolio return: 0.4129617323693371
+Number of times SPX was beat: 15
+------------------------------------------------------
+Portfolio: ('TSN', 'JPM', 'MNST')
+Average portfolio return: 3.6024240124787292
+Number of times SPX was beat: 72
+------------------------------------------------------
+Portfolio: ('JNPR', 'CSGP', 'DPZ')
+Average portfolio return: 1.4919201905885537
+Number of times SPX was beat: 36
+------------------------------------------------------
+Portfolio: ('CSGP', 'DPZ', 'JPM')
+Average portfolio return: 4.900034588697512
+Number of times SPX was beat: 80
+------------------------------------------------------
+Portfolio: ('JNPR', 'CSGP', 'TGT')
+Average portfolio return: 1.9832965834322602
+Number of times SPX was beat: 76
+------------------------------------------------------
+Portfolio: ('CSGP', 'JPM', 'DIS')
+Average portfolio return: 6.031226281848939
+Number of times SPX was beat: 86
+------------------------------------------------------
+Portfolio: ('JPM', 'TGT', 'DIS')
+Average portfolio return: 4.598425911514594
+Number of times SPX was beat: 88
+------------------------------------------------------
+Portfolio: ('CSGP', 'TGT', 'DIS')
+Average portfolio return: 7.055261405879105
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('NTAP', 'MNST', 'KR')
+Average portfolio return: 12.599948145359406
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('NTAP', 'HD', 'KR')
+Average portfolio return: 12.767145282190778
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('BA', 'COST', 'KMX')
+Average portfolio return: -5.810699223560789
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('DAL', 'WYNN', 'KMX')
+Average portfolio return: 2.9781644163243914
+Number of times SPX was beat: 67
+------------------------------------------------------
+Portfolio: ('JNPR', 'WFC', 'LLY')
+Average portfolio return: 1.007632529148317
+Number of times SPX was beat: 30
+------------------------------------------------------
+Portfolio: ('CVS', 'MCD', 'WFC')
+Average portfolio return: 0.5529773759401377
+Number of times SPX was beat: 29
+------------------------------------------------------
+Portfolio: ('JNPR', 'MCD', 'LLY')
+Average portfolio return: -0.18505700756127907
+Number of times SPX was beat: 25
+------------------------------------------------------
+Portfolio: ('MCD', 'WFC', 'LLY')
+Average portfolio return: -1.2009727435519466
+Number of times SPX was beat: 22
+------------------------------------------------------
+Portfolio: ('BA', 'GOOG', 'WYNN')
+Average portfolio return: -5.289567097246817
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('BA', 'DAL', 'KMX')
+Average portfolio return: -4.874502629735357
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('JNPR', 'AFL', 'MA')
+Average portfolio return: 0.5682514607838978
+Number of times SPX was beat: 16
+------------------------------------------------------
+Portfolio: ('AFL', 'KMI', 'V')
+Average portfolio return: 2.812492433309585
+Number of times SPX was beat: 91
+------------------------------------------------------
+Portfolio: ('SJM', 'JNPR', 'V')
+Average portfolio return: 0.042420162905090736
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('SJM', 'AFL', 'V')
+Average portfolio return: 0.5034210127601044
+Number of times SPX was beat: 3
+------------------------------------------------------
+Portfolio: ('SJM', 'JNPR', 'MA')
+Average portfolio return: 0.3851667056260055
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('SJM', 'AFL', 'MA')
+Average portfolio return: 1.05258441080939
+Number of times SPX was beat: 18
+------------------------------------------------------
+Portfolio: ('MCHP', 'JNPR', 'JNJ')
+Average portfolio return: 4.656765094725079
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('MCHP', 'JNJ', 'COST')
+Average portfolio return: 4.4046519165827736
+Number of times SPX was beat: 95
+------------------------------------------------------
+Portfolio: ('DAL', 'WYNN', 'DLTR')
+Average portfolio return: 2.2551064248268684
+Number of times SPX was beat: 45
+------------------------------------------------------
+Portfolio: ('BA', 'GOOG', 'DAL')
+Average portfolio return: -5.185062605962313
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('GOOG', 'WYNN', 'DLTR')
+Average portfolio return: 0.954928822265256
+Number of times SPX was beat: 39
+------------------------------------------------------
+Portfolio: ('GOOG', 'DAL', 'DLTR')
+Average portfolio return: 2.5376267598722753
+Number of times SPX was beat: 49
+------------------------------------------------------
+Portfolio: ('JNPR', 'COF', 'BBY')
+Average portfolio return: -0.05822095392564229
+Number of times SPX was beat: 3
+------------------------------------------------------
+Portfolio: ('COF', 'CVX', 'BBY')
+Average portfolio return: 0.37305070997923095
+Number of times SPX was beat: 15
+------------------------------------------------------
+Portfolio: ('ADBE', 'NKE', 'COST')
+Average portfolio return: -3.789095349939903
+Number of times SPX was beat: 28
+------------------------------------------------------
+Portfolio: ('ADBE', 'NKE', 'WYNN')
+Average portfolio return: -4.041068486154875
+Number of times SPX was beat: 13
+------------------------------------------------------
+Portfolio: ('DXCM', 'AFL', 'MAR')
+Average portfolio return: 11.707976982034156
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('AFL', 'JBHT', 'KMI')
+Average portfolio return: 1.8638436373908616
+Number of times SPX was beat: 73
+------------------------------------------------------
+Portfolio: ('PCG', 'HAS', 'COST')
+Average portfolio return: -0.5290705548688649
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('DXCM', 'PCG', 'HAS')
+Average portfolio return: 11.460620669934315
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('DXCM', 'JBHT', 'MAR')
+Average portfolio return: 10.894988106511605
+Number of times SPX was beat: 100
+------------------------------------------------------
+Portfolio: ('AFL', 'JBHT', 'MAR')
+Average portfolio return: 1.8698070712182686
+Number of times SPX was beat: 53
+------------------------------------------------------
+Portfolio: ('JNPR', 'BBY', 'AXON')
+Average portfolio return: -0.6350312542658638
+Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('HSY', 'FDX', 'BBY')
+Average portfolio return: 3.8841789140092398
+Number of times SPX was beat: 89
+------------------------------------------------------
+Portfolio: ('HSY', 'JNPR', 'AXON')
+Average portfolio return: 2.980062941533898
+Number of times SPX was beat: 64
+------------------------------------------------------
+Portfolio: ('HSY', 'BBY', 'AXON')
+Average portfolio return: 2.2073780928996887
+Number of times SPX was beat: 67
+------------------------------------------------------
+Portfolio: ('TSN', 'DPZ', 'JPM')
+Average portfolio return: 3.659250944371465
+Number of times SPX was beat: 77
+------------------------------------------------------
+Portfolio: ('TSN', 'DPZ', 'MNST')
+Average portfolio return: 3.3126588018392997
+Number of times SPX was beat: 71
+------------------------------------------------------
+Portfolio: ('MNST', 'KR', 'EBAY')
+Average portfolio return: 3.5263797993766186
+Number of times SPX was beat: 84
+------------------------------------------------------
+Portfolio: ('HD', 'KR', 'EBAY')
+Average portfolio return: 2.9216973772076518
+Number of times SPX was beat: 89
+------------------------------------------------------
+Stock frequencies: {'SJM': 4, 'ADBE': 3, 'EXPE': 6, 'T': 7, 'DXCM': 11, 'KHC': 3, 'BA': 5, 'CPB': 4, 'UNH': 8, 'GOOG': 4, 'HSY': 4, 'AAPL': 3, 'MCHP': 3, 'TSN': 3, 'ORCL': 4, 'ATO': 3, 'PCG': 5, 'CVS': 7, 'JNPR': 43, 'MCD': 4, 'KO': 3, 'XOM': 3, 'EA': 3, 'COF': 3, 'NKE': 4, 'JNJ': 4, 'AFL': 9, 'HAS': 3, 'NTAP': 4, 'CVX': 5, 'JBHT': 4, 'LULU': 6, 'KMI': 6, 'MRK': 5, 'FDX': 6, 'ALL': 7, 'V': 4, 'CSGP': 5, 'MAR': 3, 'MA': 3, 'DPZ': 5, 'NFLX': 6, 'JPM': 15, 'MNST': 11, 'COST': 14, 'DAL': 5, 'HD': 11, 'KR': 4, 'TGT': 4, 'AZO': 5, 'WYNN': 10, 'KMX': 5, 'BBY': 6, 'WTW': 3, 'WFC': 5, 'DLTR': 3, 'EBAY': 3, 'DIS': 3, 'LLY': 3, 'AXON': 3}
+------------------------------------------------------
+TMFG Degree Centrality: {'SJM': 0.068, 'ADBE': 0.051, 'EXPE': 0.102, 'T': 0.119, 'DXCM': 0.186, 'KHC': 0.051, 'BA': 0.085, 'CPB': 0.068, 'UNH': 0.136, 'GOOG': 0.068, 'HSY': 0.068, 'AAPL': 0.051, 'MCHP': 0.051, 'TSN': 0.051, 'ORCL': 0.068, 'ATO': 0.051, 'PCG': 0.085, 'CVS': 0.119, 'JNPR': 0.729, 'MCD': 0.068, 'KO': 0.051, 'XOM': 0.051, 'EA': 0.051, 'COF': 0.051, 'NKE': 0.068, 'JNJ': 0.068, 'AFL': 0.153, 'HAS': 0.051, 'NTAP': 0.068, 'CVX': 0.085, 'JBHT': 0.068, 'LULU': 0.102, 'KMI': 0.102, 'MRK': 0.085, 'FDX': 0.102, 'ALL': 0.119, 'V': 0.068, 'CSGP': 0.085, 'MAR': 0.051, 'MA': 0.051, 'DPZ': 0.085, 'NFLX': 0.102, 'JPM': 0.254, 'MNST': 0.186, 'COST': 0.237, 'DAL': 0.085, 'HD': 0.186, 'KR': 0.068, 'TGT': 0.068, 'AZO': 0.085, 'WYNN': 0.169, 'KMX': 0.085, 'BBY': 0.102, 'WTW': 0.051, 'WFC': 0.085, 'DLTR': 0.051, 'EBAY': 0.051, 'DIS': 0.051, 'LLY': 0.051, 'AXON': 0.051}
+Dual TMFG Degree Centrality: {('JNPR', 'KO', 'JPM'): 0.026, ('JNPR', 'JPM', 'TGT'): 0.026, ('MCHP', 'JNPR', 'COST'): 0.026, ('NKE', 'JPM', 'COST'): 0.026, ('JNPR', 'JNJ', 'ALL'): 0.026, ('JNJ', 'ALL', 'COST'): 0.026, ('ALL', 'JPM', 'WYNN'): 0.026, ('ALL', 'COST', 'KMX'): 0.026, ('JNPR', 'XOM', 'COST'): 0.026, ('DXCM', 'JPM', 'COST'): 0.026, ('DXCM', 'JNPR', 'EA'): 0.026, ('DXCM', 'JPM', 'AZO'): 0.026, ('DXCM', 'PCG', 'JNPR'): 0.026, ('DXCM', 'HAS', 'COST'): 0.026, ('JNPR', 'KO', 'AZO'): 0.026, ('KO', 'JPM', 'AZO'): 0.026, ('PCG', 'JNPR', 'XOM'): 0.026, ('PCG', 'XOM', 'COST'): 0.026, ('BA', 'COST', 'WYNN'): 0.026, ('ALL', 'WYNN', 'KMX'): 0.026, ('JNPR', 'KMI', 'AZO'): 0.026, ('DXCM', 'KMI', 'AZO'): 0.026, ('JNPR', 'KMI', 'V'): 0.026, ('DXCM', 'JBHT', 'KMI'): 0.026, ('CVS', 'JNPR', 'ALL'): 0.026, ('CVS', 'ALL', 'JPM'): 0.026, ('CVS', 'JNPR', 'MCD'): 0.026, ('CVS', 'JPM', 'MNST'): 0.026, ('ATO', 'JNPR', 'MNST'): 0.026, ('CVS', 'MNST', 'HD'): 0.026, ('JNPR', 'LULU', 'HD'): 0.026, ('MNST', 'HD', 'EBAY'): 0.026, ('T', 'AAPL', 'JNPR'): 0.026, ('T', 'NFLX', 'HD'): 0.026, ('AAPL', 'JNPR', 'NFLX'): 0.026, ('T', 'AAPL', 'NFLX'): 0.026, ('T', 'NTAP', 'MNST'): 0.026, ('T', 'NTAP', 'HD'): 0.026, ('JNPR', 'HD', 'WFC'): 0.026, ('CVS', 'HD', 'WFC'): 0.026, ('KHC', 'JNPR', 'NFLX'): 0.026, ('UNH', 'NFLX', 'HD'): 0.026, ('CPB', 'UNH', 'JNPR'): 0.026, ('UNH', 'LULU', 'HD'): 0.026, ('JNPR', 'CVX', 'LULU'): 0.026, ('UNH', 'LULU', 'MRK'): 0.026, ('JNPR', 'EA', 'AFL'): 0.026, ('DXCM', 'EA', 'AFL'): 0.026, ('JNPR', 'MRK', 'FDX'): 0.026, ('LULU', 'MRK', 'FDX'): 0.026, ('EXPE', 'JNPR', 'MRK'): 0.026, ('EXPE', 'UNH', 'MRK'): 0.026, ('EXPE', 'JNPR', 'WTW'): 0.026, ('EXPE', 'CPB', 'UNH'): 0.026, ('CPB', 'ORCL', 'JNPR'): 0.026, ('EXPE', 'CPB', 'ORCL'): 0.026, ('NKE', 'JPM', 'WYNN'): 0.026, ('ADBE', 'COST', 'WYNN'): 0.026, ('HSY', 'JNPR', 'FDX'): 0.026, ('CVX', 'LULU', 'FDX'): 0.026, ('JNPR', 'COF', 'CVX'): 0.026, ('CVX', 'FDX', 'BBY'): 0.026, ('KHC', 'UNH', 'JNPR'): 0.026, ('KHC', 'UNH', 'NFLX'): 0.026, ('T', 'ATO', 'JNPR'): 0.026, ('T', 'ATO', 'MNST'): 0.026, ('ORCL', 'JNPR', 'WTW'): 0.026, ('EXPE', 'ORCL', 'WTW'): 0.026, ('JNPR', 'DPZ', 'MNST'): 0.026, ('TSN', 'JPM', 'MNST'): 0.026, ('JNPR', 'CSGP', 'DPZ'): 0.026, ('CSGP', 'DPZ', 'JPM'): 0.026, ('JNPR', 'CSGP', 'TGT'): 0.026, ('CSGP', 'JPM', 'DIS'): 0.026, ('JPM', 'TGT', 'DIS'): 0.026, ('CSGP', 'TGT', 'DIS'): 0.026, ('NTAP', 'MNST', 'KR'): 0.026, ('NTAP', 'HD', 'KR'): 0.026, ('BA', 'COST', 'KMX'): 0.026, ('DAL', 'WYNN', 'KMX'): 0.026, ('JNPR', 'WFC', 'LLY'): 0.026, ('CVS', 'MCD', 'WFC'): 0.026, ('JNPR', 'MCD', 'LLY'): 0.026, ('MCD', 'WFC', 'LLY'): 0.026, ('BA', 'GOOG', 'WYNN'): 0.026, ('BA', 'DAL', 'KMX'): 0.026, ('JNPR', 'AFL', 'MA'): 0.026, ('AFL', 'KMI', 'V'): 0.026, ('SJM', 'JNPR', 'V'): 0.026, ('SJM', 'AFL', 'V'): 0.026, ('SJM', 'JNPR', 'MA'): 0.026, ('SJM', 'AFL', 'MA'): 0.026, ('MCHP', 'JNPR', 'JNJ'): 0.026, ('MCHP', 'JNJ', 'COST'): 0.026, ('DAL', 'WYNN', 'DLTR'): 0.026, ('BA', 'GOOG', 'DAL'): 0.026, ('GOOG', 'WYNN', 'DLTR'): 0.026, ('GOOG', 'DAL', 'DLTR'): 0.026, ('JNPR', 'COF', 'BBY'): 0.026, ('COF', 'CVX', 'BBY'): 0.026, ('ADBE', 'NKE', 'COST'): 0.026, ('ADBE', 'NKE', 'WYNN'): 0.026, ('DXCM', 'AFL', 'MAR'): 0.026, ('AFL', 'JBHT', 'KMI'): 0.026, ('PCG', 'HAS', 'COST'): 0.026, ('DXCM', 'PCG', 'HAS'): 0.026, ('DXCM', 'JBHT', 'MAR'): 0.026, ('AFL', 'JBHT', 'MAR'): 0.026, ('JNPR', 'BBY', 'AXON'): 0.026, ('HSY', 'FDX', 'BBY'): 0.026, ('HSY', 'JNPR', 'AXON'): 0.026, ('HSY', 'BBY', 'AXON'): 0.026, ('TSN', 'DPZ', 'JPM'): 0.026, ('TSN', 'DPZ', 'MNST'): 0.026, ('MNST', 'KR', 'EBAY'): 0.026, ('HD', 'KR', 'EBAY'): 0.026}
+TMFG Eigenvector Centrality: {'SJM': 0.093, 'ADBE': 0.038, 'EXPE': 0.116, 'T': 0.137, 'DXCM': 0.186, 'KHC': 0.088, 'BA': 0.041, 'CPB': 0.097, 'UNH': 0.15, 'GOOG': 0.018, 'HSY': 0.092, 'AAPL': 0.087, 'MCHP': 0.091, 'TSN': 0.059, 'ORCL': 0.09, 'ATO': 0.093, 'PCG': 0.116, 'CVS': 0.162, 'JNPR': 0.547, 'MCD': 0.097, 'KO': 0.098, 'XOM': 0.093, 'EA': 0.094, 'COF': 0.082, 'NKE': 0.061, 'JNJ': 0.106, 'AFL': 0.141, 'HAS': 0.054, 'NTAP': 0.059, 'CVX': 0.106, 'JBHT': 0.053, 'LULU': 0.13, 'KMI': 0.124, 'MRK': 0.114, 'FDX': 0.118, 'ALL': 0.15, 'V': 0.097, 'CSGP': 0.114, 'MAR': 0.041, 'MA': 0.084, 'DPZ': 0.123, 'NFLX': 0.128, 'JPM': 0.241, 'MNST': 0.182, 'COST': 0.2, 'DAL': 0.023, 'HD': 0.183, 'KR': 0.05, 'TGT': 0.102, 'AZO': 0.128, 'WYNN': 0.09, 'KMX': 0.054, 'BBY': 0.11, 'WTW': 0.081, 'WFC': 0.115, 'DLTR': 0.014, 'EBAY': 0.045, 'DIS': 0.049, 'LLY': 0.081, 'AXON': 0.08}
+Dual TMFG Eigenvector Centrality: {('JNPR', 'KO', 'JPM'): 0.093, ('JNPR', 'JPM', 'TGT'): 0.093, ('MCHP', 'JNPR', 'COST'): 0.093, ('NKE', 'JPM', 'COST'): 0.093, ('JNPR', 'JNJ', 'ALL'): 0.093, ('JNJ', 'ALL', 'COST'): 0.093, ('ALL', 'JPM', 'WYNN'): 0.093, ('ALL', 'COST', 'KMX'): 0.093, ('JNPR', 'XOM', 'COST'): 0.093, ('DXCM', 'JPM', 'COST'): 0.093, ('DXCM', 'JNPR', 'EA'): 0.093, ('DXCM', 'JPM', 'AZO'): 0.093, ('DXCM', 'PCG', 'JNPR'): 0.093, ('DXCM', 'HAS', 'COST'): 0.093, ('JNPR', 'KO', 'AZO'): 0.093, ('KO', 'JPM', 'AZO'): 0.093, ('PCG', 'JNPR', 'XOM'): 0.093, ('PCG', 'XOM', 'COST'): 0.093, ('BA', 'COST', 'WYNN'): 0.093, ('ALL', 'WYNN', 'KMX'): 0.093, ('JNPR', 'KMI', 'AZO'): 0.093, ('DXCM', 'KMI', 'AZO'): 0.093, ('JNPR', 'KMI', 'V'): 0.093, ('DXCM', 'JBHT', 'KMI'): 0.093, ('CVS', 'JNPR', 'ALL'): 0.093, ('CVS', 'ALL', 'JPM'): 0.093, ('CVS', 'JNPR', 'MCD'): 0.093, ('CVS', 'JPM', 'MNST'): 0.093, ('ATO', 'JNPR', 'MNST'): 0.093, ('CVS', 'MNST', 'HD'): 0.093, ('JNPR', 'LULU', 'HD'): 0.093, ('MNST', 'HD', 'EBAY'): 0.093, ('T', 'AAPL', 'JNPR'): 0.093, ('T', 'NFLX', 'HD'): 0.093, ('AAPL', 'JNPR', 'NFLX'): 0.093, ('T', 'AAPL', 'NFLX'): 0.093, ('T', 'NTAP', 'MNST'): 0.093, ('T', 'NTAP', 'HD'): 0.093, ('JNPR', 'HD', 'WFC'): 0.093, ('CVS', 'HD', 'WFC'): 0.093, ('KHC', 'JNPR', 'NFLX'): 0.093, ('UNH', 'NFLX', 'HD'): 0.093, ('CPB', 'UNH', 'JNPR'): 0.093, ('UNH', 'LULU', 'HD'): 0.093, ('JNPR', 'CVX', 'LULU'): 0.093, ('UNH', 'LULU', 'MRK'): 0.093, ('JNPR', 'EA', 'AFL'): 0.093, ('DXCM', 'EA', 'AFL'): 0.093, ('JNPR', 'MRK', 'FDX'): 0.093, ('LULU', 'MRK', 'FDX'): 0.093, ('EXPE', 'JNPR', 'MRK'): 0.093, ('EXPE', 'UNH', 'MRK'): 0.093, ('EXPE', 'JNPR', 'WTW'): 0.093, ('EXPE', 'CPB', 'UNH'): 0.093, ('CPB', 'ORCL', 'JNPR'): 0.093, ('EXPE', 'CPB', 'ORCL'): 0.093, ('NKE', 'JPM', 'WYNN'): 0.093, ('ADBE', 'COST', 'WYNN'): 0.093, ('HSY', 'JNPR', 'FDX'): 0.093, ('CVX', 'LULU', 'FDX'): 0.093, ('JNPR', 'COF', 'CVX'): 0.093, ('CVX', 'FDX', 'BBY'): 0.093, ('KHC', 'UNH', 'JNPR'): 0.093, ('KHC', 'UNH', 'NFLX'): 0.093, ('T', 'ATO', 'JNPR'): 0.093, ('T', 'ATO', 'MNST'): 0.093, ('ORCL', 'JNPR', 'WTW'): 0.093, ('EXPE', 'ORCL', 'WTW'): 0.093, ('JNPR', 'DPZ', 'MNST'): 0.093, ('TSN', 'JPM', 'MNST'): 0.093, ('JNPR', 'CSGP', 'DPZ'): 0.093, ('CSGP', 'DPZ', 'JPM'): 0.093, ('JNPR', 'CSGP', 'TGT'): 0.093, ('CSGP', 'JPM', 'DIS'): 0.093, ('JPM', 'TGT', 'DIS'): 0.093, ('CSGP', 'TGT', 'DIS'): 0.093, ('NTAP', 'MNST', 'KR'): 0.093, ('NTAP', 'HD', 'KR'): 0.093, ('BA', 'COST', 'KMX'): 0.093, ('DAL', 'WYNN', 'KMX'): 0.093, ('JNPR', 'WFC', 'LLY'): 0.093, ('CVS', 'MCD', 'WFC'): 0.093, ('JNPR', 'MCD', 'LLY'): 0.093, ('MCD', 'WFC', 'LLY'): 0.093, ('BA', 'GOOG', 'WYNN'): 0.093, ('BA', 'DAL', 'KMX'): 0.093, ('JNPR', 'AFL', 'MA'): 0.093, ('AFL', 'KMI', 'V'): 0.093, ('SJM', 'JNPR', 'V'): 0.093, ('SJM', 'AFL', 'V'): 0.093, ('SJM', 'JNPR', 'MA'): 0.093, ('SJM', 'AFL', 'MA'): 0.093, ('MCHP', 'JNPR', 'JNJ'): 0.093, ('MCHP', 'JNJ', 'COST'): 0.093, ('DAL', 'WYNN', 'DLTR'): 0.093, ('BA', 'GOOG', 'DAL'): 0.093, ('GOOG', 'WYNN', 'DLTR'): 0.093, ('GOOG', 'DAL', 'DLTR'): 0.093, ('JNPR', 'COF', 'BBY'): 0.093, ('COF', 'CVX', 'BBY'): 0.093, ('ADBE', 'NKE', 'COST'): 0.093, ('ADBE', 'NKE', 'WYNN'): 0.093, ('DXCM', 'AFL', 'MAR'): 0.093, ('AFL', 'JBHT', 'KMI'): 0.093, ('PCG', 'HAS', 'COST'): 0.093, ('DXCM', 'PCG', 'HAS'): 0.093, ('DXCM', 'JBHT', 'MAR'): 0.093, ('AFL', 'JBHT', 'MAR'): 0.093, ('JNPR', 'BBY', 'AXON'): 0.093, ('HSY', 'FDX', 'BBY'): 0.093, ('HSY', 'JNPR', 'AXON'): 0.093, ('HSY', 'BBY', 'AXON'): 0.093, ('TSN', 'DPZ', 'JPM'): 0.093, ('TSN', 'DPZ', 'MNST'): 0.093, ('MNST', 'KR', 'EBAY'): 0.093, ('HD', 'KR', 'EBAY'): 0.093}
+TMFG Betweenness Centrality: {'SJM': 0.0, 'ADBE': 0.0, 'EXPE': 0.001, 'T': 0.01, 'DXCM': 0.06, 'KHC': 0.0, 'BA': 0.011, 'CPB': 0.0, 'UNH': 0.006, 'GOOG': 0.0, 'HSY': 0.0, 'AAPL': 0.0, 'MCHP': 0.0, 'TSN': 0.0, 'ORCL': 0.0, 'ATO': 0.0, 'PCG': 0.007, 'CVS': 0.009, 'JNPR': 0.686, 'MCD': 0.0, 'KO': 0.0, 'XOM': 0.0, 'EA': 0.0, 'COF': 0.0, 'NKE': 0.002, 'JNJ': 0.0, 'AFL': 0.023, 'HAS': 0.0, 'NTAP': 0.0, 'CVX': 0.001, 'JBHT': 0.0, 'LULU': 0.003, 'KMI': 0.008, 'MRK': 0.001, 'FDX': 0.001, 'ALL': 0.036, 'V': 0.0, 'CSGP': 0.006, 'MAR': 0.0, 'MA': 0.0, 'DPZ': 0.006, 'NFLX': 0.002, 'JPM': 0.126, 'MNST': 0.064, 'COST': 0.139, 'DAL': 0.001, 'HD': 0.042, 'KR': 0.0, 'TGT': 0.006, 'AZO': 0.002, 'WYNN': 0.085, 'KMX': 0.008, 'BBY': 0.001, 'WTW': 0.0, 'WFC': 0.002, 'DLTR': 0.0, 'EBAY': 0.0, 'DIS': 0.0, 'LLY': 0.0, 'AXON': 0.0}
+Dual TMFG Betweenness Centrality: {('JNPR', 'KO', 'JPM'): 0.119, ('JNPR', 'JPM', 'TGT'): 0.122, ('MCHP', 'JNPR', 'COST'): 0.098, ('NKE', 'JPM', 'COST'): 0.169, ('JNPR', 'JNJ', 'ALL'): 0.128, ('JNJ', 'ALL', 'COST'): 0.039, ('ALL', 'JPM', 'WYNN'): 0.256, ('ALL', 'COST', 'KMX'): 0.042, ('JNPR', 'XOM', 'COST'): 0.091, ('DXCM', 'JPM', 'COST'): 0.188, ('DXCM', 'JNPR', 'EA'): 0.062, ('DXCM', 'JPM', 'AZO'): 0.156, ('DXCM', 'PCG', 'JNPR'): 0.077, ('DXCM', 'HAS', 'COST'): 0.058, ('JNPR', 'KO', 'AZO'): 0.065, ('KO', 'JPM', 'AZO'): 0.055, ('PCG', 'JNPR', 'XOM'): 0.063, ('PCG', 'XOM', 'COST'): 0.015, ('BA', 'COST', 'WYNN'): 0.035, ('ALL', 'WYNN', 'KMX'): 0.101, ('JNPR', 'KMI', 'AZO'): 0.093, ('DXCM', 'KMI', 'AZO'): 0.113, ('JNPR', 'KMI', 'V'): 0.065, ('DXCM', 'JBHT', 'KMI'): 0.061, ('CVS', 'JNPR', 'ALL'): 0.162, ('CVS', 'ALL', 'JPM'): 0.279, ('CVS', 'JNPR', 'MCD'): 0.121, ('CVS', 'JPM', 'MNST'): 0.298, ('ATO', 'JNPR', 'MNST'): 0.13, ('CVS', 'MNST', 'HD'): 0.243, ('JNPR', 'LULU', 'HD'): 0.284, ('MNST', 'HD', 'EBAY'): 0.06, ('T', 'AAPL', 'JNPR'): 0.082, ('T', 'NFLX', 'HD'): 0.062, ('AAPL', 'JNPR', 'NFLX'): 0.053, ('T', 'AAPL', 'NFLX'): 0.022, ('T', 'NTAP', 'MNST'): 0.035, ('T', 'NTAP', 'HD'): 0.045, ('JNPR', 'HD', 'WFC'): 0.277, ('CVS', 'HD', 'WFC'): 0.232, ('KHC', 'JNPR', 'NFLX'): 0.049, ('UNH', 'NFLX', 'HD'): 0.089, ('CPB', 'UNH', 'JNPR'): 0.045, ('UNH', 'LULU', 'HD'): 0.177, ('JNPR', 'CVX', 'LULU'): 0.138, ('UNH', 'LULU', 'MRK'): 0.114, ('JNPR', 'EA', 'AFL'): 0.03, ('DXCM', 'EA', 'AFL'): 0.015, ('JNPR', 'MRK', 'FDX'): 0.029, ('LULU', 'MRK', 'FDX'): 0.04, ('EXPE', 'JNPR', 'MRK'): 0.035, ('EXPE', 'UNH', 'MRK'): 0.074, ('EXPE', 'JNPR', 'WTW'): 0.018, ('EXPE', 'CPB', 'UNH'): 0.035, ('CPB', 'ORCL', 'JNPR'): 0.018, ('EXPE', 'CPB', 'ORCL'): 0.012, ('NKE', 'JPM', 'WYNN'): 0.166, ('ADBE', 'COST', 'WYNN'): 0.034, ('HSY', 'JNPR', 'FDX'): 0.014, ('CVX', 'LULU', 'FDX'): 0.058, ('JNPR', 'COF', 'CVX'): 0.061, ('CVX', 'FDX', 'BBY'): 0.028, ('KHC', 'UNH', 'JNPR'): 0.051, ('KHC', 'UNH', 'NFLX'): 0.03, ('T', 'ATO', 'JNPR'): 0.088, ('T', 'ATO', 'MNST'): 0.032, ('ORCL', 'JNPR', 'WTW'): 0.008, ('EXPE', 'ORCL', 'WTW'): 0.001, ('JNPR', 'DPZ', 'MNST'): 0.149, ('TSN', 'JPM', 'MNST'): 0.104, ('JNPR', 'CSGP', 'DPZ'): 0.122, ('CSGP', 'DPZ', 'JPM'): 0.044, ('JNPR', 'CSGP', 'TGT'): 0.111, ('CSGP', 'JPM', 'DIS'): 0.023, ('JPM', 'TGT', 'DIS'): 0.015, ('CSGP', 'TGT', 'DIS'): 0.001, ('NTAP', 'MNST', 'KR'): 0.015, ('NTAP', 'HD', 'KR'): 0.023, ('BA', 'COST', 'KMX'): 0.025, ('DAL', 'WYNN', 'KMX'): 0.064, ('JNPR', 'WFC', 'LLY'): 0.056, ('CVS', 'MCD', 'WFC'): 0.057, ('JNPR', 'MCD', 'LLY'): 0.057, ('MCD', 'WFC', 'LLY'): 0.001, ('BA', 'GOOG', 'WYNN'): 0.015, ('BA', 'DAL', 'KMX'): 0.016, ('JNPR', 'AFL', 'MA'): 0.023, ('AFL', 'KMI', 'V'): 0.017, ('SJM', 'JNPR', 'V'): 0.032, ('SJM', 'AFL', 'V'): 0.009, ('SJM', 'JNPR', 'MA'): 0.015, ('SJM', 'AFL', 'MA'): 0.004, ('MCHP', 'JNPR', 'JNJ'): 0.09, ('MCHP', 'JNJ', 'COST'): 0.017, ('DAL', 'WYNN', 'DLTR'): 0.025, ('BA', 'GOOG', 'DAL'): 0.005, ('GOOG', 'WYNN', 'DLTR'): 0.004, ('GOOG', 'DAL', 'DLTR'): 0.0, ('JNPR', 'COF', 'BBY'): 0.033, ('COF', 'CVX', 'BBY'): 0.001, ('ADBE', 'NKE', 'COST'): 0.033, ('ADBE', 'NKE', 'WYNN'): 0.02, ('DXCM', 'AFL', 'MAR'): 0.013, ('AFL', 'JBHT', 'KMI'): 0.018, ('PCG', 'HAS', 'COST'): 0.015, ('DXCM', 'PCG', 'HAS'): 0.025, ('DXCM', 'JBHT', 'MAR'): 0.022, ('AFL', 'JBHT', 'MAR'): 0.004, ('JNPR', 'BBY', 'AXON'): 0.02, ('HSY', 'FDX', 'BBY'): 0.014, ('HSY', 'JNPR', 'AXON'): 0.005, ('HSY', 'BBY', 'AXON'): 0.001, ('TSN', 'DPZ', 'JPM'): 0.044, ('TSN', 'DPZ', 'MNST'): 0.048, ('MNST', 'KR', 'EBAY'): 0.016, ('HD', 'KR', 'EBAY'): 0.024}
+Median Dual TMFG Betweenness Centrality: 0.043
+TMFG Closeness Centrality: {'SJM': 0.45, 'ADBE': 0.369, 'EXPE': 0.45, 'T': 0.468, 'DXCM': 0.522, 'KHC': 0.44, 'BA': 0.373, 'CPB': 0.444, 'UNH': 0.468, 'GOOG': 0.301, 'HSY': 0.444, 'AAPL': 0.444, 'MCHP': 0.472, 'TSN': 0.386, 'ORCL': 0.444, 'ATO': 0.454, 'PCG': 0.488, 'CVS': 0.496, 'JNPR': 0.756, 'MCD': 0.444, 'KO': 0.465, 'XOM': 0.472, 'EA': 0.45, 'COF': 0.44, 'NKE': 0.401, 'JNJ': 0.476, 'AFL': 0.472, 'HAS': 0.376, 'NTAP': 0.355, 'CVX': 0.447, 'JBHT': 0.358, 'LULU': 0.461, 'KMI': 0.461, 'MRK': 0.447, 'FDX': 0.45, 'ALL': 0.509, 'V': 0.45, 'CSGP': 0.472, 'MAR': 0.355, 'MA': 0.447, 'DPZ': 0.484, 'NFLX': 0.461, 'JPM': 0.573, 'MNST': 0.509, 'COST': 0.551, 'DAL': 0.303, 'HD': 0.484, 'KR': 0.353, 'TGT': 0.468, 'AZO': 0.484, 'WYNN': 0.418, 'KMX': 0.376, 'BBY': 0.45, 'WTW': 0.44, 'WFC': 0.457, 'DLTR': 0.299, 'EBAY': 0.351, 'DIS': 0.371, 'LLY': 0.44, 'AXON': 0.44}
+Dual TMFG Closeness Centrality: {('JNPR', 'KO', 'JPM'): 0.125, ('JNPR', 'JPM', 'TGT'): 0.127, ('MCHP', 'JNPR', 'COST'): 0.128, ('NKE', 'JPM', 'COST'): 0.143, ('JNPR', 'JNJ', 'ALL'): 0.144, ('JNJ', 'ALL', 'COST'): 0.136, ('ALL', 'JPM', 'WYNN'): 0.158, ('ALL', 'COST', 'KMX'): 0.131, ('JNPR', 'XOM', 'COST'): 0.122, ('DXCM', 'JPM', 'COST'): 0.137, ('DXCM', 'JNPR', 'EA'): 0.103, ('DXCM', 'JPM', 'AZO'): 0.131, ('DXCM', 'PCG', 'JNPR'): 0.112, ('DXCM', 'HAS', 'COST'): 0.125, ('JNPR', 'KO', 'AZO'): 0.12, ('KO', 'JPM', 'AZO'): 0.126, ('PCG', 'JNPR', 'XOM'): 0.115, ('PCG', 'XOM', 'COST'): 0.116, ('BA', 'COST', 'WYNN'): 0.116, ('ALL', 'WYNN', 'KMX'): 0.142, ('JNPR', 'KMI', 'AZO'): 0.116, ('DXCM', 'KMI', 'AZO'): 0.12, ('JNPR', 'KMI', 'V'): 0.107, ('DXCM', 'JBHT', 'KMI'): 0.11, ('CVS', 'JNPR', 'ALL'): 0.155, ('CVS', 'ALL', 'JPM'): 0.164, ('CVS', 'JNPR', 'MCD'): 0.149, ('CVS', 'JPM', 'MNST'): 0.165, ('ATO', 'JNPR', 'MNST'): 0.136, ('CVS', 'MNST', 'HD'): 0.159, ('JNPR', 'LULU', 'HD'): 0.139, ('MNST', 'HD', 'EBAY'): 0.143, ('T', 'AAPL', 'JNPR'): 0.125, ('T', 'NFLX', 'HD'): 0.124, ('AAPL', 'JNPR', 'NFLX'): 0.117, ('T', 'AAPL', 'NFLX'): 0.12, ('T', 'NTAP', 'MNST'): 0.129, ('T', 'NTAP', 'HD'): 0.129, ('JNPR', 'HD', 'WFC'): 0.146, ('CVS', 'HD', 'WFC'): 0.154, ('KHC', 'JNPR', 'NFLX'): 0.113, ('UNH', 'NFLX', 'HD'): 0.125, ('CPB', 'UNH', 'JNPR'): 0.103, ('UNH', 'LULU', 'HD'): 0.131, ('JNPR', 'CVX', 'LULU'): 0.126, ('UNH', 'LULU', 'MRK'): 0.12, ('JNPR', 'EA', 'AFL'): 0.097, ('DXCM', 'EA', 'AFL'): 0.097, ('JNPR', 'MRK', 'FDX'): 0.102, ('LULU', 'MRK', 'FDX'): 0.11, ('EXPE', 'JNPR', 'MRK'): 0.102, ('EXPE', 'UNH', 'MRK'): 0.11, ('EXPE', 'JNPR', 'WTW'): 0.095, ('EXPE', 'CPB', 'UNH'): 0.104, ('CPB', 'ORCL', 'JNPR'): 0.095, ('EXPE', 'CPB', 'ORCL'): 0.095, ('NKE', 'JPM', 'WYNN'): 0.149, ('ADBE', 'COST', 'WYNN'): 0.125, ('HSY', 'JNPR', 'FDX'): 0.093, ('CVX', 'LULU', 'FDX'): 0.116, ('JNPR', 'COF', 'CVX'): 0.113, ('CVX', 'FDX', 'BBY'): 0.105, ('KHC', 'UNH', 'JNPR'): 0.11, ('KHC', 'UNH', 'NFLX'): 0.117, ('T', 'ATO', 'JNPR'): 0.13, ('T', 'ATO', 'MNST'): 0.13, ('ORCL', 'JNPR', 'WTW'): 0.092, ('EXPE', 'ORCL', 'WTW'): 0.089, ('JNPR', 'DPZ', 'MNST'): 0.143, ('TSN', 'JPM', 'MNST'): 0.151, ('JNPR', 'CSGP', 'DPZ'): 0.135, ('CSGP', 'DPZ', 'JPM'): 0.135, ('JNPR', 'CSGP', 'TGT'): 0.13, ('CSGP', 'JPM', 'DIS'): 0.127, ('JPM', 'TGT', 'DIS'): 0.122, ('CSGP', 'TGT', 'DIS'): 0.121, ('NTAP', 'MNST', 'KR'): 0.126, ('NTAP', 'HD', 'KR'): 0.127, ('BA', 'COST', 'KMX'): 0.121, ('DAL', 'WYNN', 'KMX'): 0.127, ('JNPR', 'WFC', 'LLY'): 0.14, ('CVS', 'MCD', 'WFC'): 0.147, ('JNPR', 'MCD', 'LLY'): 0.141, ('MCD', 'WFC', 'LLY'): 0.134, ('BA', 'GOOG', 'WYNN'): 0.105, ('BA', 'DAL', 'KMX'): 0.116, ('JNPR', 'AFL', 'MA'): 0.094, ('AFL', 'KMI', 'V'): 0.098, ('SJM', 'JNPR', 'V'): 0.099, ('SJM', 'AFL', 'V'): 0.092, ('SJM', 'JNPR', 'MA'): 0.093, ('SJM', 'AFL', 'MA'): 0.089, ('MCHP', 'JNPR', 'JNJ'): 0.134, ('MCHP', 'JNJ', 'COST'): 0.127, ('DAL', 'WYNN', 'DLTR'): 0.114, ('BA', 'GOOG', 'DAL'): 0.107, ('GOOG', 'WYNN', 'DLTR'): 0.106, ('GOOG', 'DAL', 'DLTR'): 0.103, ('JNPR', 'COF', 'BBY'): 0.103, ('COF', 'CVX', 'BBY'): 0.104, ('ADBE', 'NKE', 'COST'): 0.128, ('ADBE', 'NKE', 'WYNN'): 0.132, ('DXCM', 'AFL', 'MAR'): 0.096, ('AFL', 'JBHT', 'KMI'): 0.101, ('PCG', 'HAS', 'COST'): 0.115, ('DXCM', 'PCG', 'HAS'): 0.115, ('DXCM', 'JBHT', 'MAR'): 0.101, ('AFL', 'JBHT', 'MAR'): 0.094, ('JNPR', 'BBY', 'AXON'): 0.096, ('HSY', 'FDX', 'BBY'): 0.097, ('HSY', 'JNPR', 'AXON'): 0.091, ('HSY', 'BBY', 'AXON'): 0.089, ('TSN', 'DPZ', 'JPM'): 0.141, ('TSN', 'DPZ', 'MNST'): 0.144, ('MNST', 'KR', 'EBAY'): 0.129, ('HD', 'KR', 'EBAY'): 0.131}
+Median Dual TMFG Closeness Centrality: 0.121
+TMFG Katz Centrality: {'SJM': 0.128, 'ADBE': 0.127, 'EXPE': 0.129, 'T': 0.13, 'DXCM': 0.132, 'KHC': 0.127, 'BA': 0.128, 'CPB': 0.128, 'UNH': 0.13, 'GOOG': 0.128, 'HSY': 0.128, 'AAPL': 0.127, 'MCHP': 0.127, 'TSN': 0.127, 'ORCL': 0.128, 'ATO': 0.127, 'PCG': 0.129, 'CVS': 0.13, 'JNPR': 0.153, 'MCD': 0.128, 'KO': 0.127, 'XOM': 0.127, 'EA': 0.127, 'COF': 0.127, 'NKE': 0.128, 'JNJ': 0.128, 'AFL': 0.131, 'HAS': 0.127, 'NTAP': 0.128, 'CVX': 0.129, 'JBHT': 0.128, 'LULU': 0.129, 'KMI': 0.129, 'MRK': 0.129, 'FDX': 0.129, 'ALL': 0.13, 'V': 0.128, 'CSGP': 0.129, 'MAR': 0.127, 'MA': 0.127, 'DPZ': 0.129, 'NFLX': 0.129, 'JPM': 0.135, 'MNST': 0.132, 'COST': 0.134, 'DAL': 0.128, 'HD': 0.132, 'KR': 0.128, 'TGT': 0.128, 'AZO': 0.129, 'WYNN': 0.132, 'KMX': 0.128, 'BBY': 0.129, 'WTW': 0.127, 'WFC': 0.129, 'DLTR': 0.127, 'EBAY': 0.127, 'DIS': 0.127, 'LLY': 0.127, 'AXON': 0.127}
+Dual TMFG Katz Centrality: {('JNPR', 'KO', 'JPM'): 0.093, ('JNPR', 'JPM', 'TGT'): 0.093, ('MCHP', 'JNPR', 'COST'): 0.093, ('NKE', 'JPM', 'COST'): 0.093, ('JNPR', 'JNJ', 'ALL'): 0.093, ('JNJ', 'ALL', 'COST'): 0.093, ('ALL', 'JPM', 'WYNN'): 0.093, ('ALL', 'COST', 'KMX'): 0.093, ('JNPR', 'XOM', 'COST'): 0.093, ('DXCM', 'JPM', 'COST'): 0.093, ('DXCM', 'JNPR', 'EA'): 0.093, ('DXCM', 'JPM', 'AZO'): 0.093, ('DXCM', 'PCG', 'JNPR'): 0.093, ('DXCM', 'HAS', 'COST'): 0.093, ('JNPR', 'KO', 'AZO'): 0.093, ('KO', 'JPM', 'AZO'): 0.093, ('PCG', 'JNPR', 'XOM'): 0.093, ('PCG', 'XOM', 'COST'): 0.093, ('BA', 'COST', 'WYNN'): 0.093, ('ALL', 'WYNN', 'KMX'): 0.093, ('JNPR', 'KMI', 'AZO'): 0.093, ('DXCM', 'KMI', 'AZO'): 0.093, ('JNPR', 'KMI', 'V'): 0.093, ('DXCM', 'JBHT', 'KMI'): 0.093, ('CVS', 'JNPR', 'ALL'): 0.093, ('CVS', 'ALL', 'JPM'): 0.093, ('CVS', 'JNPR', 'MCD'): 0.093, ('CVS', 'JPM', 'MNST'): 0.093, ('ATO', 'JNPR', 'MNST'): 0.093, ('CVS', 'MNST', 'HD'): 0.093, ('JNPR', 'LULU', 'HD'): 0.093, ('MNST', 'HD', 'EBAY'): 0.093, ('T', 'AAPL', 'JNPR'): 0.093, ('T', 'NFLX', 'HD'): 0.093, ('AAPL', 'JNPR', 'NFLX'): 0.093, ('T', 'AAPL', 'NFLX'): 0.093, ('T', 'NTAP', 'MNST'): 0.093, ('T', 'NTAP', 'HD'): 0.093, ('JNPR', 'HD', 'WFC'): 0.093, ('CVS', 'HD', 'WFC'): 0.093, ('KHC', 'JNPR', 'NFLX'): 0.093, ('UNH', 'NFLX', 'HD'): 0.093, ('CPB', 'UNH', 'JNPR'): 0.093, ('UNH', 'LULU', 'HD'): 0.093, ('JNPR', 'CVX', 'LULU'): 0.093, ('UNH', 'LULU', 'MRK'): 0.093, ('JNPR', 'EA', 'AFL'): 0.093, ('DXCM', 'EA', 'AFL'): 0.093, ('JNPR', 'MRK', 'FDX'): 0.093, ('LULU', 'MRK', 'FDX'): 0.093, ('EXPE', 'JNPR', 'MRK'): 0.093, ('EXPE', 'UNH', 'MRK'): 0.093, ('EXPE', 'JNPR', 'WTW'): 0.093, ('EXPE', 'CPB', 'UNH'): 0.093, ('CPB', 'ORCL', 'JNPR'): 0.093, ('EXPE', 'CPB', 'ORCL'): 0.093, ('NKE', 'JPM', 'WYNN'): 0.093, ('ADBE', 'COST', 'WYNN'): 0.093, ('HSY', 'JNPR', 'FDX'): 0.093, ('CVX', 'LULU', 'FDX'): 0.093, ('JNPR', 'COF', 'CVX'): 0.093, ('CVX', 'FDX', 'BBY'): 0.093, ('KHC', 'UNH', 'JNPR'): 0.093, ('KHC', 'UNH', 'NFLX'): 0.093, ('T', 'ATO', 'JNPR'): 0.093, ('T', 'ATO', 'MNST'): 0.093, ('ORCL', 'JNPR', 'WTW'): 0.093, ('EXPE', 'ORCL', 'WTW'): 0.093, ('JNPR', 'DPZ', 'MNST'): 0.093, ('TSN', 'JPM', 'MNST'): 0.093, ('JNPR', 'CSGP', 'DPZ'): 0.093, ('CSGP', 'DPZ', 'JPM'): 0.093, ('JNPR', 'CSGP', 'TGT'): 0.093, ('CSGP', 'JPM', 'DIS'): 0.093, ('JPM', 'TGT', 'DIS'): 0.093, ('CSGP', 'TGT', 'DIS'): 0.093, ('NTAP', 'MNST', 'KR'): 0.093, ('NTAP', 'HD', 'KR'): 0.093, ('BA', 'COST', 'KMX'): 0.093, ('DAL', 'WYNN', 'KMX'): 0.093, ('JNPR', 'WFC', 'LLY'): 0.093, ('CVS', 'MCD', 'WFC'): 0.093, ('JNPR', 'MCD', 'LLY'): 0.093, ('MCD', 'WFC', 'LLY'): 0.093, ('BA', 'GOOG', 'WYNN'): 0.093, ('BA', 'DAL', 'KMX'): 0.093, ('JNPR', 'AFL', 'MA'): 0.093, ('AFL', 'KMI', 'V'): 0.093, ('SJM', 'JNPR', 'V'): 0.093, ('SJM', 'AFL', 'V'): 0.093, ('SJM', 'JNPR', 'MA'): 0.093, ('SJM', 'AFL', 'MA'): 0.093, ('MCHP', 'JNPR', 'JNJ'): 0.093, ('MCHP', 'JNJ', 'COST'): 0.093, ('DAL', 'WYNN', 'DLTR'): 0.093, ('BA', 'GOOG', 'DAL'): 0.093, ('GOOG', 'WYNN', 'DLTR'): 0.093, ('GOOG', 'DAL', 'DLTR'): 0.093, ('JNPR', 'COF', 'BBY'): 0.093, ('COF', 'CVX', 'BBY'): 0.093, ('ADBE', 'NKE', 'COST'): 0.093, ('ADBE', 'NKE', 'WYNN'): 0.093, ('DXCM', 'AFL', 'MAR'): 0.093, ('AFL', 'JBHT', 'KMI'): 0.093, ('PCG', 'HAS', 'COST'): 0.093, ('DXCM', 'PCG', 'HAS'): 0.093, ('DXCM', 'JBHT', 'MAR'): 0.093, ('AFL', 'JBHT', 'MAR'): 0.093, ('JNPR', 'BBY', 'AXON'): 0.093, ('HSY', 'FDX', 'BBY'): 0.093, ('HSY', 'JNPR', 'AXON'): 0.093, ('HSY', 'BBY', 'AXON'): 0.093, ('TSN', 'DPZ', 'JPM'): 0.093, ('TSN', 'DPZ', 'MNST'): 0.093, ('MNST', 'KR', 'EBAY'): 0.093, ('HD', 'KR', 'EBAY'): 0.093}
+Median Dual TMFG Katz Centrality: 0.093
+TMFG Current Flow Centrality: {'SJM': 0.032, 'ADBE': 0.024, 'EXPE': 0.051, 'T': 0.068, 'DXCM': 0.15, 'KHC': 0.021, 'BA': 0.044, 'CPB': 0.029, 'UNH': 0.086, 'GOOG': 0.024, 'HSY': 0.028, 'AAPL': 0.021, 'MCHP': 0.029, 'TSN': 0.027, 'ORCL': 0.027, 'ATO': 0.022, 'PCG': 0.056, 'CVS': 0.089, 'JNPR': 0.675, 'MCD': 0.029, 'KO': 0.025, 'XOM': 0.03, 'EA': 0.025, 'COF': 0.019, 'NKE': 0.043, 'JNJ': 0.04, 'AFL': 0.096, 'HAS': 0.029, 'NTAP': 0.029, 'CVX': 0.039, 'JBHT': 0.029, 'LULU': 0.061, 'KMI': 0.059, 'MRK': 0.044, 'FDX': 0.053, 'ALL': 0.101, 'V': 0.033, 'CSGP': 0.045, 'MAR': 0.02, 'MA': 0.023, 'DPZ': 0.052, 'NFLX': 0.058, 'JPM': 0.236, 'MNST': 0.138, 'COST': 0.218, 'DAL': 0.036, 'HD': 0.132, 'KR': 0.027, 'TGT': 0.033, 'AZO': 0.053, 'WYNN': 0.13, 'KMX': 0.05, 'BBY': 0.048, 'WTW': 0.019, 'WFC': 0.044, 'DLTR': 0.016, 'EBAY': 0.018, 'DIS': 0.018, 'LLY': 0.018, 'AXON': 0.019}
+Dual TMFG Current Flow Centrality: {('JNPR', 'KO', 'JPM'): 0.219, ('JNPR', 'JPM', 'TGT'): 0.219, ('MCHP', 'JNPR', 'COST'): 0.155, ('NKE', 'JPM', 'COST'): 0.181, ('JNPR', 'JNJ', 'ALL'): 0.193, ('JNJ', 'ALL', 'COST'): 0.14, ('ALL', 'JPM', 'WYNN'): 0.211, ('ALL', 'COST', 'KMX'): 0.114, ('JNPR', 'XOM', 'COST'): 0.152, ('DXCM', 'JPM', 'COST'): 0.215, ('DXCM', 'JNPR', 'EA'): 0.139, ('DXCM', 'JPM', 'AZO'): 0.18, ('DXCM', 'PCG', 'JNPR'): 0.153, ('DXCM', 'HAS', 'COST'): 0.09, ('JNPR', 'KO', 'AZO'): 0.14, ('KO', 'JPM', 'AZO'): 0.121, ('PCG', 'JNPR', 'XOM'): 0.104, ('PCG', 'XOM', 'COST'): 0.077, ('BA', 'COST', 'WYNN'): 0.101, ('ALL', 'WYNN', 'KMX'): 0.109, ('JNPR', 'KMI', 'AZO'): 0.142, ('DXCM', 'KMI', 'AZO'): 0.118, ('JNPR', 'KMI', 'V'): 0.1, ('DXCM', 'JBHT', 'KMI'): 0.085, ('CVS', 'JNPR', 'ALL'): 0.24, ('CVS', 'ALL', 'JPM'): 0.238, ('CVS', 'JNPR', 'MCD'): 0.212, ('CVS', 'JPM', 'MNST'): 0.248, ('ATO', 'JNPR', 'MNST'): 0.209, ('CVS', 'MNST', 'HD'): 0.215, ('JNPR', 'LULU', 'HD'): 0.253, ('MNST', 'HD', 'EBAY'): 0.135, ('T', 'AAPL', 'JNPR'): 0.142, ('T', 'NFLX', 'HD'): 0.157, ('AAPL', 'JNPR', 'NFLX'): 0.122, ('T', 'AAPL', 'NFLX'): 0.074, ('T', 'NTAP', 'MNST'): 0.109, ('T', 'NTAP', 'HD'): 0.139, ('JNPR', 'HD', 'WFC'): 0.251, ('CVS', 'HD', 'WFC'): 0.169, ('KHC', 'JNPR', 'NFLX'): 0.119, ('UNH', 'NFLX', 'HD'): 0.159, ('CPB', 'UNH', 'JNPR'): 0.126, ('UNH', 'LULU', 'HD'): 0.171, ('JNPR', 'CVX', 'LULU'): 0.15, ('UNH', 'LULU', 'MRK'): 0.119, ('JNPR', 'EA', 'AFL'): 0.087, ('DXCM', 'EA', 'AFL'): 0.082, ('JNPR', 'MRK', 'FDX'): 0.11, ('LULU', 'MRK', 'FDX'): 0.092, ('EXPE', 'JNPR', 'MRK'): 0.103, ('EXPE', 'UNH', 'MRK'): 0.089, ('EXPE', 'JNPR', 'WTW'): 0.067, ('EXPE', 'CPB', 'UNH'): 0.078, ('CPB', 'ORCL', 'JNPR'): 0.063, ('EXPE', 'CPB', 'ORCL'): 0.04, ('NKE', 'JPM', 'WYNN'): 0.134, ('ADBE', 'COST', 'WYNN'): 0.097, ('HSY', 'JNPR', 'FDX'): 0.078, ('CVX', 'LULU', 'FDX'): 0.092, ('JNPR', 'COF', 'CVX'): 0.073, ('CVX', 'FDX', 'BBY'): 0.059, ('KHC', 'UNH', 'JNPR'): 0.131, ('KHC', 'UNH', 'NFLX'): 0.074, ('T', 'ATO', 'JNPR'): 0.151, ('T', 'ATO', 'MNST'): 0.114, ('ORCL', 'JNPR', 'WTW'): 0.042, ('EXPE', 'ORCL', 'WTW'): 0.035, ('JNPR', 'DPZ', 'MNST'): 0.224, ('TSN', 'JPM', 'MNST'): 0.128, ('JNPR', 'CSGP', 'DPZ'): 0.163, ('CSGP', 'DPZ', 'JPM'): 0.117, ('JNPR', 'CSGP', 'TGT'): 0.137, ('CSGP', 'JPM', 'DIS'): 0.098, ('JPM', 'TGT', 'DIS'): 0.097, ('CSGP', 'TGT', 'DIS'): 0.044, ('NTAP', 'MNST', 'KR'): 0.074, ('NTAP', 'HD', 'KR'): 0.087, ('BA', 'COST', 'KMX'): 0.081, ('DAL', 'WYNN', 'KMX'): 0.071, ('JNPR', 'WFC', 'LLY'): 0.132, ('CVS', 'MCD', 'WFC'): 0.116, ('JNPR', 'MCD', 'LLY'): 0.107, ('MCD', 'WFC', 'LLY'): 0.06, ('BA', 'GOOG', 'WYNN'): 0.053, ('BA', 'DAL', 'KMX'): 0.048, ('JNPR', 'AFL', 'MA'): 0.074, ('AFL', 'KMI', 'V'): 0.067, ('SJM', 'JNPR', 'V'): 0.057, ('SJM', 'AFL', 'V'): 0.048, ('SJM', 'JNPR', 'MA'): 0.043, ('SJM', 'AFL', 'MA'): 0.041, ('MCHP', 'JNPR', 'JNJ'): 0.107, ('MCHP', 'JNJ', 'COST'): 0.092, ('DAL', 'WYNN', 'DLTR'): 0.038, ('BA', 'GOOG', 'DAL'): 0.037, ('GOOG', 'WYNN', 'DLTR'): 0.028, ('GOOG', 'DAL', 'DLTR'): 0.022, ('JNPR', 'COF', 'BBY'): 0.051, ('COF', 'CVX', 'BBY'): 0.039, ('ADBE', 'NKE', 'COST'): 0.087, ('ADBE', 'NKE', 'WYNN'): 0.058, ('DXCM', 'AFL', 'MAR'): 0.07, ('AFL', 'JBHT', 'KMI'): 0.063, ('PCG', 'HAS', 'COST'): 0.067, ('DXCM', 'PCG', 'HAS'): 0.072, ('DXCM', 'JBHT', 'MAR'): 0.047, ('AFL', 'JBHT', 'MAR'): 0.043, ('JNPR', 'BBY', 'AXON'): 0.045, ('HSY', 'FDX', 'BBY'): 0.049, ('HSY', 'JNPR', 'AXON'): 0.039, ('HSY', 'BBY', 'AXON'): 0.026, ('TSN', 'DPZ', 'JPM'): 0.107, ('TSN', 'DPZ', 'MNST'): 0.095, ('MNST', 'KR', 'EBAY'): 0.069, ('HD', 'KR', 'EBAY'): 0.073}
+Median Dual TMFG Current Flow Centrality: 0.099
+TMFG Communicability Betweenness Centrality: {'SJM': 0.059, 'ADBE': 0.019, 'EXPE': 0.087, 'T': 0.125, 'DXCM': 0.25, 'KHC': 0.049, 'BA': 0.043, 'CPB': 0.06, 'UNH': 0.139, 'GOOG': 0.016, 'HSY': 0.056, 'AAPL': 0.048, 'MCHP': 0.059, 'TSN': 0.024, 'ORCL': 0.054, 'ATO': 0.055, 'PCG': 0.099, 'CVS': 0.169, 'JNPR': 0.932, 'MCD': 0.06, 'KO': 0.063, 'XOM': 0.061, 'EA': 0.058, 'COF': 0.044, 'NKE': 0.044, 'JNJ': 0.081, 'AFL': 0.147, 'HAS': 0.023, 'NTAP': 0.027, 'CVX': 0.073, 'JBHT': 0.024, 'LULU': 0.106, 'KMI': 0.106, 'MRK': 0.08, 'FDX': 0.089, 'ALL': 0.184, 'V': 0.063, 'CSGP': 0.091, 'MAR': 0.014, 'MA': 0.047, 'DPZ': 0.103, 'NFLX': 0.103, 'JPM': 0.396, 'MNST': 0.23, 'COST': 0.34, 'DAL': 0.024, 'HD': 0.219, 'KR': 0.022, 'TGT': 0.074, 'AZO': 0.108, 'WYNN': 0.154, 'KMX': 0.051, 'BBY': 0.081, 'WTW': 0.043, 'WFC': 0.084, 'DLTR': 0.01, 'EBAY': 0.016, 'DIS': 0.017, 'LLY': 0.043, 'AXON': 0.043}
+Dual TMFG Communicability Betweenness Centrality: {('JNPR', 'KO', 'JPM'): 0.124, ('JNPR', 'JPM', 'TGT'): 0.127, ('MCHP', 'JNPR', 'COST'): 0.102, ('NKE', 'JPM', 'COST'): 0.166, ('JNPR', 'JNJ', 'ALL'): 0.135, ('JNJ', 'ALL', 'COST'): 0.05, ('ALL', 'JPM', 'WYNN'): 0.251, ('ALL', 'COST', 'KMX'): 0.048, ('JNPR', 'XOM', 'COST'): 0.094, ('DXCM', 'JPM', 'COST'): 0.183, ('DXCM', 'JNPR', 'EA'): 0.064, ('DXCM', 'JPM', 'AZO'): 0.153, ('DXCM', 'PCG', 'JNPR'): 0.08, ('DXCM', 'HAS', 'COST'): 0.059, ('JNPR', 'KO', 'AZO'): 0.078, ('KO', 'JPM', 'AZO'): 0.067, ('PCG', 'JNPR', 'XOM'): 0.068, ('PCG', 'XOM', 'COST'): 0.024, ('BA', 'COST', 'WYNN'): 0.036, ('ALL', 'WYNN', 'KMX'): 0.102, ('JNPR', 'KMI', 'AZO'): 0.096, ('DXCM', 'KMI', 'AZO'): 0.11, ('JNPR', 'KMI', 'V'): 0.067, ('DXCM', 'JBHT', 'KMI'): 0.062, ('CVS', 'JNPR', 'ALL'): 0.182, ('CVS', 'ALL', 'JPM'): 0.278, ('CVS', 'JNPR', 'MCD'): 0.138, ('CVS', 'JPM', 'MNST'): 0.284, ('ATO', 'JNPR', 'MNST'): 0.132, ('CVS', 'MNST', 'HD'): 0.231, ('JNPR', 'LULU', 'HD'): 0.284, ('MNST', 'HD', 'EBAY'): 0.064, ('T', 'AAPL', 'JNPR'): 0.085, ('T', 'NFLX', 'HD'): 0.066, ('AAPL', 'JNPR', 'NFLX'): 0.059, ('T', 'AAPL', 'NFLX'): 0.031, ('T', 'NTAP', 'MNST'): 0.039, ('T', 'NTAP', 'HD'): 0.049, ('JNPR', 'HD', 'WFC'): 0.277, ('CVS', 'HD', 'WFC'): 0.224, ('KHC', 'JNPR', 'NFLX'): 0.054, ('UNH', 'NFLX', 'HD'): 0.093, ('CPB', 'UNH', 'JNPR'): 0.048, ('UNH', 'LULU', 'HD'): 0.177, ('JNPR', 'CVX', 'LULU'): 0.141, ('UNH', 'LULU', 'MRK'): 0.114, ('JNPR', 'EA', 'AFL'): 0.034, ('DXCM', 'EA', 'AFL'): 0.021, ('JNPR', 'MRK', 'FDX'): 0.036, ('LULU', 'MRK', 'FDX'): 0.047, ('EXPE', 'JNPR', 'MRK'): 0.038, ('EXPE', 'UNH', 'MRK'): 0.073, ('EXPE', 'JNPR', 'WTW'): 0.019, ('EXPE', 'CPB', 'UNH'): 0.037, ('CPB', 'ORCL', 'JNPR'): 0.021, ('EXPE', 'CPB', 'ORCL'): 0.015, ('NKE', 'JPM', 'WYNN'): 0.166, ('ADBE', 'COST', 'WYNN'): 0.037, ('HSY', 'JNPR', 'FDX'): 0.018, ('CVX', 'LULU', 'FDX'): 0.062, ('JNPR', 'COF', 'CVX'): 0.062, ('CVX', 'FDX', 'BBY'): 0.032, ('KHC', 'UNH', 'JNPR'): 0.055, ('KHC', 'UNH', 'NFLX'): 0.038, ('T', 'ATO', 'JNPR'): 0.094, ('T', 'ATO', 'MNST'): 0.044, ('ORCL', 'JNPR', 'WTW'): 0.009, ('EXPE', 'ORCL', 'WTW'): 0.005, ('JNPR', 'DPZ', 'MNST'): 0.152, ('TSN', 'JPM', 'MNST'): 0.109, ('JNPR', 'CSGP', 'DPZ'): 0.127, ('CSGP', 'DPZ', 'JPM'): 0.05, ('JNPR', 'CSGP', 'TGT'): 0.115, ('CSGP', 'JPM', 'DIS'): 0.027, ('JPM', 'TGT', 'DIS'): 0.02, ('CSGP', 'TGT', 'DIS'): 0.009, ('NTAP', 'MNST', 'KR'): 0.02, ('NTAP', 'HD', 'KR'): 0.028, ('BA', 'COST', 'KMX'): 0.03, ('DAL', 'WYNN', 'KMX'): 0.064, ('JNPR', 'WFC', 'LLY'): 0.07, ('CVS', 'MCD', 'WFC'): 0.071, ('JNPR', 'MCD', 'LLY'): 0.066, ('MCD', 'WFC', 'LLY'): 0.015, ('BA', 'GOOG', 'WYNN'): 0.016, ('BA', 'DAL', 'KMX'): 0.02, ('JNPR', 'AFL', 'MA'): 0.024, ('AFL', 'KMI', 'V'): 0.02, ('SJM', 'JNPR', 'V'): 0.033, ('SJM', 'AFL', 'V'): 0.012, ('SJM', 'JNPR', 'MA'): 0.016, ('SJM', 'AFL', 'MA'): 0.008, ('MCHP', 'JNPR', 'JNJ'): 0.092, ('MCHP', 'JNJ', 'COST'): 0.031, ('DAL', 'WYNN', 'DLTR'): 0.026, ('BA', 'GOOG', 'DAL'): 0.009, ('GOOG', 'WYNN', 'DLTR'): 0.007, ('GOOG', 'DAL', 'DLTR'): 0.004, ('JNPR', 'COF', 'BBY'): 0.034, ('COF', 'CVX', 'BBY'): 0.01, ('ADBE', 'NKE', 'COST'): 0.037, ('ADBE', 'NKE', 'WYNN'): 0.029, ('DXCM', 'AFL', 'MAR'): 0.016, ('AFL', 'JBHT', 'KMI'): 0.021, ('PCG', 'HAS', 'COST'): 0.021, ('DXCM', 'PCG', 'HAS'): 0.031, ('DXCM', 'JBHT', 'MAR'): 0.024, ('AFL', 'JBHT', 'MAR'): 0.008, ('JNPR', 'BBY', 'AXON'): 0.019, ('HSY', 'FDX', 'BBY'): 0.017, ('HSY', 'JNPR', 'AXON'): 0.007, ('HSY', 'BBY', 'AXON'): 0.004, ('TSN', 'DPZ', 'JPM'): 0.055, ('TSN', 'DPZ', 'MNST'): 0.058, ('MNST', 'KR', 'EBAY'): 0.023, ('HD', 'KR', 'EBAY'): 0.029}
+Median Dual TMFG Communicability Betweenness Centrality: 0.0485
+TMFG Load Centrality: {'SJM': 0.0, 'ADBE': 0.0, 'EXPE': 0.001, 'T': 0.01, 'DXCM': 0.06, 'KHC': 0.0, 'BA': 0.013, 'CPB': 0.0, 'UNH': 0.006, 'GOOG': 0.0, 'HSY': 0.0, 'AAPL': 0.0, 'MCHP': 0.0, 'TSN': 0.0, 'ORCL': 0.0, 'ATO': 0.0, 'PCG': 0.007, 'CVS': 0.009, 'JNPR': 0.683, 'MCD': 0.0, 'KO': 0.0, 'XOM': 0.0, 'EA': 0.0, 'COF': 0.0, 'NKE': 0.002, 'JNJ': 0.0, 'AFL': 0.023, 'HAS': 0.0, 'NTAP': 0.0, 'CVX': 0.001, 'JBHT': 0.0, 'LULU': 0.003, 'KMI': 0.008, 'MRK': 0.001, 'FDX': 0.001, 'ALL': 0.036, 'V': 0.0, 'CSGP': 0.006, 'MAR': 0.0, 'MA': 0.0, 'DPZ': 0.006, 'NFLX': 0.002, 'JPM': 0.128, 'MNST': 0.064, 'COST': 0.138, 'DAL': 0.001, 'HD': 0.043, 'KR': 0.0, 'TGT': 0.006, 'AZO': 0.002, 'WYNN': 0.084, 'KMX': 0.007, 'BBY': 0.001, 'WTW': 0.0, 'WFC': 0.002, 'DLTR': 0.0, 'EBAY': 0.0, 'DIS': 0.0, 'LLY': 0.0, 'AXON': 0.0}
+Dual TMFG Load Centrality: {('JNPR', 'KO', 'JPM'): 0.117, ('JNPR', 'JPM', 'TGT'): 0.12, ('MCHP', 'JNPR', 'COST'): 0.098, ('NKE', 'JPM', 'COST'): 0.17, ('JNPR', 'JNJ', 'ALL'): 0.128, ('JNJ', 'ALL', 'COST'): 0.039, ('ALL', 'JPM', 'WYNN'): 0.258, ('ALL', 'COST', 'KMX'): 0.042, ('JNPR', 'XOM', 'COST'): 0.091, ('DXCM', 'JPM', 'COST'): 0.19, ('DXCM', 'JNPR', 'EA'): 0.062, ('DXCM', 'JPM', 'AZO'): 0.157, ('DXCM', 'PCG', 'JNPR'): 0.077, ('DXCM', 'HAS', 'COST'): 0.059, ('JNPR', 'KO', 'AZO'): 0.064, ('KO', 'JPM', 'AZO'): 0.056, ('PCG', 'JNPR', 'XOM'): 0.063, ('PCG', 'XOM', 'COST'): 0.015, ('BA', 'COST', 'WYNN'): 0.034, ('ALL', 'WYNN', 'KMX'): 0.101, ('JNPR', 'KMI', 'AZO'): 0.092, ('DXCM', 'KMI', 'AZO'): 0.113, ('JNPR', 'KMI', 'V'): 0.065, ('DXCM', 'JBHT', 'KMI'): 0.06, ('CVS', 'JNPR', 'ALL'): 0.161, ('CVS', 'ALL', 'JPM'): 0.281, ('CVS', 'JNPR', 'MCD'): 0.12, ('CVS', 'JPM', 'MNST'): 0.3, ('ATO', 'JNPR', 'MNST'): 0.129, ('CVS', 'MNST', 'HD'): 0.245, ('JNPR', 'LULU', 'HD'): 0.285, ('MNST', 'HD', 'EBAY'): 0.06, ('T', 'AAPL', 'JNPR'): 0.082, ('T', 'NFLX', 'HD'): 0.06, ('AAPL', 'JNPR', 'NFLX'): 0.054, ('T', 'AAPL', 'NFLX'): 0.021, ('T', 'NTAP', 'MNST'): 0.034, ('T', 'NTAP', 'HD'): 0.044, ('JNPR', 'HD', 'WFC'): 0.278, ('CVS', 'HD', 'WFC'): 0.232, ('KHC', 'JNPR', 'NFLX'): 0.049, ('UNH', 'NFLX', 'HD'): 0.087, ('CPB', 'UNH', 'JNPR'): 0.045, ('UNH', 'LULU', 'HD'): 0.176, ('JNPR', 'CVX', 'LULU'): 0.139, ('UNH', 'LULU', 'MRK'): 0.113, ('JNPR', 'EA', 'AFL'): 0.031, ('DXCM', 'EA', 'AFL'): 0.015, ('JNPR', 'MRK', 'FDX'): 0.029, ('LULU', 'MRK', 'FDX'): 0.039, ('EXPE', 'JNPR', 'MRK'): 0.036, ('EXPE', 'UNH', 'MRK'): 0.074, ('EXPE', 'JNPR', 'WTW'): 0.018, ('EXPE', 'CPB', 'UNH'): 0.035, ('CPB', 'ORCL', 'JNPR'): 0.018, ('EXPE', 'CPB', 'ORCL'): 0.011, ('NKE', 'JPM', 'WYNN'): 0.168, ('ADBE', 'COST', 'WYNN'): 0.035, ('HSY', 'JNPR', 'FDX'): 0.014, ('CVX', 'LULU', 'FDX'): 0.058, ('JNPR', 'COF', 'CVX'): 0.062, ('CVX', 'FDX', 'BBY'): 0.028, ('KHC', 'UNH', 'JNPR'): 0.051, ('KHC', 'UNH', 'NFLX'): 0.03, ('T', 'ATO', 'JNPR'): 0.087, ('T', 'ATO', 'MNST'): 0.032, ('ORCL', 'JNPR', 'WTW'): 0.008, ('EXPE', 'ORCL', 'WTW'): 0.001, ('JNPR', 'DPZ', 'MNST'): 0.148, ('TSN', 'JPM', 'MNST'): 0.104, ('JNPR', 'CSGP', 'DPZ'): 0.12, ('CSGP', 'DPZ', 'JPM'): 0.044, ('JNPR', 'CSGP', 'TGT'): 0.109, ('CSGP', 'JPM', 'DIS'): 0.024, ('JPM', 'TGT', 'DIS'): 0.015, ('CSGP', 'TGT', 'DIS'): 0.001, ('NTAP', 'MNST', 'KR'): 0.014, ('NTAP', 'HD', 'KR'): 0.023, ('BA', 'COST', 'KMX'): 0.024, ('DAL', 'WYNN', 'KMX'): 0.064, ('JNPR', 'WFC', 'LLY'): 0.057, ('CVS', 'MCD', 'WFC'): 0.055, ('JNPR', 'MCD', 'LLY'): 0.058, ('MCD', 'WFC', 'LLY'): 0.001, ('BA', 'GOOG', 'WYNN'): 0.014, ('BA', 'DAL', 'KMX'): 0.016, ('JNPR', 'AFL', 'MA'): 0.024, ('AFL', 'KMI', 'V'): 0.017, ('SJM', 'JNPR', 'V'): 0.032, ('SJM', 'AFL', 'V'): 0.008, ('SJM', 'JNPR', 'MA'): 0.015, ('SJM', 'AFL', 'MA'): 0.004, ('MCHP', 'JNPR', 'JNJ'): 0.09, ('MCHP', 'JNJ', 'COST'): 0.017, ('DAL', 'WYNN', 'DLTR'): 0.026, ('BA', 'GOOG', 'DAL'): 0.005, ('GOOG', 'WYNN', 'DLTR'): 0.004, ('GOOG', 'DAL', 'DLTR'): 0.0, ('JNPR', 'COF', 'BBY'): 0.033, ('COF', 'CVX', 'BBY'): 0.001, ('ADBE', 'NKE', 'COST'): 0.033, ('ADBE', 'NKE', 'WYNN'): 0.02, ('DXCM', 'AFL', 'MAR'): 0.013, ('AFL', 'JBHT', 'KMI'): 0.018, ('PCG', 'HAS', 'COST'): 0.015, ('DXCM', 'PCG', 'HAS'): 0.025, ('DXCM', 'JBHT', 'MAR'): 0.022, ('AFL', 'JBHT', 'MAR'): 0.004, ('JNPR', 'BBY', 'AXON'): 0.02, ('HSY', 'FDX', 'BBY'): 0.014, ('HSY', 'JNPR', 'AXON'): 0.005, ('HSY', 'BBY', 'AXON'): 0.001, ('TSN', 'DPZ', 'JPM'): 0.044, ('TSN', 'DPZ', 'MNST'): 0.048, ('MNST', 'KR', 'EBAY'): 0.016, ('HD', 'KR', 'EBAY'): 0.024}
+Median Dual TMFG Load Centrality: 0.043
+TMFG Harmonic Centrality: {'CPB': 28.583, 'AZO': 30.5, 'V': 28.917, 'KMX': 24.917, 'DAL': 21.083, 'MAR': 23.0, 'MA': 28.417, 'ADBE': 23.75, 'WFC': 29.583, 'HD': 32.75, 'XOM': 29.333, 'JPM': 37.0, 'COF': 28.083, 'JNPR': 50.5, 'AFL': 31.583, 'UNH': 31.083, 'PCG': 30.667, 'KMI': 30.083, 'KR': 23.417, 'BA': 24.75, 'GOOG': 20.583, 'NTAP': 23.583, 'EBAY': 22.917, 'HAS': 24.25, 'ALL': 32.167, 'EXPE': 29.583, 'AAPL': 28.25, 'HSY': 28.583, 'EA': 28.583, 'DPZ': 30.5, 'CVS': 31.667, 'MCD': 28.583, 'JBHT': 23.5, 'MCHP': 29.333, 'KO': 29.0, 'LLY': 28.083, 'ATO': 28.75, 'LULU': 30.083, 'FDX': 29.583, 'ORCL': 28.583, 'CSGP': 30.0, 'NKE': 26.0, 'TGT': 29.5, 'SJM': 28.917, 'T': 30.75, 'DLTR': 20.083, 'DIS': 23.667, 'TSN': 24.667, 'COST': 36.0, 'WYNN': 29.0, 'CVX': 29.083, 'JNJ': 29.833, 'KHC': 28.083, 'NFLX': 30.083, 'BBY': 29.583, 'MNST': 33.5, 'AXON': 28.083, 'DXCM': 34.0, 'WTW': 28.083, 'MRK': 29.083}
+Dual TMFG Harmonic Centrality: {('SJM', 'JNPR', 'MA'): 16.909, ('BA', 'COST', 'WYNN'): 19.93, ('CSGP', 'TGT', 'DIS'): 18.612, ('JNPR', 'WFC', 'LLY'): 21.359, ('JNPR', 'CSGP', 'DPZ'): 21.152, ('DAL', 'WYNN', 'KMX'): 20.647, ('ADBE', 'COST', 'WYNN'): 20.356, ('JNJ', 'ALL', 'COST'): 21.635, ('TSN', 'DPZ', 'MNST'): 21.835, ('LULU', 'MRK', 'FDX'): 20.407, ('CVX', 'FDX', 'BBY'): 18.872, ('DXCM', 'JBHT', 'MAR'): 17.966, ('NTAP', 'MNST', 'KR'): 19.917, ('AAPL', 'JNPR', 'NFLX'): 19.487, ('UNH', 'LULU', 'MRK'): 21.657, ('MCHP', 'JNJ', 'COST'): 20.017, ('CVS', 'HD', 'WFC'): 23.661, ('KHC', 'JNPR', 'NFLX'): 19.432, ('AFL', 'JBHT', 'KMI'): 18.384, ('JNPR', 'HD', 'WFC'): 23.163, ('HSY', 'FDX', 'BBY'): 17.778, ('JNPR', 'AFL', 'MA'): 17.274, ('UNH', 'LULU', 'HD'): 22.88, ('HSY', 'BBY', 'AXON'): 16.029, ('COF', 'CVX', 'BBY'): 18.092, ('JNPR', 'MRK', 'FDX'): 19.382, ('JNPR', 'CSGP', 'TGT'): 20.414, ('MNST', 'HD', 'EBAY'): 21.876, ('JNPR', 'KO', 'JPM'): 20.438, ('TSN', 'JPM', 'MNST'): 22.803, ('ORCL', 'JNPR', 'WTW'): 16.765, ('BA', 'GOOG', 'WYNN'): 18.074, ('UNH', 'NFLX', 'HD'): 21.992, ('CVX', 'LULU', 'FDX'): 20.461, ('DAL', 'WYNN', 'DLTR'): 18.518, ('HSY', 'JNPR', 'AXON'): 16.665, ('DXCM', 'EA', 'AFL'): 18.009, ('DXCM', 'PCG', 'JNPR'): 19.842, ('CVS', 'JNPR', 'MCD'): 22.353, ('DXCM', 'KMI', 'AZO'): 20.983, ('CVS', 'ALL', 'JPM'): 24.939, ('SJM', 'AFL', 'V'): 16.979, ('NTAP', 'HD', 'KR'): 20.236, ('EXPE', 'JNPR', 'MRK'): 19.255, ('T', 'NFLX', 'HD'): 21.374, ('SJM', 'JNPR', 'V'): 17.759, ('CPB', 'ORCL', 'JNPR'): 17.207, ('JNPR', 'KO', 'AZO'): 20.177, ('DXCM', 'PCG', 'HAS'): 19.68, ('DXCM', 'AFL', 'MAR'): 17.702, ('JNPR', 'LULU', 'HD'): 23.256, ('KHC', 'UNH', 'JNPR'): 19.412, ('CVS', 'MNST', 'HD'): 24.229, ('BA', 'GOOG', 'DAL'): 18.017, ('HD', 'KR', 'EBAY'): 20.252, ('T', 'AAPL', 'JNPR'): 20.169, ('CVS', 'JNPR', 'ALL'): 23.72, ('AFL', 'KMI', 'V'): 18.055, ('MNST', 'KR', 'EBAY'): 20.027, ('KO', 'JPM', 'AZO'): 20.907, ('MCHP', 'JNPR', 'JNJ'): 20.579, ('PCG', 'JNPR', 'XOM'): 19.298, ('DXCM', 'JPM', 'AZO'): 22.286, ('CSGP', 'DPZ', 'JPM'): 20.871, ('ADBE', 'NKE', 'COST'): 20.512, ('TSN', 'DPZ', 'JPM'): 21.439, ('NKE', 'JPM', 'COST'): 22.769, ('JPM', 'TGT', 'DIS'): 18.986, ('BA', 'COST', 'KMX'): 20.507, ('ALL', 'WYNN', 'KMX'): 22.763, ('HSY', 'JNPR', 'FDX'): 17.848, ('T', 'NTAP', 'MNST'): 20.749, ('JNPR', 'BBY', 'AXON'): 17.022, ('AFL', 'JBHT', 'MAR'): 17.155, ('JNPR', 'XOM', 'COST'): 19.863, ('DXCM', 'JBHT', 'KMI'): 19.453, ('CVS', 'JPM', 'MNST'): 24.845, ('CVS', 'MCD', 'WFC'): 22.228, ('JNPR', 'CVX', 'LULU'): 21.544, ('JNPR', 'COF', 'CVX'): 19.34, ('JNPR', 'EA', 'AFL'): 17.951, ('JNPR', 'JNJ', 'ALL'): 22.362, ('EXPE', 'CPB', 'UNH'): 19.082, ('BA', 'DAL', 'KMX'): 19.401, ('JNPR', 'DPZ', 'MNST'): 22.119, ('T', 'NTAP', 'HD'): 21.17, ('T', 'ATO', 'JNPR'): 20.56, ('JNPR', 'MCD', 'LLY'): 20.931, ('DXCM', 'JNPR', 'EA'): 18.794, ('JNPR', 'KMI', 'AZO'): 20.426, ('EXPE', 'ORCL', 'WTW'): 16.181, ('PCG', 'HAS', 'COST'): 19.598, ('CSGP', 'JPM', 'DIS'): 19.638, ('EXPE', 'UNH', 'MRK'): 20.307, ('MCD', 'WFC', 'LLY'): 20.18, ('DXCM', 'HAS', 'COST'): 20.989, ('KHC', 'UNH', 'NFLX'): 20.225, ('T', 'AAPL', 'NFLX'): 20.14, ('GOOG', 'WYNN', 'DLTR'): 17.391, ('EXPE', 'JNPR', 'WTW'): 17.538, ('JNPR', 'KMI', 'V'): 19.1, ('ADBE', 'NKE', 'WYNN'): 20.64, ('NKE', 'JPM', 'WYNN'): 23.178, ('JNPR', 'JPM', 'TGT'): 20.245, ('DXCM', 'JPM', 'COST'): 22.877, ('EXPE', 'CPB', 'ORCL'): 17.168, ('MCHP', 'JNPR', 'COST'): 20.281, ('T', 'ATO', 'MNST'): 20.588, ('GOOG', 'DAL', 'DLTR'): 16.888, ('SJM', 'AFL', 'MA'): 16.353, ('JNPR', 'COF', 'BBY'): 17.866, ('ATO', 'JNPR', 'MNST'): 21.195, ('ALL', 'COST', 'KMX'): 21.696, ('PCG', 'XOM', 'COST'): 19.347, ('CPB', 'UNH', 'JNPR'): 18.771, ('ALL', 'JPM', 'WYNN'): 24.394}
+Median Dual TMFG Harmonic Centrality: 20.1785
+TMFG Percolation Centrality: {'SJM': 0.0, 'ADBE': 0.0, 'EXPE': 0.001, 'T': 0.01, 'DXCM': 0.06, 'KHC': 0.0, 'BA': 0.011, 'CPB': 0.0, 'UNH': 0.006, 'GOOG': 0.0, 'HSY': 0.0, 'AAPL': 0.0, 'MCHP': 0.0, 'TSN': 0.0, 'ORCL': 0.0, 'ATO': 0.0, 'PCG': 0.007, 'CVS': 0.009, 'JNPR': 0.686, 'MCD': 0.0, 'KO': 0.0, 'XOM': 0.0, 'EA': 0.0, 'COF': 0.0, 'NKE': 0.002, 'JNJ': 0.0, 'AFL': 0.023, 'HAS': 0.0, 'NTAP': 0.0, 'CVX': 0.001, 'JBHT': 0.0, 'LULU': 0.003, 'KMI': 0.008, 'MRK': 0.001, 'FDX': 0.001, 'ALL': 0.036, 'V': 0.0, 'CSGP': 0.006, 'MAR': 0.0, 'MA': 0.0, 'DPZ': 0.006, 'NFLX': 0.002, 'JPM': 0.126, 'MNST': 0.064, 'COST': 0.139, 'DAL': 0.001, 'HD': 0.042, 'KR': 0.0, 'TGT': 0.006, 'AZO': 0.002, 'WYNN': 0.085, 'KMX': 0.008, 'BBY': 0.001, 'WTW': 0.0, 'WFC': 0.002, 'DLTR': 0.0, 'EBAY': 0.0, 'DIS': 0.0, 'LLY': 0.0, 'AXON': 0.0}
+Dual TMFG Percolation Centrality: {('JNPR', 'KO', 'JPM'): 0.119, ('JNPR', 'JPM', 'TGT'): 0.122, ('MCHP', 'JNPR', 'COST'): 0.098, ('NKE', 'JPM', 'COST'): 0.169, ('JNPR', 'JNJ', 'ALL'): 0.128, ('JNJ', 'ALL', 'COST'): 0.039, ('ALL', 'JPM', 'WYNN'): 0.256, ('ALL', 'COST', 'KMX'): 0.042, ('JNPR', 'XOM', 'COST'): 0.091, ('DXCM', 'JPM', 'COST'): 0.188, ('DXCM', 'JNPR', 'EA'): 0.062, ('DXCM', 'JPM', 'AZO'): 0.156, ('DXCM', 'PCG', 'JNPR'): 0.077, ('DXCM', 'HAS', 'COST'): 0.058, ('JNPR', 'KO', 'AZO'): 0.065, ('KO', 'JPM', 'AZO'): 0.055, ('PCG', 'JNPR', 'XOM'): 0.063, ('PCG', 'XOM', 'COST'): 0.015, ('BA', 'COST', 'WYNN'): 0.035, ('ALL', 'WYNN', 'KMX'): 0.101, ('JNPR', 'KMI', 'AZO'): 0.093, ('DXCM', 'KMI', 'AZO'): 0.113, ('JNPR', 'KMI', 'V'): 0.065, ('DXCM', 'JBHT', 'KMI'): 0.061, ('CVS', 'JNPR', 'ALL'): 0.162, ('CVS', 'ALL', 'JPM'): 0.279, ('CVS', 'JNPR', 'MCD'): 0.121, ('CVS', 'JPM', 'MNST'): 0.298, ('ATO', 'JNPR', 'MNST'): 0.13, ('CVS', 'MNST', 'HD'): 0.243, ('JNPR', 'LULU', 'HD'): 0.284, ('MNST', 'HD', 'EBAY'): 0.06, ('T', 'AAPL', 'JNPR'): 0.082, ('T', 'NFLX', 'HD'): 0.062, ('AAPL', 'JNPR', 'NFLX'): 0.053, ('T', 'AAPL', 'NFLX'): 0.022, ('T', 'NTAP', 'MNST'): 0.035, ('T', 'NTAP', 'HD'): 0.045, ('JNPR', 'HD', 'WFC'): 0.277, ('CVS', 'HD', 'WFC'): 0.232, ('KHC', 'JNPR', 'NFLX'): 0.049, ('UNH', 'NFLX', 'HD'): 0.089, ('CPB', 'UNH', 'JNPR'): 0.045, ('UNH', 'LULU', 'HD'): 0.177, ('JNPR', 'CVX', 'LULU'): 0.138, ('UNH', 'LULU', 'MRK'): 0.114, ('JNPR', 'EA', 'AFL'): 0.03, ('DXCM', 'EA', 'AFL'): 0.015, ('JNPR', 'MRK', 'FDX'): 0.029, ('LULU', 'MRK', 'FDX'): 0.04, ('EXPE', 'JNPR', 'MRK'): 0.035, ('EXPE', 'UNH', 'MRK'): 0.074, ('EXPE', 'JNPR', 'WTW'): 0.018, ('EXPE', 'CPB', 'UNH'): 0.035, ('CPB', 'ORCL', 'JNPR'): 0.018, ('EXPE', 'CPB', 'ORCL'): 0.012, ('NKE', 'JPM', 'WYNN'): 0.166, ('ADBE', 'COST', 'WYNN'): 0.034, ('HSY', 'JNPR', 'FDX'): 0.014, ('CVX', 'LULU', 'FDX'): 0.058, ('JNPR', 'COF', 'CVX'): 0.061, ('CVX', 'FDX', 'BBY'): 0.028, ('KHC', 'UNH', 'JNPR'): 0.051, ('KHC', 'UNH', 'NFLX'): 0.03, ('T', 'ATO', 'JNPR'): 0.088, ('T', 'ATO', 'MNST'): 0.032, ('ORCL', 'JNPR', 'WTW'): 0.008, ('EXPE', 'ORCL', 'WTW'): 0.001, ('JNPR', 'DPZ', 'MNST'): 0.149, ('TSN', 'JPM', 'MNST'): 0.104, ('JNPR', 'CSGP', 'DPZ'): 0.122, ('CSGP', 'DPZ', 'JPM'): 0.044, ('JNPR', 'CSGP', 'TGT'): 0.111, ('CSGP', 'JPM', 'DIS'): 0.023, ('JPM', 'TGT', 'DIS'): 0.015, ('CSGP', 'TGT', 'DIS'): 0.001, ('NTAP', 'MNST', 'KR'): 0.015, ('NTAP', 'HD', 'KR'): 0.023, ('BA', 'COST', 'KMX'): 0.025, ('DAL', 'WYNN', 'KMX'): 0.064, ('JNPR', 'WFC', 'LLY'): 0.056, ('CVS', 'MCD', 'WFC'): 0.057, ('JNPR', 'MCD', 'LLY'): 0.057, ('MCD', 'WFC', 'LLY'): 0.001, ('BA', 'GOOG', 'WYNN'): 0.015, ('BA', 'DAL', 'KMX'): 0.016, ('JNPR', 'AFL', 'MA'): 0.023, ('AFL', 'KMI', 'V'): 0.017, ('SJM', 'JNPR', 'V'): 0.032, ('SJM', 'AFL', 'V'): 0.009, ('SJM', 'JNPR', 'MA'): 0.015, ('SJM', 'AFL', 'MA'): 0.004, ('MCHP', 'JNPR', 'JNJ'): 0.09, ('MCHP', 'JNJ', 'COST'): 0.017, ('DAL', 'WYNN', 'DLTR'): 0.025, ('BA', 'GOOG', 'DAL'): 0.005, ('GOOG', 'WYNN', 'DLTR'): 0.004, ('GOOG', 'DAL', 'DLTR'): 0.0, ('JNPR', 'COF', 'BBY'): 0.033, ('COF', 'CVX', 'BBY'): 0.001, ('ADBE', 'NKE', 'COST'): 0.033, ('ADBE', 'NKE', 'WYNN'): 0.02, ('DXCM', 'AFL', 'MAR'): 0.013, ('AFL', 'JBHT', 'KMI'): 0.018, ('PCG', 'HAS', 'COST'): 0.015, ('DXCM', 'PCG', 'HAS'): 0.025, ('DXCM', 'JBHT', 'MAR'): 0.022, ('AFL', 'JBHT', 'MAR'): 0.004, ('JNPR', 'BBY', 'AXON'): 0.02, ('HSY', 'FDX', 'BBY'): 0.014, ('HSY', 'JNPR', 'AXON'): 0.005, ('HSY', 'BBY', 'AXON'): 0.001, ('TSN', 'DPZ', 'JPM'): 0.044, ('TSN', 'DPZ', 'MNST'): 0.048, ('MNST', 'KR', 'EBAY'): 0.016, ('HD', 'KR', 'EBAY'): 0.024}
+Median Dual TMFG Percolation Centrality: 0.043
+TMFG Second Order Centrality: {'SJM': 312.792, 'ADBE': 365.526, 'EXPE': 266.929, 'T': 237.607, 'DXCM': 190.021, 'KHC': 339.606, 'BA': 323.337, 'CPB': 309.24, 'UNH': 222.264, 'GOOG': 378.305, 'HSY': 320.444, 'AAPL': 338.59, 'MCHP': 337.752, 'TSN': 345.76, 'ORCL': 321.601, 'ATO': 334.703, 'PCG': 269.798, 'CVS': 219.889, 'JNPR': 71.745, 'MCD': 311.96, 'KO': 328.226, 'XOM': 331.304, 'EA': 333.455, 'COF': 353.556, 'NKE': 312.104, 'JNJ': 294.53, 'AFL': 227.153, 'HAS': 348.239, 'NTAP': 314.4, 'CVX': 285.629, 'JBHT': 326.436, 'LULU': 248.832, 'KMI': 254.045, 'MRK': 270.853, 'FDX': 261.168, 'ALL': 225.942, 'V': 306.48, 'CSGP': 279.809, 'MAR': 368.435, 'MA': 348.716, 'DPZ': 268.059, 'NFLX': 251.947, 'JPM': 152.864, 'MNST': 194.182, 'COST': 174.685, 'DAL': 348.236, 'HD': 191.802, 'KR': 328.136, 'TGT': 309.55, 'AZO': 260.524, 'WYNN': 241.739, 'KMX': 301.584, 'BBY': 275.702, 'WTW': 356.476, 'WFC': 278.292, 'DLTR': 415.823, 'EBAY': 365.733, 'DIS': 362.669, 'LLY': 354.119, 'AXON': 361.385}
+Dual TMFG Second Order Centrality: {('JNPR', 'KO', 'JPM'): 504.085, ('JNPR', 'JPM', 'TGT'): 503.592, ('MCHP', 'JNPR', 'COST'): 577.708, ('NKE', 'JPM', 'COST'): 450.393, ('JNPR', 'JNJ', 'ALL'): 535.011, ('JNJ', 'ALL', 'COST'): 501.771, ('ALL', 'JPM', 'WYNN'): 416.092, ('ALL', 'COST', 'KMX'): 468.227, ('JNPR', 'XOM', 'COST'): 585.644, ('DXCM', 'JPM', 'COST'): 447.974, ('DXCM', 'JNPR', 'EA'): 588.887, ('DXCM', 'JPM', 'AZO'): 466.118, ('DXCM', 'PCG', 'JNPR'): 562.793, ('DXCM', 'HAS', 'COST'): 512.741, ('JNPR', 'KO', 'AZO'): 567.504, ('KO', 'JPM', 'AZO'): 502.448, ('PCG', 'JNPR', 'XOM'): 610.433, ('PCG', 'XOM', 'COST'): 581.706, ('BA', 'COST', 'WYNN'): 495.977, ('ALL', 'WYNN', 'KMX'): 458.049, ('JNPR', 'KMI', 'AZO'): 576.388, ('DXCM', 'KMI', 'AZO'): 510.943, ('JNPR', 'KMI', 'V'): 619.979, ('DXCM', 'JBHT', 'KMI'): 540.826, ('CVS', 'JNPR', 'ALL'): 505.647, ('CVS', 'ALL', 'JPM'): 399.736, ('CVS', 'JNPR', 'MCD'): 539.194, ('CVS', 'JPM', 'MNST'): 376.941, ('ATO', 'JNPR', 'MNST'): 512.691, ('CVS', 'MNST', 'HD'): 389.898, ('JNPR', 'LULU', 'HD'): 555.706, ('MNST', 'HD', 'EBAY'): 430.471, ('T', 'AAPL', 'JNPR'): 560.304, ('T', 'NFLX', 'HD'): 480.289, ('AAPL', 'JNPR', 'NFLX'): 576.989, ('T', 'AAPL', 'NFLX'): 532.915, ('T', 'NTAP', 'MNST'): 463.524, ('T', 'NTAP', 'HD'): 461.133, ('JNPR', 'HD', 'WFC'): 516.32, ('CVS', 'HD', 'WFC'): 437.47, ('KHC', 'JNPR', 'NFLX'): 609.541, ('UNH', 'NFLX', 'HD'): 506.537, ('CPB', 'UNH', 'JNPR'): 654.552, ('UNH', 'LULU', 'HD'): 523.909, ('JNPR', 'CVX', 'LULU'): 652.658, ('UNH', 'LULU', 'MRK'): 559.603, ('JNPR', 'EA', 'AFL'): 624.335, ('DXCM', 'EA', 'AFL'): 589.903, ('JNPR', 'MRK', 'FDX'): 692.982, ('LULU', 'MRK', 'FDX'): 603.835, ('EXPE', 'JNPR', 'MRK'): 688.949, ('EXPE', 'UNH', 'MRK'): 600.522, ('EXPE', 'JNPR', 'WTW'): 717.47, ('EXPE', 'CPB', 'UNH'): 627.237, ('CPB', 'ORCL', 'JNPR'): 702.086, ('EXPE', 'CPB', 'ORCL'): 674.646, ('NKE', 'JPM', 'WYNN'): 449.488, ('ADBE', 'COST', 'WYNN'): 491.635, ('HSY', 'JNPR', 'FDX'): 732.886, ('CVX', 'LULU', 'FDX'): 632.561, ('JNPR', 'COF', 'CVX'): 717.482, ('CVX', 'FDX', 'BBY'): 658.658, ('KHC', 'UNH', 'JNPR'): 620.058, ('KHC', 'UNH', 'NFLX'): 571.695, ('T', 'ATO', 'JNPR'): 540.635, ('T', 'ATO', 'MNST'): 494.471, ('ORCL', 'JNPR', 'WTW'): 724.383, ('EXPE', 'ORCL', 'WTW'): 698.213, ('JNPR', 'DPZ', 'MNST'): 497.112, ('TSN', 'JPM', 'MNST'): 435.701, ('JNPR', 'CSGP', 'DPZ'): 530.08, ('CSGP', 'DPZ', 'JPM'): 493.703, ('JNPR', 'CSGP', 'TGT'): 550.511, ('CSGP', 'JPM', 'DIS'): 531.442, ('JPM', 'TGT', 'DIS'): 547.588, ('CSGP', 'TGT', 'DIS'): 570.392, ('NTAP', 'MNST', 'KR'): 462.036, ('NTAP', 'HD', 'KR'): 463.44, ('BA', 'COST', 'KMX'): 486.457, ('DAL', 'WYNN', 'KMX'): 504.025, ('JNPR', 'WFC', 'LLY'): 612.942, ('CVS', 'MCD', 'WFC'): 499.626, ('JNPR', 'MCD', 'LLY'): 585.16, ('MCD', 'WFC', 'LLY'): 560.618, ('BA', 'GOOG', 'WYNN'): 537.808, ('BA', 'DAL', 'KMX'): 512.323, ('JNPR', 'AFL', 'MA'): 662.415, ('AFL', 'KMI', 'V'): 591.34, ('SJM', 'JNPR', 'V'): 667.62, ('SJM', 'AFL', 'V'): 626.718, ('SJM', 'JNPR', 'MA'): 689.024, ('SJM', 'AFL', 'MA'): 651.868, ('MCHP', 'JNPR', 'JNJ'): 610.734, ('MCHP', 'JNJ', 'COST'): 558.356, ('DAL', 'WYNN', 'DLTR'): 535.521, ('BA', 'GOOG', 'DAL'): 535.543, ('GOOG', 'WYNN', 'DLTR'): 549.952, ('GOOG', 'DAL', 'DLTR'): 548.868, ('JNPR', 'COF', 'BBY'): 785.734, ('COF', 'CVX', 'BBY'): 690.414, ('ADBE', 'NKE', 'COST'): 490.09, ('ADBE', 'NKE', 'WYNN'): 496.815, ('DXCM', 'AFL', 'MAR'): 570.037, ('AFL', 'JBHT', 'KMI'): 562.765, ('PCG', 'HAS', 'COST'): 544.856, ('DXCM', 'PCG', 'HAS'): 545.871, ('DXCM', 'JBHT', 'MAR'): 563.647, ('AFL', 'JBHT', 'MAR'): 568.758, ('JNPR', 'BBY', 'AXON'): 818.079, ('HSY', 'FDX', 'BBY'): 688.852, ('HSY', 'JNPR', 'AXON'): 801.822, ('HSY', 'BBY', 'AXON'): 725.387, ('TSN', 'DPZ', 'JPM'): 470.611, ('TSN', 'DPZ', 'MNST'): 484.725, ('MNST', 'KR', 'EBAY'): 460.438, ('HD', 'KR', 'EBAY'): 459.513}
+Median Dual TMFG Second Order Centrality: 549.4100000000001
+TMFG Voterank: ['JNPR', 'JPM', 'COST', 'HD', 'AFL', 'WYNN', 'MNST', 'DXCM', 'UNH', 'BBY', 'EXPE', 'DAL', 'T', 'FDX', 'CSGP', 'WFC', 'KMI', 'PCG', 'NFLX', 'ALL', 'SJM', 'GOOG', 'ORCL', 'KR', 'CVX', 'HSY', 'CVS', 'MCD', 'NKE', 'JNJ', 'JBHT', 'DPZ', 'TGT', 'AZO', 'BA', 'LULU']
+Dual TMFG Voterank: [('JNPR', 'KO', 'JPM'), ('MCHP', 'JNPR', 'COST'), ('NKE', 'JPM', 'COST'), ('ALL', 'COST', 'KMX'), ('DXCM', 'JNPR', 'EA'), ('DXCM', 'KMI', 'AZO'), ('CVS', 'JNPR', 'ALL'), ('ATO', 'JNPR', 'MNST'), ('CVS', 'MNST', 'HD'), ('JNPR', 'LULU', 'HD'), ('T', 'NFLX', 'HD'), ('KHC', 'JNPR', 'NFLX'), ('JNPR', 'MRK', 'FDX'), ('EXPE', 'CPB', 'UNH'), ('CVX', 'FDX', 'BBY'), ('ORCL', 'JNPR', 'WTW'), ('CSGP', 'DPZ', 'JPM'), ('NTAP', 'MNST', 'KR'), ('MCD', 'WFC', 'LLY'), ('BA', 'GOOG', 'WYNN'), ('AFL', 'KMI', 'V'), ('SJM', 'JNPR', 'MA'), ('PCG', 'HAS', 'COST'), ('JNPR', 'BBY', 'AXON'), ('CSGP', 'TGT', 'DIS'), ('DAL', 'WYNN', 'KMX'), ('DXCM', 'AFL', 'MAR'), ('ADBE', 'COST', 'WYNN'), ('TSN', 'JPM', 'MNST'), ('PCG', 'JNPR', 'XOM'), ('T', 'AAPL', 'JNPR'), ('UNH', 'LULU', 'MRK'), ('JNPR', 'COF', 'CVX'), ('GOOG', 'DAL', 'DLTR'), ('HD', 'KR', 'EBAY'), ('ALL', 'JPM', 'WYNN'), ('JNPR', 'JPM', 'TGT'), ('JNPR', 'JNJ', 'ALL'), ('DXCM', 'JPM', 'COST'), ('JNPR', 'KO', 'AZO'), ('DXCM', 'JBHT', 'KMI'), ('CVS', 'JNPR', 'MCD'), ('T', 'NTAP', 'MNST'), ('JNPR', 'HD', 'WFC'), ('CPB', 'UNH', 'JNPR'), ('EXPE', 'JNPR', 'WTW'), ('HSY', 'JNPR', 'FDX'), ('JNPR', 'DPZ', 'MNST'), ('JNPR', 'AFL', 'MA'), ('SJM', 'JNPR', 'V'), ('UNH', 'NFLX', 'HD'), ('BA', 'COST', 'KMX'), ('EXPE', 'CPB', 'ORCL'), ('CVX', 'LULU', 'FDX'), ('MCHP', 'JNJ', 'COST'), ('ADBE', 'NKE', 'WYNN'), ('DXCM', 'PCG', 'HAS'), ('AFL', 'JBHT', 'MAR'), ('HSY', 'BBY', 'AXON'), ('JNPR', 'XOM', 'COST'), ('DXCM', 'JPM', 'AZO'), ('JNPR', 'KMI', 'AZO'), ('CVS', 'ALL', 'JPM'), ('MNST', 'HD', 'EBAY'), ('AAPL', 'JNPR', 'NFLX'), ('T', 'NTAP', 'HD'), ('CVS', 'HD', 'WFC'), ('JNPR', 'EA', 'AFL'), ('EXPE', 'JNPR', 'MRK'), ('KHC', 'UNH', 'JNPR'), ('T', 'ATO', 'JNPR'), ('JNPR', 'CSGP', 'DPZ'), ('CSGP', 'JPM', 'DIS'), ('JNPR', 'WFC', 'LLY'), ('BA', 'DAL', 'KMX'), ('SJM', 'AFL', 'V'), ('DAL', 'WYNN', 'DLTR'), ('JNPR', 'COF', 'BBY'), ('TSN', 'DPZ', 'JPM')]
+TMFG Pagerank: {'SJM': 0.012450663777163211, 'ADBE': 0.009654333952194057, 'EXPE': 0.017528923627911083, 'T': 0.01957859320375993, 'DXCM': 0.029884579978975714, 'KHC': 0.009381096233320757, 'BA': 0.014925470653209046, 'CPB': 0.012143738080799873, 'UNH': 0.02177910103011864, 'GOOG': 0.012965526534679027, 'HSY': 0.012388644081896135, 'AAPL': 0.009546736194476947, 'MCHP': 0.009424569430934414, 'TSN': 0.00928890167665744, 'ORCL': 0.01250057348562735, 'ATO': 0.009293396858434333, 'PCG': 0.01483398611724406, 'CVS': 0.018968510248949876, 'JNPR': 0.11067735376425575, 'MCD': 0.012203854900331127, 'KO': 0.009422888151972654, 'XOM': 0.009538309620886896, 'EA': 0.0093850154273445, 'COF': 0.009650569631374159, 'NKE': 0.012193287517037285, 'JNJ': 0.012036263637324985, 'AFL': 0.025381793838758923, 'HAS': 0.009434105632674973, 'NTAP': 0.01207936488540783, 'CVX': 0.014684975240660484, 'JBHT': 0.012326884357289448, 'LULU': 0.016576160483033685, 'KMI': 0.01709726553849515, 'MRK': 0.014398361003858232, 'FDX': 0.017235389018951906, 'ALL': 0.018564638116274353, 'V': 0.012116041722345608, 'CSGP': 0.014701361648946665, 'MAR': 0.009714170935205494, 'MA': 0.009674383530052729, 'DPZ': 0.014312572993856293, 'NFLX': 0.017064884670638346, 'JPM': 0.03945067068317529, 'MNST': 0.029364110227122063, 'COST': 0.03662982669441379, 'DAL': 0.015588704002160713, 'HD': 0.02896566209015601, 'KR': 0.012324748639821628, 'TGT': 0.012200940436568542, 'AZO': 0.014434843019118931, 'WYNN': 0.028145697181997192, 'KMX': 0.014815544252363899, 'BBY': 0.01774625331222846, 'WTW': 0.009780259763608783, 'WFC': 0.014426951759202741, 'DLTR': 0.010258780274771522, 'EBAY': 0.009491253724903288, 'DIS': 0.009827910438812577, 'LLY': 0.009739596828606156, 'AXON': 0.009801005237639167}
+Dual TMFG Pagerank: {('JNPR', 'KO', 'JPM'): 0.01390072991107897, ('JNPR', 'JPM', 'TGT'): 0.0145057990451982, ('MCHP', 'JNPR', 'COST'): 0.006821150218256935, ('NKE', 'JPM', 'COST'): 0.008985223474381918, ('JNPR', 'JNJ', 'ALL'): 0.007301522907338438, ('JNJ', 'ALL', 'COST'): 0.010021517102417173, ('ALL', 'JPM', 'WYNN'): 0.009346781334122038, ('ALL', 'COST', 'KMX'): 0.011134855724171168, ('JNPR', 'XOM', 'COST'): 0.006722069432140849, ('DXCM', 'JPM', 'COST'): 0.009072153140070979, ('DXCM', 'JNPR', 'EA'): 0.007496382789400119, ('DXCM', 'JPM', 'AZO'): 0.009305048380342395, ('DXCM', 'PCG', 'JNPR'): 0.008323844131737663, ('DXCM', 'HAS', 'COST'): 0.010783710758628471, ('JNPR', 'KO', 'AZO'): 0.005138882374615291, ('KO', 'JPM', 'AZO'): 0.0061964816568802926, ('PCG', 'JNPR', 'XOM'): 0.005984162948477486, ('PCG', 'XOM', 'COST'): 0.007386816659364339, ('BA', 'COST', 'WYNN'): 0.008280888575176726, ('ALL', 'WYNN', 'KMX'): 0.009492697844447229, ('JNPR', 'KMI', 'AZO'): 0.0062593464892982745, ('DXCM', 'KMI', 'AZO'): 0.008600413957240084, ('JNPR', 'KMI', 'V'): 0.006608890085993743, ('DXCM', 'JBHT', 'KMI'): 0.01081059957830145, ('CVS', 'JNPR', 'ALL'): 0.005895474700015089, ('CVS', 'ALL', 'JPM'): 0.007650702658596613, ('CVS', 'JNPR', 'MCD'): 0.006437973059847583, ('CVS', 'JPM', 'MNST'): 0.008609138826033752, ('ATO', 'JNPR', 'MNST'): 0.006657810681764522, ('CVS', 'MNST', 'HD'): 0.009947299466167535, ('JNPR', 'LULU', 'HD'): 0.006421333299328679, ('MNST', 'HD', 'EBAY'): 0.010548369610737527, ('T', 'AAPL', 'JNPR'): 0.007345766384051715, ('T', 'NFLX', 'HD'): 0.010427045645185, ('AAPL', 'JNPR', 'NFLX'): 0.007763895290620298, ('T', 'AAPL', 'NFLX'): 0.008446846707408352, ('T', 'NTAP', 'MNST'): 0.011038494681463082, ('T', 'NTAP', 'HD'): 0.009346155138083186, ('JNPR', 'HD', 'WFC'): 0.007605199737722729, ('CVS', 'HD', 'WFC'): 0.010294812013711331, ('KHC', 'JNPR', 'NFLX'): 0.006670119004709756, ('UNH', 'NFLX', 'HD'): 0.010970687658802403, ('CPB', 'UNH', 'JNPR'): 0.006581358916298092, ('UNH', 'LULU', 'HD'): 0.009088158607657248, ('JNPR', 'CVX', 'LULU'): 0.005928918901520405, ('UNH', 'LULU', 'MRK'): 0.011878948023911201, ('JNPR', 'EA', 'AFL'): 0.006934334660299387, ('DXCM', 'EA', 'AFL'): 0.007465739600132381, ('JNPR', 'MRK', 'FDX'): 0.0061463067011005065, ('LULU', 'MRK', 'FDX'): 0.009051970458350787, ('EXPE', 'JNPR', 'MRK'): 0.006260316053805474, ('EXPE', 'UNH', 'MRK'): 0.01091515629651351, ('EXPE', 'JNPR', 'WTW'): 0.007146762910607749, ('EXPE', 'CPB', 'UNH'): 0.010406861499639689, ('CPB', 'ORCL', 'JNPR'): 0.0069663736393640666, ('EXPE', 'CPB', 'ORCL'): 0.011867784345464783, ('NKE', 'JPM', 'WYNN'): 0.00903176068689249, ('ADBE', 'COST', 'WYNN'): 0.008879349839772262, ('HSY', 'JNPR', 'FDX'): 0.00670645551273985, ('CVX', 'LULU', 'FDX'): 0.009714740348625461, ('JNPR', 'COF', 'CVX'): 0.006956671657681134, ('CVX', 'FDX', 'BBY'): 0.01655059505354518, ('KHC', 'UNH', 'JNPR'): 0.006704242985438333, ('KHC', 'UNH', 'NFLX'): 0.007387265934294084, ('T', 'ATO', 'JNPR'): 0.006531425841867016, ('T', 'ATO', 'MNST'): 0.008044685017013525, ('ORCL', 'JNPR', 'WTW'): 0.0074407086497726435, ('EXPE', 'ORCL', 'WTW'): 0.010704139665353083, ('JNPR', 'DPZ', 'MNST'): 0.006777595199413482, ('TSN', 'JPM', 'MNST'): 0.009902680547678355, ('JNPR', 'CSGP', 'DPZ'): 0.005965209343140139, ('CSGP', 'DPZ', 'JPM'): 0.009067774163415344, ('JNPR', 'CSGP', 'TGT'): 0.004954445883724519, ('CSGP', 'JPM', 'DIS'): 0.010109762186620365, ('JPM', 'TGT', 'DIS'): 0.008246257240021952, ('CSGP', 'TGT', 'DIS'): 0.007136404732213641, ('NTAP', 'MNST', 'KR'): 0.010511857691108399, ('NTAP', 'HD', 'KR'): 0.009704811774522941, ('BA', 'COST', 'KMX'): 0.009766165169653738, ('DAL', 'WYNN', 'KMX'): 0.010050099661129087, ('JNPR', 'WFC', 'LLY'): 0.005678834696402068, ('CVS', 'MCD', 'WFC'): 0.012435829480090097, ('JNPR', 'MCD', 'LLY'): 0.006651133786964395, ('MCD', 'WFC', 'LLY'): 0.008016927695461857, ('BA', 'GOOG', 'WYNN'): 0.0078011327987149975, ('BA', 'DAL', 'KMX'): 0.009282438439928141, ('JNPR', 'AFL', 'MA'): 0.006595960873525245, ('AFL', 'KMI', 'V'): 0.00948370329673573, ('SJM', 'JNPR', 'V'): 0.006213195759091117, ('SJM', 'AFL', 'V'): 0.010981651141129275, ('SJM', 'JNPR', 'MA'): 0.006038199755318107, ('SJM', 'AFL', 'MA'): 0.008907695153049476, ('MCHP', 'JNPR', 'JNJ'): 0.005723058769060377, ('MCHP', 'JNJ', 'COST'): 0.00713993168666035, ('DAL', 'WYNN', 'DLTR'): 0.01026855033432627, ('BA', 'GOOG', 'DAL'): 0.00942958057772894, ('GOOG', 'WYNN', 'DLTR'): 0.008970869809343475, ('GOOG', 'DAL', 'DLTR'): 0.009362239253811105, ('JNPR', 'COF', 'BBY'): 0.005798581445066814, ('COF', 'CVX', 'BBY'): 0.008781593343559886, ('ADBE', 'NKE', 'COST'): 0.007999896388364056, ('ADBE', 'NKE', 'WYNN'): 0.007288754156615684, ('DXCM', 'AFL', 'MAR'): 0.01175670055166059, ('AFL', 'JBHT', 'KMI'): 0.010843403226088677, ('PCG', 'HAS', 'COST'): 0.011371817867674003, ('DXCM', 'PCG', 'HAS'): 0.00887946388284435, ('DXCM', 'JBHT', 'MAR'): 0.01144497804797759, ('AFL', 'JBHT', 'MAR'): 0.011701509247162324, ('JNPR', 'BBY', 'AXON'): 0.00539615428102836, ('HSY', 'FDX', 'BBY'): 0.01480977564547731, ('HSY', 'JNPR', 'AXON'): 0.005674963321560996, ('HSY', 'BBY', 'AXON'): 0.008759479328810226, ('TSN', 'DPZ', 'JPM'): 0.00980491119359154, ('TSN', 'DPZ', 'MNST'): 0.007191244626064794, ('MNST', 'KR', 'EBAY'): 0.009748143139971856, ('HD', 'KR', 'EBAY'): 0.009726508515508376}
+TMFG Estrada Index: 11920.388897481997
+Dual TMFG Estrada Index: 418.3146826958792
+S&P 500 Wins Dictionary: {('JNPR', 'KO', 'JPM'): 11, ('JNPR', 'JPM', 'TGT'): 37, ('MCHP', 'JNPR', 'COST'): 100, ('NKE', 'JPM', 'COST'): 0, ('JNPR', 'JNJ', 'ALL'): 15, ('JNJ', 'ALL', 'COST'): 0, ('ALL', 'JPM', 'WYNN'): 29, ('ALL', 'COST', 'KMX'): 19, ('JNPR', 'XOM', 'COST'): 28, ('DXCM', 'JPM', 'COST'): 100, ('DXCM', 'JNPR', 'EA'): 100, ('DXCM', 'JPM', 'AZO'): 100, ('DXCM', 'PCG', 'JNPR'): 100, ('DXCM', 'HAS', 'COST'): 100, ('JNPR', 'KO', 'AZO'): 22, ('KO', 'JPM', 'AZO'): 5, ('PCG', 'JNPR', 'XOM'): 0, ('PCG', 'XOM', 'COST'): 0, ('BA', 'COST', 'WYNN'): 0, ('ALL', 'WYNN', 'KMX'): 17, ('JNPR', 'KMI', 'AZO'): 37, ('DXCM', 'KMI', 'AZO'): 100, ('JNPR', 'KMI', 'V'): 28, ('DXCM', 'JBHT', 'KMI'): 100, ('CVS', 'JNPR', 'ALL'): 45, ('CVS', 'ALL', 'JPM'): 39, ('CVS', 'JNPR', 'MCD'): 34, ('CVS', 'JPM', 'MNST'): 52, ('ATO', 'JNPR', 'MNST'): 56, ('CVS', 'MNST', 'HD'): 40, ('JNPR', 'LULU', 'HD'): 4, ('MNST', 'HD', 'EBAY'): 23, ('T', 'AAPL', 'JNPR'): 0, ('T', 'NFLX', 'HD'): 10, ('AAPL', 'JNPR', 'NFLX'): 0, ('T', 'AAPL', 'NFLX'): 0, ('T', 'NTAP', 'MNST'): 98, ('T', 'NTAP', 'HD'): 100, ('JNPR', 'HD', 'WFC'): 26, ('CVS', 'HD', 'WFC'): 51, ('KHC', 'JNPR', 'NFLX'): 0, ('UNH', 'NFLX', 'HD'): 0, ('CPB', 'UNH', 'JNPR'): 26, ('UNH', 'LULU', 'HD'): 0, ('JNPR', 'CVX', 'LULU'): 6, ('UNH', 'LULU', 'MRK'): 0, ('JNPR', 'EA', 'AFL'): 20, ('DXCM', 'EA', 'AFL'): 100, ('JNPR', 'MRK', 'FDX'): 8, ('LULU', 'MRK', 'FDX'): 0, ('EXPE', 'JNPR', 'MRK'): 0, ('EXPE', 'UNH', 'MRK'): 0, ('EXPE', 'JNPR', 'WTW'): 0, ('EXPE', 'CPB', 'UNH'): 0, ('CPB', 'ORCL', 'JNPR'): 88, ('EXPE', 'CPB', 'ORCL'): 0, ('NKE', 'JPM', 'WYNN'): 0, ('ADBE', 'COST', 'WYNN'): 28, ('HSY', 'JNPR', 'FDX'): 85, ('CVX', 'LULU', 'FDX'): 18, ('JNPR', 'COF', 'CVX'): 15, ('CVX', 'FDX', 'BBY'): 48, ('KHC', 'UNH', 'JNPR'): 0, ('KHC', 'UNH', 'NFLX'): 0, ('T', 'ATO', 'JNPR'): 36, ('T', 'ATO', 'MNST'): 31, ('ORCL', 'JNPR', 'WTW'): 87, ('EXPE', 'ORCL', 'WTW'): 31, ('JNPR', 'DPZ', 'MNST'): 15, ('TSN', 'JPM', 'MNST'): 72, ('JNPR', 'CSGP', 'DPZ'): 36, ('CSGP', 'DPZ', 'JPM'): 80, ('JNPR', 'CSGP', 'TGT'): 76, ('CSGP', 'JPM', 'DIS'): 86, ('JPM', 'TGT', 'DIS'): 88, ('CSGP', 'TGT', 'DIS'): 100, ('NTAP', 'MNST', 'KR'): 100, ('NTAP', 'HD', 'KR'): 100, ('BA', 'COST', 'KMX'): 0, ('DAL', 'WYNN', 'KMX'): 67, ('JNPR', 'WFC', 'LLY'): 30, ('CVS', 'MCD', 'WFC'): 29, ('JNPR', 'MCD', 'LLY'): 25, ('MCD', 'WFC', 'LLY'): 22, ('BA', 'GOOG', 'WYNN'): 0, ('BA', 'DAL', 'KMX'): 0, ('JNPR', 'AFL', 'MA'): 16, ('AFL', 'KMI', 'V'): 91, ('SJM', 'JNPR', 'V'): 0, ('SJM', 'AFL', 'V'): 3, ('SJM', 'JNPR', 'MA'): 0, ('SJM', 'AFL', 'MA'): 18, ('MCHP', 'JNPR', 'JNJ'): 100, ('MCHP', 'JNJ', 'COST'): 95, ('DAL', 'WYNN', 'DLTR'): 45, ('BA', 'GOOG', 'DAL'): 0, ('GOOG', 'WYNN', 'DLTR'): 39, ('GOOG', 'DAL', 'DLTR'): 49, ('JNPR', 'COF', 'BBY'): 3, ('COF', 'CVX', 'BBY'): 15, ('ADBE', 'NKE', 'COST'): 28, ('ADBE', 'NKE', 'WYNN'): 13, ('DXCM', 'AFL', 'MAR'): 100, ('AFL', 'JBHT', 'KMI'): 73, ('PCG', 'HAS', 'COST'): 0, ('DXCM', 'PCG', 'HAS'): 100, ('DXCM', 'JBHT', 'MAR'): 100, ('AFL', 'JBHT', 'MAR'): 53, ('JNPR', 'BBY', 'AXON'): 0, ('HSY', 'FDX', 'BBY'): 89, ('HSY', 'JNPR', 'AXON'): 64, ('HSY', 'BBY', 'AXON'): 67, ('TSN', 'DPZ', 'JPM'): 77, ('TSN', 'DPZ', 'MNST'): 71, ('MNST', 'KR', 'EBAY'): 84, ('HD', 'KR', 'EBAY'): 89}
+------------------------------------------------------

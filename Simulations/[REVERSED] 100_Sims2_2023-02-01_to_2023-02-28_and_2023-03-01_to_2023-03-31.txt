@@ -1,385 +1,191 @@
-Stocks (60): ['DIS', 'KO', 'ADBE', 'MRK', 'KMI', 'AAPL', 'JNJ', 'CVS', 'COST', 'T', 'BA', 'EA', 'HAS', 'HD', 'HSY', 'LLY', 'NFLX', 'NKE', 'V', 'JPM', 'FDX', 'KR', 'KHC', 'LULU', 'MA', 'BBY', 'GOOG', 'ALL', 'KMX', 'MNST', 'AZO', 'COF', 'WFC', 'XOM', 'CVX', 'MAR', 'MCD', 'ORCL', 'UNH', 'EBAY', 'CPB', 'DPZ', 'JBHT', 'TSN', 'WYNN', 'DLTR', 'EXPE', 'JNPR', 'SJM', 'NTAP', 'ATO', 'AFL', 'DXCM', 'MCHP', 'DAL', 'TGT', 'PCG', 'CSGP', 'WTW', 'AXON']
+Stocks (20): ['DAL', 'MCD', 'KHC', 'MNST', 'NKE', 'JBHT', 'MAR', 'UNH', 'EXPE', 'DIS', 'MA', 'JNPR', 'WFC', 'COST', 'XOM', 'MCHP', 'HD', 'ALL', 'MRK', 'AZO']
 Seed: 1
 Simulations: 100
 Starting date: 2023-02-01 to 2023-02-28
 Ending date range: 2023-03-01 to 2023-03-31
 ------------------------------------------------------
-Portfolio: ('CVS', 'COF', 'MNST')
-Average portfolio return: 0.5979320207557139
-Number of times SPX was beat: 89
-------------------------------------------------------
-Portfolio: ('GOOG', 'CVS', 'MNST')
-Average portfolio return: -0.49537365456188953
-Number of times SPX was beat: 43
-------------------------------------------------------
-Portfolio: ('EBAY', 'SJM', 'MNST')
-Average portfolio return: 1.5744620162283474
-Number of times SPX was beat: 90
-------------------------------------------------------
-Portfolio: ('CVS', 'SJM', 'TGT')
-Average portfolio return: -3.7011519241872928
-Number of times SPX was beat: 0
-------------------------------------------------------
-Portfolio: ('KO', 'MNST', 'AAPL')
-Average portfolio return: 5.165313156511737
-Number of times SPX was beat: 94
-------------------------------------------------------
-Portfolio: ('CVS', 'KO', 'FDX')
-Average portfolio return: 4.232945834098422
-Number of times SPX was beat: 94
-------------------------------------------------------
-Portfolio: ('ADBE', 'CVS', 'KO')
-Average portfolio return: -0.1443729040988127
-Number of times SPX was beat: 47
-------------------------------------------------------
-Portfolio: ('SJM', 'KO', 'LULU')
-Average portfolio return: 1.0187412445590738
-Number of times SPX was beat: 42
-------------------------------------------------------
-Portfolio: ('CVS', 'PCG', 'LULU')
-Average portfolio return: 0.581493712595805
-Number of times SPX was beat: 44
-------------------------------------------------------
-Portfolio: ('SJM', 'PCG', 'LULU')
-Average portfolio return: -0.0622670088491379
-Number of times SPX was beat: 41
-------------------------------------------------------
-Portfolio: ('CVS', 'BA', 'PCG')
-Average portfolio return: 2.1731940965258847
-Number of times SPX was beat: 97
-------------------------------------------------------
-Portfolio: ('BA', 'SJM', 'PCG')
-Average portfolio return: 1.903458812820374
-Number of times SPX was beat: 79
-------------------------------------------------------
-Portfolio: ('XOM', 'CVS', 'LULU')
-Average portfolio return: 0.0950712575959859
-Number of times SPX was beat: 38
-------------------------------------------------------
-Portfolio: ('XOM', 'KO', 'LULU')
-Average portfolio return: 1.2167552453697086
-Number of times SPX was beat: 42
-------------------------------------------------------
-Portfolio: ('COF', 'SJM', 'MNST')
-Average portfolio return: 2.362977298762859
-Number of times SPX was beat: 96
-------------------------------------------------------
-Portfolio: ('CVS', 'COF', 'SJM')
-Average portfolio return: 2.258391125105282
-Number of times SPX was beat: 92
-------------------------------------------------------
-Portfolio: ('EBAY', 'KO', 'MNST')
-Average portfolio return: 1.4244430689504608
-Number of times SPX was beat: 92
-------------------------------------------------------
-Portfolio: ('EBAY', 'SJM', 'KO')
-Average portfolio return: 1.9065187849691636
-Number of times SPX was beat: 88
-------------------------------------------------------
-Portfolio: ('T', 'MNST', 'FDX')
-Average portfolio return: 3.805869265793068
-Number of times SPX was beat: 84
-------------------------------------------------------
-Portfolio: ('T', 'KO', 'FDX')
-Average portfolio return: 4.7713978151465
+Portfolio: ('MNST', 'MCD', 'JNPR')
+Average portfolio return: 1.964687078064882
 Number of times SPX was beat: 93
 ------------------------------------------------------
-Portfolio: ('MNST', 'MCD', 'FDX')
-Average portfolio return: 3.969173759970923
-Number of times SPX was beat: 92
-------------------------------------------------------
-Portfolio: ('CVS', 'MCD', 'FDX')
-Average portfolio return: 4.195896017152861
-Number of times SPX was beat: 92
-------------------------------------------------------
-Portfolio: ('WTW', 'MNST', 'MCD')
-Average portfolio return: 2.305925578852682
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('CVS', 'COST', 'MCD')
-Average portfolio return: 2.738102837406793
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('DLTR', 'MAR', 'MNST')
-Average portfolio return: 1.0301600933228316
-Number of times SPX was beat: 93
-------------------------------------------------------
-Portfolio: ('DLTR', 'MAR', 'MCD')
-Average portfolio return: 1.9364376565721853
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('MAR', 'MNST', 'MRK')
-Average portfolio return: -1.3998998559178732
-Number of times SPX was beat: 35
-------------------------------------------------------
-Portfolio: ('CVS', 'ATO', 'MAR')
-Average portfolio return: -2.633823285040127
-Number of times SPX was beat: 28
-------------------------------------------------------
-Portfolio: ('DIS', 'MNST', 'WYNN')
-Average portfolio return: 4.164988881293686
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('CVS', 'WYNN', 'MCHP')
-Average portfolio return: 2.1142297522073554
-Number of times SPX was beat: 86
-------------------------------------------------------
-Portfolio: ('CVS', 'ORCL', 'JNPR')
-Average portfolio return: 3.7832047072118393
-Number of times SPX was beat: 96
-------------------------------------------------------
-Portfolio: ('ORCL', 'JNPR', 'WYNN')
-Average portfolio return: 3.6752985181951483
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('DIS', 'MNST', 'ORCL')
-Average portfolio return: -0.07083958441414334
-Number of times SPX was beat: 54
-------------------------------------------------------
-Portfolio: ('DIS', 'ORCL', 'WYNN')
-Average portfolio return: 3.800558810483719
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('CVS', 'JNPR', 'JPM')
-Average portfolio return: -6.603320506479685
-Number of times SPX was beat: 3
-------------------------------------------------------
-Portfolio: ('CVX', 'JNPR', 'WYNN')
-Average portfolio return: 4.554890658406522
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('HD', 'CVX', 'CVS')
-Average portfolio return: -9.380859118773213
-Number of times SPX was beat: 0
-------------------------------------------------------
-Portfolio: ('CVX', 'JNPR', 'CPB')
-Average portfolio return: 1.351949215379749
-Number of times SPX was beat: 78
-------------------------------------------------------
-Portfolio: ('CVS', 'CPB', 'DXCM')
-Average portfolio return: 3.1665685471915843
+Portfolio: ('MNST', 'MCD', 'MCHP')
+Average portfolio return: 1.5747577412293214
 Number of times SPX was beat: 87
 ------------------------------------------------------
-Portfolio: ('HD', 'CVX', 'CPB')
-Average portfolio return: 0.9410243968849932
-Number of times SPX was beat: 75
+Portfolio: ('HD', 'XOM', 'MCD')
+Average portfolio return: -2.40516868272946
+Number of times SPX was beat: 13
 ------------------------------------------------------
-Portfolio: ('MNST', 'ALL', 'WYNN')
-Average portfolio return: 3.311146028238592
-Number of times SPX was beat: 88
+Portfolio: ('XOM', 'MNST', 'WFC')
+Average portfolio return: -2.913958285917501
+Number of times SPX was beat: 4
 ------------------------------------------------------
-Portfolio: ('MAR', 'ALL', 'WYNN')
-Average portfolio return: 2.5393417087729655
-Number of times SPX was beat: 98
+Portfolio: ('EXPE', 'MCD', 'AZO')
+Average portfolio return: -3.7151268105764257
+Number of times SPX was beat: 4
 ------------------------------------------------------
-Portfolio: ('DLTR', 'MNST', 'AXON')
-Average portfolio return: 11.47505089106352
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('DLTR', 'MCD', 'AXON')
-Average portfolio return: 11.622033083650171
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('KMI', 'MNST', 'AXON')
-Average portfolio return: 11.541565766864982
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('JBHT', 'MCD', 'AXON')
-Average portfolio return: 11.599681689779725
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('KMI', 'EXPE', 'MNST')
-Average portfolio return: 0.40491518328295867
-Number of times SPX was beat: 84
-------------------------------------------------------
-Portfolio: ('DPZ', 'KMI', 'MCD')
-Average portfolio return: 1.7026949412501629
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('CVX', 'CVS', 'MCHP')
-Average portfolio return: 0.38163443635543515
-Number of times SPX was beat: 63
-------------------------------------------------------
-Portfolio: ('CVX', 'KHC', 'WYNN')
-Average portfolio return: 3.403747394430259
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('HD', 'CVS', 'V')
-Average portfolio return: -0.7281868044987406
-Number of times SPX was beat: 33
-------------------------------------------------------
-Portfolio: ('TSN', 'HD', 'CPB')
-Average portfolio return: 0.9325070759626307
-Number of times SPX was beat: 71
-------------------------------------------------------
-Portfolio: ('HAS', 'CVS', 'V')
-Average portfolio return: -0.06587259918407613
-Number of times SPX was beat: 45
-------------------------------------------------------
-Portfolio: ('HAS', 'V', 'CPB')
-Average portfolio return: 1.633007076322106
-Number of times SPX was beat: 82
-------------------------------------------------------
-Portfolio: ('HAS', 'CVS', 'MA')
-Average portfolio return: -0.4977198991708934
-Number of times SPX was beat: 38
-------------------------------------------------------
-Portfolio: ('HAS', 'MA', 'CPB')
-Average portfolio return: 1.6323136347844656
-Number of times SPX was beat: 83
-------------------------------------------------------
-Portfolio: ('TSN', 'V', 'CPB')
-Average portfolio return: 1.3580372654621713
-Number of times SPX was beat: 79
-------------------------------------------------------
-Portfolio: ('TSN', 'HD', 'V')
-Average portfolio return: 0.1367608127364376
-Number of times SPX was beat: 68
-------------------------------------------------------
-Portfolio: ('KMI', 'EA', 'MCD')
-Average portfolio return: 2.53341668703399
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('NFLX', 'KMI', 'AXON')
-Average portfolio return: 11.196925206451422
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('CSGP', 'CVS', 'CPB')
-Average portfolio return: 0.19743341716070323
-Number of times SPX was beat: 60
-------------------------------------------------------
-Portfolio: ('WFC', 'JNPR', 'CPB')
-Average portfolio return: 2.0708553830856773
-Number of times SPX was beat: 77
-------------------------------------------------------
-Portfolio: ('CVS', 'WFC', 'HSY')
-Average portfolio return: 1.2311613566602428
-Number of times SPX was beat: 85
-------------------------------------------------------
-Portfolio: ('WFC', 'JNPR', 'HSY')
-Average portfolio return: 3.1506142005248012
-Number of times SPX was beat: 81
-------------------------------------------------------
-Portfolio: ('CVS', 'ATO', 'WYNN')
-Average portfolio return: 3.8398640397895543
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('ATO', 'MAR', 'WYNN')
-Average portfolio return: 4.008334849769621
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('CVS', 'JPM', 'HSY')
-Average portfolio return: 2.234593086140174
-Number of times SPX was beat: 78
-------------------------------------------------------
-Portfolio: ('BBY', 'JNPR', 'HSY')
-Average portfolio return: 2.567265180449482
-Number of times SPX was beat: 77
-------------------------------------------------------
-Portfolio: ('KR', 'NTAP', 'MCD')
-Average portfolio return: 1.344882621313515
-Number of times SPX was beat: 96
-------------------------------------------------------
-Portfolio: ('NKE', 'KMI', 'KR')
-Average portfolio return: 9.601779057339861
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('MNST', 'MRK', 'ALL')
-Average portfolio return: -10.713164664549987
+Portfolio: ('HD', 'XOM', 'AZO')
+Average portfolio return: -3.4017172421115727
 Number of times SPX was beat: 0
+------------------------------------------------------
+Portfolio: ('MAR', 'MCD', 'AZO')
+Average portfolio return: -1.406694938471963
+Number of times SPX was beat: 19
+------------------------------------------------------
+Portfolio: ('MAR', 'MNST', 'AZO')
+Average portfolio return: -1.6620733837577917
+Number of times SPX was beat: 21
+------------------------------------------------------
+Portfolio: ('MAR', 'MCD', 'ALL')
+Average portfolio return: -2.208612779097874
+Number of times SPX was beat: 22
+------------------------------------------------------
+Portfolio: ('COST', 'MAR', 'MNST')
+Average portfolio return: -1.131240281233265
+Number of times SPX was beat: 22
+------------------------------------------------------
+Portfolio: ('NKE', 'MNST', 'ALL')
+Average portfolio return: -1.1457307911937364
+Number of times SPX was beat: 20
 ------------------------------------------------------
 Portfolio: ('MAR', 'MRK', 'ALL')
-Average portfolio return: -10.35471260813726
+Average portfolio return: -3.7154702107614073
+Number of times SPX was beat: 9
+------------------------------------------------------
+Portfolio: ('XOM', 'DAL', 'MCD')
+Average portfolio return: -4.07176361287942
+Number of times SPX was beat: 32
+------------------------------------------------------
+Portfolio: ('XOM', 'JBHT', 'MNST')
+Average portfolio return: -3.5865563804227567
+Number of times SPX was beat: 3
+------------------------------------------------------
+Portfolio: ('MNST', 'WFC', 'AZO')
+Average portfolio return: -6.843342120780568
 Number of times SPX was beat: 0
 ------------------------------------------------------
-Portfolio: ('LLY', 'NTAP', 'MCD')
-Average portfolio return: 2.3303206113767483
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('LLY', 'KR', 'NTAP')
-Average portfolio return: -2.2137327672484908
-Number of times SPX was beat: 18
-------------------------------------------------------
-Portfolio: ('CVS', 'BA', 'TGT')
-Average portfolio return: -3.9109501309299373
+Portfolio: ('XOM', 'WFC', 'AZO')
+Average portfolio return: -8.293495446878273
 Number of times SPX was beat: 0
 ------------------------------------------------------
-Portfolio: ('BA', 'SJM', 'TGT')
-Average portfolio return: -4.370703993407262
+Portfolio: ('MA', 'MCD', 'ALL')
+Average portfolio return: -1.0397350060519681
+Number of times SPX was beat: 33
+------------------------------------------------------
+Portfolio: ('MA', 'MNST', 'ALL')
+Average portfolio return: -1.480362128165331
+Number of times SPX was beat: 14
+------------------------------------------------------
+Portfolio: ('KHC', 'MA', 'MCD')
+Average portfolio return: -1.0937895096957375
+Number of times SPX was beat: 10
+------------------------------------------------------
+Portfolio: ('DIS', 'MA', 'MNST')
+Average portfolio return: -1.355751723159567
+Number of times SPX was beat: 11
+------------------------------------------------------
+Portfolio: ('KHC', 'MCD', 'MCHP')
+Average portfolio return: -0.22531983048225157
+Number of times SPX was beat: 48
+------------------------------------------------------
+Portfolio: ('KHC', 'MNST', 'MCHP')
+Average portfolio return: -1.0063872845110569
+Number of times SPX was beat: 30
+------------------------------------------------------
+Portfolio: ('HD', 'EXPE', 'MCD')
+Average portfolio return: -4.344255848754551
 Number of times SPX was beat: 0
 ------------------------------------------------------
-Portfolio: ('KHC', 'WYNN', 'MCHP')
-Average portfolio return: 1.9625365406344004
-Number of times SPX was beat: 81
-------------------------------------------------------
-Portfolio: ('CVX', 'KHC', 'MCHP')
-Average portfolio return: 1.4010784020349658
-Number of times SPX was beat: 84
-------------------------------------------------------
-Portfolio: ('NFLX', 'KR', 'AXON')
-Average portfolio return: 12.09080383045389
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('KMI', 'KR', 'DAL')
-Average portfolio return: -5.701921345409636
-Number of times SPX was beat: 29
-------------------------------------------------------
-Portfolio: ('NFLX', 'KMI', 'UNH')
-Average portfolio return: -2.0602578415966137
+Portfolio: ('HD', 'EXPE', 'AZO')
+Average portfolio return: -5.413740943999411
 Number of times SPX was beat: 0
 ------------------------------------------------------
-Portfolio: ('NFLX', 'UNH', 'KR')
-Average portfolio return: 10.022261669484942
-Number of times SPX was beat: 100
+Portfolio: ('COST', 'MNST', 'MRK')
+Average portfolio return: 0.08555865116784092
+Number of times SPX was beat: 69
 ------------------------------------------------------
-Portfolio: ('KMI', 'UNH', 'DAL')
-Average portfolio return: -5.451685534703881
-Number of times SPX was beat: 40
+Portfolio: ('COST', 'MAR', 'MRK')
+Average portfolio return: -1.4669066409428868
+Number of times SPX was beat: 19
 ------------------------------------------------------
-Portfolio: ('JNJ', 'UNH', 'KR')
-Average portfolio return: 9.707580385456309
-Number of times SPX was beat: 100
-------------------------------------------------------
-Portfolio: ('T', 'MNST', 'AAPL')
-Average portfolio return: 4.967397286118616
-Number of times SPX was beat: 95
-------------------------------------------------------
-Portfolio: ('T', 'KO', 'AAPL')
-Average portfolio return: 4.897509390163529
-Number of times SPX was beat: 82
-------------------------------------------------------
-Portfolio: ('JNPR', 'AZO', 'JPM')
-Average portfolio return: -7.8475295782849095
-Number of times SPX was beat: 0
-------------------------------------------------------
-Portfolio: ('AZO', 'JPM', 'HSY')
-Average portfolio return: 1.9507791545819995
+Portfolio: ('UNH', 'MCD', 'JNPR')
+Average portfolio return: 1.106958772066817
 Number of times SPX was beat: 83
 ------------------------------------------------------
-Portfolio: ('ADBE', 'XOM', 'CVS')
-Average portfolio return: -10.053579638381041
+Portfolio: ('XOM', 'DAL', 'JNPR')
+Average portfolio return: -2.9633233251674813
+Number of times SPX was beat: 43
+------------------------------------------------------
+Portfolio: ('UNH', 'DAL', 'MCD')
+Average portfolio return: -3.1528467330771166
+Number of times SPX was beat: 22
+------------------------------------------------------
+Portfolio: ('UNH', 'DAL', 'JNPR')
+Average portfolio return: -3.2522853546646844
+Number of times SPX was beat: 24
+------------------------------------------------------
+Portfolio: ('DIS', 'KHC', 'MNST')
+Average portfolio return: -2.942316669613496
 Number of times SPX was beat: 0
 ------------------------------------------------------
-Portfolio: ('ADBE', 'XOM', 'KO')
-Average portfolio return: 0.2829124498626855
-Number of times SPX was beat: 64
+Portfolio: ('DIS', 'KHC', 'MA')
+Average portfolio return: -3.4144625577467207
+Number of times SPX was beat: 0
 ------------------------------------------------------
-Portfolio: ('LLY', 'KMX', 'MCD')
-Average portfolio return: 1.4917945428039545
-Number of times SPX was beat: 100
+Portfolio: ('JBHT', 'MNST', 'JNPR')
+Average portfolio return: -1.0543282575848247
+Number of times SPX was beat: 26
 ------------------------------------------------------
-Portfolio: ('LLY', 'KMI', 'EA')
-Average portfolio return: 2.409245618009601
-Number of times SPX was beat: 100
+Portfolio: ('XOM', 'JBHT', 'JNPR')
+Average portfolio return: -2.8285791535492253
+Number of times SPX was beat: 15
 ------------------------------------------------------
-Portfolio: ('CVS', 'MA', 'DXCM')
-Average portfolio return: 3.162212601536412
-Number of times SPX was beat: 88
+Portfolio: ('NKE', 'MNST', 'MRK')
+Average portfolio return: 0.5114218469557889
+Number of times SPX was beat: 77
 ------------------------------------------------------
-Portfolio: ('MA', 'CPB', 'DXCM')
-Average portfolio return: 2.6060258346585607
-Number of times SPX was beat: 86
+Portfolio: ('NKE', 'MRK', 'ALL')
+Average portfolio return: -2.166592069776864
+Number of times SPX was beat: 9
 ------------------------------------------------------
-Portfolio: ('DPZ', 'EXPE', 'MCD')
-Average portfolio return: 0.9892665656233008
-Number of times SPX was beat: 100
+Stock frequencies: {'DIS': 3, 'HD': 4, 'NKE': 3, 'XOM': 8, 'UNH': 3, 'JBHT': 3, 'COST': 3, 'EXPE': 3, 'KHC': 5, 'MA': 5, 'MAR': 6, 'MNST': 15, 'DAL': 4, 'MCD': 13, 'MRK': 5, 'WFC': 3, 'ALL': 6, 'JNPR': 6, 'AZO': 7, 'MCHP': 3}
+------------------------------------------------------
+TMFG Degree Centrality: {'DIS': 0.158, 'HD': 0.211, 'NKE': 0.158, 'XOM': 0.421, 'UNH': 0.158, 'JBHT': 0.158, 'COST': 0.158, 'EXPE': 0.158, 'KHC': 0.263, 'MA': 0.263, 'MAR': 0.316, 'MNST': 0.789, 'DAL': 0.211, 'MCD': 0.684, 'MRK': 0.263, 'WFC': 0.158, 'ALL': 0.316, 'JNPR': 0.316, 'AZO': 0.368, 'MCHP': 0.158}
+Dual TMFG Degree Centrality: {('MNST', 'MCD', 'JNPR'): 0.086, ('MNST', 'MCD', 'MCHP'): 0.086, ('HD', 'XOM', 'MCD'): 0.086, ('XOM', 'MNST', 'WFC'): 0.086, ('EXPE', 'MCD', 'AZO'): 0.086, ('HD', 'XOM', 'AZO'): 0.086, ('MAR', 'MCD', 'AZO'): 0.086, ('MAR', 'MNST', 'AZO'): 0.086, ('MAR', 'MCD', 'ALL'): 0.086, ('COST', 'MAR', 'MNST'): 0.086, ('NKE', 'MNST', 'ALL'): 0.086, ('MAR', 'MRK', 'ALL'): 0.086, ('XOM', 'DAL', 'MCD'): 0.086, ('XOM', 'JBHT', 'MNST'): 0.086, ('MNST', 'WFC', 'AZO'): 0.086, ('XOM', 'WFC', 'AZO'): 0.086, ('MA', 'MCD', 'ALL'): 0.086, ('MA', 'MNST', 'ALL'): 0.086, ('KHC', 'MA', 'MCD'): 0.086, ('DIS', 'MA', 'MNST'): 0.086, ('KHC', 'MCD', 'MCHP'): 0.086, ('KHC', 'MNST', 'MCHP'): 0.086, ('HD', 'EXPE', 'MCD'): 0.086, ('HD', 'EXPE', 'AZO'): 0.086, ('COST', 'MNST', 'MRK'): 0.086, ('COST', 'MAR', 'MRK'): 0.086, ('UNH', 'MCD', 'JNPR'): 0.086, ('XOM', 'DAL', 'JNPR'): 0.086, ('UNH', 'DAL', 'MCD'): 0.086, ('UNH', 'DAL', 'JNPR'): 0.086, ('DIS', 'KHC', 'MNST'): 0.086, ('DIS', 'KHC', 'MA'): 0.086, ('JBHT', 'MNST', 'JNPR'): 0.086, ('XOM', 'JBHT', 'JNPR'): 0.086, ('NKE', 'MNST', 'MRK'): 0.086, ('NKE', 'MRK', 'ALL'): 0.086}
+TMFG Eigenvector Centrality: {'DIS': 0.125, 'HD': 0.16, 'NKE': 0.126, 'XOM': 0.287, 'UNH': 0.116, 'JBHT': 0.141, 'COST': 0.127, 'EXPE': 0.123, 'KHC': 0.198, 'MA': 0.208, 'MAR': 0.244, 'MNST': 0.451, 'DAL': 0.153, 'MCD': 0.414, 'MRK': 0.173, 'WFC': 0.147, 'ALL': 0.237, 'JNPR': 0.229, 'AZO': 0.267, 'MCHP': 0.156}
+Dual TMFG Eigenvector Centrality: {('MNST', 'MCD', 'JNPR'): 0.167, ('MNST', 'MCD', 'MCHP'): 0.167, ('HD', 'XOM', 'MCD'): 0.167, ('XOM', 'MNST', 'WFC'): 0.167, ('EXPE', 'MCD', 'AZO'): 0.167, ('HD', 'XOM', 'AZO'): 0.167, ('MAR', 'MCD', 'AZO'): 0.167, ('MAR', 'MNST', 'AZO'): 0.167, ('MAR', 'MCD', 'ALL'): 0.167, ('COST', 'MAR', 'MNST'): 0.167, ('NKE', 'MNST', 'ALL'): 0.167, ('MAR', 'MRK', 'ALL'): 0.167, ('XOM', 'DAL', 'MCD'): 0.167, ('XOM', 'JBHT', 'MNST'): 0.167, ('MNST', 'WFC', 'AZO'): 0.167, ('XOM', 'WFC', 'AZO'): 0.167, ('MA', 'MCD', 'ALL'): 0.167, ('MA', 'MNST', 'ALL'): 0.167, ('KHC', 'MA', 'MCD'): 0.167, ('DIS', 'MA', 'MNST'): 0.167, ('KHC', 'MCD', 'MCHP'): 0.167, ('KHC', 'MNST', 'MCHP'): 0.167, ('HD', 'EXPE', 'MCD'): 0.167, ('HD', 'EXPE', 'AZO'): 0.167, ('COST', 'MNST', 'MRK'): 0.167, ('COST', 'MAR', 'MRK'): 0.167, ('UNH', 'MCD', 'JNPR'): 0.167, ('XOM', 'DAL', 'JNPR'): 0.167, ('UNH', 'DAL', 'MCD'): 0.167, ('UNH', 'DAL', 'JNPR'): 0.167, ('DIS', 'KHC', 'MNST'): 0.167, ('DIS', 'KHC', 'MA'): 0.167, ('JBHT', 'MNST', 'JNPR'): 0.167, ('XOM', 'JBHT', 'JNPR'): 0.167, ('NKE', 'MNST', 'MRK'): 0.167, ('NKE', 'MRK', 'ALL'): 0.167}
+TMFG Betweenness Centrality: {'DIS': 0.0, 'HD': 0.003, 'NKE': 0.0, 'XOM': 0.061, 'UNH': 0.0, 'JBHT': 0.0, 'COST': 0.0, 'EXPE': 0.0, 'KHC': 0.012, 'MA': 0.012, 'MAR': 0.03, 'MNST': 0.387, 'DAL': 0.003, 'MCD': 0.28, 'MRK': 0.007, 'WFC': 0.0, 'ALL': 0.026, 'JNPR': 0.033, 'AZO': 0.047, 'MCHP': 0.0}
+Dual TMFG Betweenness Centrality: {('MNST', 'MCD', 'JNPR'): 0.194, ('MNST', 'MCD', 'MCHP'): 0.173, ('HD', 'XOM', 'MCD'): 0.117, ('XOM', 'MNST', 'WFC'): 0.126, ('EXPE', 'MCD', 'AZO'): 0.142, ('HD', 'XOM', 'AZO'): 0.053, ('MAR', 'MCD', 'AZO'): 0.226, ('MAR', 'MNST', 'AZO'): 0.187, ('MAR', 'MCD', 'ALL'): 0.23, ('COST', 'MAR', 'MNST'): 0.102, ('NKE', 'MNST', 'ALL'): 0.059, ('MAR', 'MRK', 'ALL'): 0.078, ('XOM', 'DAL', 'MCD'): 0.104, ('XOM', 'JBHT', 'MNST'): 0.119, ('MNST', 'WFC', 'AZO'): 0.146, ('XOM', 'WFC', 'AZO'): 0.054, ('MA', 'MCD', 'ALL'): 0.199, ('MA', 'MNST', 'ALL'): 0.11, ('KHC', 'MA', 'MCD'): 0.143, ('DIS', 'MA', 'MNST'): 0.057, ('KHC', 'MCD', 'MCHP'): 0.102, ('KHC', 'MNST', 'MCHP'): 0.072, ('HD', 'EXPE', 'MCD'): 0.084, ('HD', 'EXPE', 'AZO'): 0.027, ('COST', 'MNST', 'MRK'): 0.05, ('COST', 'MAR', 'MRK'): 0.023, ('UNH', 'MCD', 'JNPR'): 0.086, ('XOM', 'DAL', 'JNPR'): 0.046, ('UNH', 'DAL', 'MCD'): 0.054, ('UNH', 'DAL', 'JNPR'): 0.014, ('DIS', 'KHC', 'MNST'): 0.059, ('DIS', 'KHC', 'MA'): 0.012, ('JBHT', 'MNST', 'JNPR'): 0.094, ('XOM', 'JBHT', 'JNPR'): 0.05, ('NKE', 'MNST', 'MRK'): 0.04, ('NKE', 'MRK', 'ALL'): 0.021}
+Median Dual TMFG Betweenness Centrality: 0.08499999999999999
+TMFG Closeness Centrality: {'DIS': 0.487, 'HD': 0.5, 'NKE': 0.487, 'XOM': 0.633, 'UNH': 0.475, 'JBHT': 0.528, 'COST': 0.487, 'EXPE': 0.475, 'KHC': 0.576, 'MA': 0.576, 'MAR': 0.594, 'MNST': 0.826, 'DAL': 0.5, 'MCD': 0.76, 'MRK': 0.514, 'WFC': 0.528, 'ALL': 0.594, 'JNPR': 0.594, 'AZO': 0.613, 'MCHP': 0.543}
+Dual TMFG Closeness Centrality: {('MNST', 'MCD', 'JNPR'): 0.245, ('MNST', 'MCD', 'MCHP'): 0.241, ('HD', 'XOM', 'MCD'): 0.236, ('XOM', 'MNST', 'WFC'): 0.252, ('EXPE', 'MCD', 'AZO'): 0.257, ('HD', 'XOM', 'AZO'): 0.233, ('MAR', 'MCD', 'AZO'): 0.285, ('MAR', 'MNST', 'AZO'): 0.269, ('MAR', 'MCD', 'ALL'): 0.28, ('COST', 'MAR', 'MNST'): 0.235, ('NKE', 'MNST', 'ALL'): 0.211, ('MAR', 'MRK', 'ALL'): 0.238, ('XOM', 'DAL', 'MCD'): 0.226, ('XOM', 'JBHT', 'MNST'): 0.245, ('MNST', 'WFC', 'AZO'): 0.261, ('XOM', 'WFC', 'AZO'): 0.245, ('MA', 'MCD', 'ALL'): 0.269, ('MA', 'MNST', 'ALL'): 0.235, ('KHC', 'MA', 'MCD'): 0.257, ('DIS', 'MA', 'MNST'): 0.224, ('KHC', 'MCD', 'MCHP'): 0.245, ('KHC', 'MNST', 'MCHP'): 0.23, ('HD', 'EXPE', 'MCD'): 0.24, ('HD', 'EXPE', 'AZO'): 0.233, ('COST', 'MNST', 'MRK'): 0.219, ('COST', 'MAR', 'MRK'): 0.22, ('UNH', 'MCD', 'JNPR'): 0.222, ('XOM', 'DAL', 'JNPR'): 0.213, ('UNH', 'DAL', 'MCD'): 0.212, ('UNH', 'DAL', 'JNPR'): 0.203, ('DIS', 'KHC', 'MNST'): 0.219, ('DIS', 'KHC', 'MA'): 0.219, ('JBHT', 'MNST', 'JNPR'): 0.24, ('XOM', 'JBHT', 'JNPR'): 0.23, ('NKE', 'MNST', 'MRK'): 0.208, ('NKE', 'MRK', 'ALL'): 0.208}
+Median Dual TMFG Closeness Centrality: 0.235
+TMFG Katz Centrality: {'DIS': 0.221, 'HD': 0.222, 'NKE': 0.221, 'XOM': 0.226, 'UNH': 0.221, 'JBHT': 0.221, 'COST': 0.221, 'EXPE': 0.221, 'KHC': 0.223, 'MA': 0.223, 'MAR': 0.224, 'MNST': 0.234, 'DAL': 0.222, 'MCD': 0.232, 'MRK': 0.223, 'WFC': 0.221, 'ALL': 0.224, 'JNPR': 0.224, 'AZO': 0.225, 'MCHP': 0.221}
+Dual TMFG Katz Centrality: {('MNST', 'MCD', 'JNPR'): 0.167, ('MNST', 'MCD', 'MCHP'): 0.167, ('HD', 'XOM', 'MCD'): 0.167, ('XOM', 'MNST', 'WFC'): 0.167, ('EXPE', 'MCD', 'AZO'): 0.167, ('HD', 'XOM', 'AZO'): 0.167, ('MAR', 'MCD', 'AZO'): 0.167, ('MAR', 'MNST', 'AZO'): 0.167, ('MAR', 'MCD', 'ALL'): 0.167, ('COST', 'MAR', 'MNST'): 0.167, ('NKE', 'MNST', 'ALL'): 0.167, ('MAR', 'MRK', 'ALL'): 0.167, ('XOM', 'DAL', 'MCD'): 0.167, ('XOM', 'JBHT', 'MNST'): 0.167, ('MNST', 'WFC', 'AZO'): 0.167, ('XOM', 'WFC', 'AZO'): 0.167, ('MA', 'MCD', 'ALL'): 0.167, ('MA', 'MNST', 'ALL'): 0.167, ('KHC', 'MA', 'MCD'): 0.167, ('DIS', 'MA', 'MNST'): 0.167, ('KHC', 'MCD', 'MCHP'): 0.167, ('KHC', 'MNST', 'MCHP'): 0.167, ('HD', 'EXPE', 'MCD'): 0.167, ('HD', 'EXPE', 'AZO'): 0.167, ('COST', 'MNST', 'MRK'): 0.167, ('COST', 'MAR', 'MRK'): 0.167, ('UNH', 'MCD', 'JNPR'): 0.167, ('XOM', 'DAL', 'JNPR'): 0.167, ('UNH', 'DAL', 'MCD'): 0.167, ('UNH', 'DAL', 'JNPR'): 0.167, ('DIS', 'KHC', 'MNST'): 0.167, ('DIS', 'KHC', 'MA'): 0.167, ('JBHT', 'MNST', 'JNPR'): 0.167, ('XOM', 'JBHT', 'JNPR'): 0.167, ('NKE', 'MNST', 'MRK'): 0.167, ('NKE', 'MRK', 'ALL'): 0.167}
+Median Dual TMFG Katz Centrality: 0.167
+TMFG Current Flow Centrality: {'DIS': 0.043, 'HD': 0.071, 'NKE': 0.043, 'XOM': 0.194, 'UNH': 0.044, 'JBHT': 0.051, 'COST': 0.044, 'EXPE': 0.044, 'KHC': 0.103, 'MA': 0.103, 'MAR': 0.136, 'MNST': 0.442, 'DAL': 0.07, 'MCD': 0.38, 'MRK': 0.097, 'WFC': 0.049, 'ALL': 0.133, 'JNPR': 0.133, 'AZO': 0.167, 'MCHP': 0.047}
+Dual TMFG Current Flow Centrality: {('MNST', 'MCD', 'JNPR'): 0.286, ('MNST', 'MCD', 'MCHP'): 0.259, ('HD', 'XOM', 'MCD'): 0.206, ('XOM', 'MNST', 'WFC'): 0.187, ('EXPE', 'MCD', 'AZO'): 0.191, ('HD', 'XOM', 'AZO'): 0.156, ('MAR', 'MCD', 'AZO'): 0.248, ('MAR', 'MNST', 'AZO'): 0.246, ('MAR', 'MCD', 'ALL'): 0.242, ('COST', 'MAR', 'MNST'): 0.183, ('NKE', 'MNST', 'ALL'): 0.169, ('MAR', 'MRK', 'ALL'): 0.148, ('XOM', 'DAL', 'MCD'): 0.196, ('XOM', 'JBHT', 'MNST'): 0.177, ('MNST', 'WFC', 'AZO'): 0.204, ('XOM', 'WFC', 'AZO'): 0.15, ('MA', 'MCD', 'ALL'): 0.203, ('MA', 'MNST', 'ALL'): 0.205, ('KHC', 'MA', 'MCD'): 0.178, ('DIS', 'MA', 'MNST'): 0.151, ('KHC', 'MCD', 'MCHP'): 0.149, ('KHC', 'MNST', 'MCHP'): 0.151, ('HD', 'EXPE', 'MCD'): 0.128, ('HD', 'EXPE', 'AZO'): 0.108, ('COST', 'MNST', 'MRK'): 0.126, ('COST', 'MAR', 'MRK'): 0.105, ('UNH', 'MCD', 'JNPR'): 0.152, ('XOM', 'DAL', 'JNPR'): 0.14, ('UNH', 'DAL', 'MCD'): 0.11, ('UNH', 'DAL', 'JNPR'): 0.091, ('DIS', 'KHC', 'MNST'): 0.138, ('DIS', 'KHC', 'MA'): 0.088, ('JBHT', 'MNST', 'JNPR'): 0.156, ('XOM', 'JBHT', 'JNPR'): 0.133, ('NKE', 'MNST', 'MRK'): 0.122, ('NKE', 'MRK', 'ALL'): 0.102}
+Median Dual TMFG Current Flow Centrality: 0.154
+TMFG Communicability Betweenness Centrality: {'DIS': 0.075, 'HD': 0.123, 'NKE': 0.078, 'XOM': 0.382, 'UNH': 0.068, 'JBHT': 0.093, 'COST': 0.078, 'EXPE': 0.072, 'KHC': 0.193, 'MA': 0.209, 'MAR': 0.28, 'MNST': 0.774, 'DAL': 0.118, 'MCD': 0.69, 'MRK': 0.154, 'WFC': 0.098, 'ALL': 0.267, 'JNPR': 0.26, 'AZO': 0.333, 'MCHP': 0.112}
+Dual TMFG Communicability Betweenness Centrality: {('MNST', 'MCD', 'JNPR'): 0.201, ('MNST', 'MCD', 'MCHP'): 0.186, ('HD', 'XOM', 'MCD'): 0.129, ('XOM', 'MNST', 'WFC'): 0.141, ('EXPE', 'MCD', 'AZO'): 0.152, ('HD', 'XOM', 'AZO'): 0.077, ('MAR', 'MCD', 'AZO'): 0.233, ('MAR', 'MNST', 'AZO'): 0.197, ('MAR', 'MCD', 'ALL'): 0.234, ('COST', 'MAR', 'MNST'): 0.115, ('NKE', 'MNST', 'ALL'): 0.075, ('MAR', 'MRK', 'ALL'): 0.094, ('XOM', 'DAL', 'MCD'): 0.116, ('XOM', 'JBHT', 'MNST'): 0.131, ('MNST', 'WFC', 'AZO'): 0.16, ('XOM', 'WFC', 'AZO'): 0.085, ('MA', 'MCD', 'ALL'): 0.202, ('MA', 'MNST', 'ALL'): 0.124, ('KHC', 'MA', 'MCD'): 0.152, ('DIS', 'MA', 'MNST'): 0.078, ('KHC', 'MCD', 'MCHP'): 0.125, ('KHC', 'MNST', 'MCHP'): 0.099, ('HD', 'EXPE', 'MCD'): 0.099, ('HD', 'EXPE', 'AZO'): 0.062, ('COST', 'MNST', 'MRK'): 0.066, ('COST', 'MAR', 'MRK'): 0.052, ('UNH', 'MCD', 'JNPR'): 0.098, ('XOM', 'DAL', 'JNPR'): 0.065, ('UNH', 'DAL', 'MCD'): 0.068, ('UNH', 'DAL', 'JNPR'): 0.042, ('DIS', 'KHC', 'MNST'): 0.075, ('DIS', 'KHC', 'MA'): 0.046, ('JBHT', 'MNST', 'JNPR'): 0.115, ('XOM', 'JBHT', 'JNPR'): 0.075, ('NKE', 'MNST', 'MRK'): 0.055, ('NKE', 'MRK', 'ALL'): 0.047}
+Median Dual TMFG Communicability Betweenness Centrality: 0.099
+TMFG Load Centrality: {'DIS': 0.0, 'HD': 0.003, 'NKE': 0.0, 'XOM': 0.061, 'UNH': 0.0, 'JBHT': 0.0, 'COST': 0.0, 'EXPE': 0.0, 'KHC': 0.012, 'MA': 0.012, 'MAR': 0.031, 'MNST': 0.384, 'DAL': 0.003, 'MCD': 0.276, 'MRK': 0.007, 'WFC': 0.0, 'ALL': 0.028, 'JNPR': 0.034, 'AZO': 0.048, 'MCHP': 0.0}
+Dual TMFG Load Centrality: {('MNST', 'MCD', 'JNPR'): 0.193, ('MNST', 'MCD', 'MCHP'): 0.172, ('HD', 'XOM', 'MCD'): 0.116, ('XOM', 'MNST', 'WFC'): 0.127, ('EXPE', 'MCD', 'AZO'): 0.142, ('HD', 'XOM', 'AZO'): 0.053, ('MAR', 'MCD', 'AZO'): 0.226, ('MAR', 'MNST', 'AZO'): 0.188, ('MAR', 'MCD', 'ALL'): 0.232, ('COST', 'MAR', 'MNST'): 0.102, ('NKE', 'MNST', 'ALL'): 0.059, ('MAR', 'MRK', 'ALL'): 0.078, ('XOM', 'DAL', 'MCD'): 0.104, ('XOM', 'JBHT', 'MNST'): 0.12, ('MNST', 'WFC', 'AZO'): 0.148, ('XOM', 'WFC', 'AZO'): 0.054, ('MA', 'MCD', 'ALL'): 0.198, ('MA', 'MNST', 'ALL'): 0.109, ('KHC', 'MA', 'MCD'): 0.142, ('DIS', 'MA', 'MNST'): 0.057, ('KHC', 'MCD', 'MCHP'): 0.101, ('KHC', 'MNST', 'MCHP'): 0.072, ('HD', 'EXPE', 'MCD'): 0.084, ('HD', 'EXPE', 'AZO'): 0.027, ('COST', 'MNST', 'MRK'): 0.052, ('COST', 'MAR', 'MRK'): 0.022, ('UNH', 'MCD', 'JNPR'): 0.086, ('XOM', 'DAL', 'JNPR'): 0.046, ('UNH', 'DAL', 'MCD'): 0.053, ('UNH', 'DAL', 'JNPR'): 0.013, ('DIS', 'KHC', 'MNST'): 0.06, ('DIS', 'KHC', 'MA'): 0.012, ('JBHT', 'MNST', 'JNPR'): 0.094, ('XOM', 'JBHT', 'JNPR'): 0.05, ('NKE', 'MNST', 'MRK'): 0.041, ('NKE', 'MRK', 'ALL'): 0.021}
+Median Dual TMFG Load Centrality: 0.08499999999999999
+TMFG Harmonic Centrality: {'AZO': 13.0, 'DAL': 10.833, 'MA': 12.0, 'MAR': 12.5, 'WFC': 10.833, 'HD': 10.833, 'XOM': 13.5, 'JNPR': 12.5, 'UNH': 10.167, 'ALL': 12.5, 'EXPE': 10.167, 'JBHT': 10.833, 'MCD': 16.0, 'MCHP': 11.0, 'NKE': 10.333, 'DIS': 10.333, 'COST': 10.333, 'KHC': 12.0, 'MNST': 17.0, 'MRK': 11.333}
+Dual TMFG Harmonic Centrality: {('NKE', 'MRK', 'ALL'): 10.581, ('KHC', 'MA', 'MCD'): 11.883, ('MNST', 'MCD', 'MCHP'): 11.379, ('KHC', 'MCD', 'MCHP'): 11.326, ('MNST', 'MCD', 'JNPR'): 11.738, ('XOM', 'JBHT', 'MNST'): 11.412, ('KHC', 'MNST', 'MCHP'): 10.971, ('XOM', 'JBHT', 'JNPR'): 11.129, ('COST', 'MAR', 'MNST'): 11.214, ('COST', 'MNST', 'MRK'): 10.763, ('XOM', 'DAL', 'JNPR'): 10.893, ('MAR', 'MCD', 'ALL'): 12.66, ('XOM', 'MNST', 'WFC'): 11.569, ('XOM', 'DAL', 'MCD'): 11.24, ('XOM', 'WFC', 'AZO'): 11.462, ('DIS', 'MA', 'MNST'): 10.89, ('HD', 'EXPE', 'AZO'): 10.895, ('COST', 'MAR', 'MRK'): 10.787, ('MNST', 'WFC', 'AZO'): 11.826, ('DIS', 'KHC', 'MA'): 10.64, ('DIS', 'KHC', 'MNST'): 10.656, ('MAR', 'MCD', 'AZO'): 12.65, ('HD', 'EXPE', 'MCD'): 11.052, ('UNH', 'MCD', 'JNPR'): 10.912, ('HD', 'XOM', 'AZO'): 11.339, ('NKE', 'MNST', 'ALL'): 10.759, ('MAR', 'MNST', 'AZO'): 12.283, ('UNH', 'DAL', 'JNPR'): 10.267, ('JBHT', 'MNST', 'JNPR'): 11.37, ('UNH', 'DAL', 'MCD'): 10.54, ('EXPE', 'MCD', 'AZO'): 11.633, ('HD', 'XOM', 'MCD'): 11.431, ('MA', 'MCD', 'ALL'): 12.343, ('MAR', 'MRK', 'ALL'): 11.573, ('MA', 'MNST', 'ALL'): 11.556, ('NKE', 'MNST', 'MRK'): 10.585}
+Median Dual TMFG Harmonic Centrality: 11.283000000000001
+TMFG Percolation Centrality: {'DIS': 0.0, 'HD': 0.003, 'NKE': 0.0, 'XOM': 0.061, 'UNH': 0.0, 'JBHT': 0.0, 'COST': 0.0, 'EXPE': 0.0, 'KHC': 0.012, 'MA': 0.012, 'MAR': 0.03, 'MNST': 0.387, 'DAL': 0.003, 'MCD': 0.28, 'MRK': 0.007, 'WFC': 0.0, 'ALL': 0.026, 'JNPR': 0.033, 'AZO': 0.047, 'MCHP': 0.0}
+Dual TMFG Percolation Centrality: {('MNST', 'MCD', 'JNPR'): 0.194, ('MNST', 'MCD', 'MCHP'): 0.173, ('HD', 'XOM', 'MCD'): 0.117, ('XOM', 'MNST', 'WFC'): 0.126, ('EXPE', 'MCD', 'AZO'): 0.142, ('HD', 'XOM', 'AZO'): 0.053, ('MAR', 'MCD', 'AZO'): 0.226, ('MAR', 'MNST', 'AZO'): 0.187, ('MAR', 'MCD', 'ALL'): 0.23, ('COST', 'MAR', 'MNST'): 0.102, ('NKE', 'MNST', 'ALL'): 0.059, ('MAR', 'MRK', 'ALL'): 0.078, ('XOM', 'DAL', 'MCD'): 0.104, ('XOM', 'JBHT', 'MNST'): 0.119, ('MNST', 'WFC', 'AZO'): 0.146, ('XOM', 'WFC', 'AZO'): 0.054, ('MA', 'MCD', 'ALL'): 0.199, ('MA', 'MNST', 'ALL'): 0.11, ('KHC', 'MA', 'MCD'): 0.143, ('DIS', 'MA', 'MNST'): 0.057, ('KHC', 'MCD', 'MCHP'): 0.102, ('KHC', 'MNST', 'MCHP'): 0.072, ('HD', 'EXPE', 'MCD'): 0.084, ('HD', 'EXPE', 'AZO'): 0.027, ('COST', 'MNST', 'MRK'): 0.05, ('COST', 'MAR', 'MRK'): 0.023, ('UNH', 'MCD', 'JNPR'): 0.086, ('XOM', 'DAL', 'JNPR'): 0.046, ('UNH', 'DAL', 'MCD'): 0.054, ('UNH', 'DAL', 'JNPR'): 0.014, ('DIS', 'KHC', 'MNST'): 0.059, ('DIS', 'KHC', 'MA'): 0.012, ('JBHT', 'MNST', 'JNPR'): 0.094, ('XOM', 'JBHT', 'JNPR'): 0.05, ('NKE', 'MNST', 'MRK'): 0.04, ('NKE', 'MRK', 'ALL'): 0.021}
+Median Dual TMFG Percolation Centrality: 0.08499999999999999
+TMFG Second Order Centrality: {'DIS': 64.154, 'HD': 53.397, 'NKE': 66.17, 'XOM': 35.238, 'UNH': 64.812, 'JBHT': 62.99, 'COST': 63.504, 'EXPE': 63.571, 'KHC': 48.704, 'MA': 47.267, 'MAR': 40.989, 'MNST': 20.402, 'DAL': 55.561, 'MCD': 23.028, 'MRK': 49.802, 'WFC': 59.984, 'ALL': 42.043, 'JNPR': 44.031, 'AZO': 38.614, 'MCHP': 59.813}
+Dual TMFG Second Order Centrality: {('MNST', 'MCD', 'JNPR'): 97.196, ('MNST', 'MCD', 'MCHP'): 96.059, ('HD', 'XOM', 'MCD'): 94.091, ('XOM', 'MNST', 'WFC'): 86.35, ('EXPE', 'MCD', 'AZO'): 93.644, ('HD', 'XOM', 'AZO'): 88.352, ('MAR', 'MCD', 'AZO'): 84.602, ('MAR', 'MNST', 'AZO'): 85.036, ('MAR', 'MCD', 'ALL'): 85.697, ('COST', 'MAR', 'MNST'): 97.878, ('NKE', 'MNST', 'ALL'): 102.672, ('MAR', 'MRK', 'ALL'): 94.313, ('XOM', 'DAL', 'MCD'): 102.298, ('XOM', 'JBHT', 'MNST'): 89.174, ('MNST', 'WFC', 'AZO'): 86.088, ('XOM', 'WFC', 'AZO'): 86.477, ('MA', 'MCD', 'ALL'): 91.288, ('MA', 'MNST', 'ALL'): 96.102, ('KHC', 'MA', 'MCD'): 97.112, ('DIS', 'MA', 'MNST'): 103.601, ('KHC', 'MCD', 'MCHP'): 101.253, ('KHC', 'MNST', 'MCHP'): 102.517, ('HD', 'EXPE', 'MCD'): 99.04, ('HD', 'EXPE', 'AZO'): 96.657, ('COST', 'MNST', 'MRK'): 105.183, ('COST', 'MAR', 'MRK'): 101.889, ('UNH', 'MCD', 'JNPR'): 133.055, ('XOM', 'DAL', 'JNPR'): 100.342, ('UNH', 'DAL', 'MCD'): 119.214, ('UNH', 'DAL', 'JNPR'): 117.609, ('DIS', 'KHC', 'MNST'): 105.248, ('DIS', 'KHC', 'MA'): 106.303, ('JBHT', 'MNST', 'JNPR'): 89.63, ('XOM', 'JBHT', 'JNPR'): 93.103, ('NKE', 'MNST', 'MRK'): 105.329, ('NKE', 'MRK', 'ALL'): 102.154}
+Median Dual TMFG Second Order Centrality: 97.154
+TMFG Voterank: ['MNST', 'MCD', 'XOM', 'MRK', 'AZO', 'KHC', 'JNPR', 'ALL', 'HD', 'MA', 'MAR', 'DAL']
+Dual TMFG Voterank: [('MNST', 'MCD', 'JNPR'), ('HD', 'XOM', 'MCD'), ('XOM', 'MNST', 'WFC'), ('MAR', 'MCD', 'AZO'), ('NKE', 'MNST', 'ALL'), ('KHC', 'MA', 'MCD'), ('COST', 'MAR', 'MRK'), ('XOM', 'DAL', 'JNPR'), ('DIS', 'KHC', 'MNST'), ('HD', 'EXPE', 'AZO'), ('UNH', 'DAL', 'MCD'), ('MNST', 'MCD', 'MCHP'), ('MAR', 'MNST', 'AZO'), ('MAR', 'MCD', 'ALL'), ('XOM', 'JBHT', 'MNST'), ('NKE', 'MNST', 'MRK'), ('MA', 'MNST', 'ALL'), ('XOM', 'WFC', 'AZO'), ('EXPE', 'MCD', 'AZO'), ('COST', 'MAR', 'MNST'), ('MAR', 'MRK', 'ALL'), ('DIS', 'MA', 'MNST'), ('KHC', 'MCD', 'MCHP'), ('UNH', 'MCD', 'JNPR'), ('JBHT', 'MNST', 'JNPR')]
+TMFG Pagerank: {'DIS': 0.02979185914111955, 'HD': 0.03971557222848673, 'NKE': 0.028530886709571275, 'XOM': 0.0728267588510591, 'UNH': 0.031062327313794047, 'JBHT': 0.02847310329500226, 'COST': 0.030036970698767637, 'EXPE': 0.030082776732540763, 'KHC': 0.047080205150371, 'MA': 0.04636071722123697, 'MAR': 0.05621971308162119, 'MNST': 0.12714144965157348, 'DAL': 0.03913338503137274, 'MCD': 0.11197778926289761, 'MRK': 0.04818499087079178, 'WFC': 0.030340392646351848, 'ALL': 0.055573276868888986, 'JNPR': 0.05390842100649089, 'AZO': 0.06263413433801018, 'MCHP': 0.030925269900051906}
+Dual TMFG Pagerank: {('MNST', 'MCD', 'JNPR'): 0.030910914247368894, ('MNST', 'MCD', 'MCHP'): 0.03887200394532342, ('HD', 'XOM', 'MCD'): 0.02712482750467922, ('XOM', 'MNST', 'WFC'): 0.028882886609024654, ('EXPE', 'MCD', 'AZO'): 0.026626342864573826, ('HD', 'XOM', 'AZO'): 0.03335973858417898, ('MAR', 'MCD', 'AZO'): 0.02469632085631731, ('MAR', 'MNST', 'AZO'): 0.025738366290708213, ('MAR', 'MCD', 'ALL'): 0.025119736886977544, ('COST', 'MAR', 'MNST'): 0.025600995290686282, ('NKE', 'MNST', 'ALL'): 0.025304659941953515, ('MAR', 'MRK', 'ALL'): 0.03414407356477838, ('XOM', 'DAL', 'MCD'): 0.027997739045330913, ('XOM', 'JBHT', 'MNST'): 0.025493936043586476, ('MNST', 'WFC', 'AZO'): 0.028057724831020966, ('XOM', 'WFC', 'AZO'): 0.0316156437714443, ('MA', 'MCD', 'ALL'): 0.02559662578520544, ('MA', 'MNST', 'ALL'): 0.026387028319958587, ('KHC', 'MA', 'MCD'): 0.027481410383339365, ('DIS', 'MA', 'MNST'): 0.028025394537598683, ('KHC', 'MCD', 'MCHP'): 0.024796498196220866, ('KHC', 'MNST', 'MCHP'): 0.02584736935787467, ('HD', 'EXPE', 'MCD'): 0.0255341416475418, ('HD', 'EXPE', 'AZO'): 0.02730002111761797, ('COST', 'MNST', 'MRK'): 0.025939366012731745, ('COST', 'MAR', 'MRK'): 0.027382830808889133, ('UNH', 'MCD', 'JNPR'): 0.02105295359588124, ('XOM', 'DAL', 'JNPR'): 0.03217126100814034, ('UNH', 'DAL', 'MCD'): 0.029123672828613875, ('UNH', 'DAL', 'JNPR'): 0.03005878474020164, ('DIS', 'KHC', 'MNST'): 0.02791527113106844, ('DIS', 'KHC', 'MA'): 0.026523568244890758, ('JBHT', 'MNST', 'JNPR'): 0.02453299202589112, ('XOM', 'JBHT', 'JNPR'): 0.02799362401358966, ('NKE', 'MNST', 'MRK'): 0.0274282809697744, ('NKE', 'MRK', 'ALL'): 0.02936299499701757}
+TMFG Estrada Index: 993.7207729278606
+Dual TMFG Estrada Index: 132.14572546202666
+S&P 500 Wins Dictionary: {('MNST', 'MCD', 'JNPR'): 93, ('MNST', 'MCD', 'MCHP'): 87, ('HD', 'XOM', 'MCD'): 13, ('XOM', 'MNST', 'WFC'): 4, ('EXPE', 'MCD', 'AZO'): 4, ('HD', 'XOM', 'AZO'): 0, ('MAR', 'MCD', 'AZO'): 19, ('MAR', 'MNST', 'AZO'): 21, ('MAR', 'MCD', 'ALL'): 22, ('COST', 'MAR', 'MNST'): 22, ('NKE', 'MNST', 'ALL'): 20, ('MAR', 'MRK', 'ALL'): 9, ('XOM', 'DAL', 'MCD'): 32, ('XOM', 'JBHT', 'MNST'): 3, ('MNST', 'WFC', 'AZO'): 0, ('XOM', 'WFC', 'AZO'): 0, ('MA', 'MCD', 'ALL'): 33, ('MA', 'MNST', 'ALL'): 14, ('KHC', 'MA', 'MCD'): 10, ('DIS', 'MA', 'MNST'): 11, ('KHC', 'MCD', 'MCHP'): 48, ('KHC', 'MNST', 'MCHP'): 30, ('HD', 'EXPE', 'MCD'): 0, ('HD', 'EXPE', 'AZO'): 0, ('COST', 'MNST', 'MRK'): 69, ('COST', 'MAR', 'MRK'): 19, ('UNH', 'MCD', 'JNPR'): 83, ('XOM', 'DAL', 'JNPR'): 43, ('UNH', 'DAL', 'MCD'): 22, ('UNH', 'DAL', 'JNPR'): 24, ('DIS', 'KHC', 'MNST'): 0, ('DIS', 'KHC', 'MA'): 0, ('JBHT', 'MNST', 'JNPR'): 26, ('XOM', 'JBHT', 'JNPR'): 15, ('NKE', 'MNST', 'MRK'): 77, ('NKE', 'MRK', 'ALL'): 9}
+------------------------------------------------------
